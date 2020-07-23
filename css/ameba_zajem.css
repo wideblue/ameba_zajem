@@ -1,0 +1,127 @@
+body {
+  font-size:12px; 
+  font-family:"Verdana","Tahoma","Helvetica","Sans-Serif"; 
+  color:black; 
+  background:white;
+  margin:5px; 
+  padding:2px; 
+}
+
+h2,h3,h4,h5,h6 { margin-top:10px; }
+h1,h2 { font-weight:normal; }
+h3,h4,h5,h6 { font-weight:bold; }
+h1 { font-size:50px; }
+h2 { font-size:20px; }
+h3 { font-size:15px; }
+h4 { font-size:12px; }
+
+p { font-size:12px; color:black; text-align:justify; }
+
+table {
+  border:1px solid #808080; 
+  padding:0px; 
+  border-spacing:0px;
+  border-collapse:collapse;
+}
+
+td,th {
+  border:1px solid #808080; 
+  padding:5px; 
+  font-size:11px; 
+  font-family:"Verdana", "Tahoma", "Helvetica", "Sans-Serif";
+  vertical-align:top; 
+  text-align:center;
+}
+th { background-color:#eeeeee; }
+
+pre {
+  font-size:12px; 
+  font-family:Verdana; 
+  margin:20px; 
+  line-height:120%;
+}
+
+.color-blue { background:#66aaff; }
+.color-green {  background:#66ff66; }
+.color-white {  background:#ffffff; }
+.color-gray { background:#d0d0d0; }
+
+.red { color:red }
+.bold { font-weight:bold }
+
+.aplikacija_style { 
+  background:#ffffff; 
+  width:845px; 
+  height:720px; 
+  border:2px solid #000000; 
+  margin-bottom:2px; 
+}
+
+.povezave_style { 
+  background:#ffffff; 
+  z-index:1; 
+  width:240px; 
+  height:720px; 
+  border:2px solid #ffffff; 
+  position:absolute; 
+  top:7px; 
+  left:855px; 
+  padding:2px; 
+}
+.povezave_style p { margin-left:10px; margin-top:10px; }
+.povezave_style hr { margin-left:5px; }
+.povezave_style li { padding-bottom:10px; }
+.povezave_style ul { margin:15px; padding-left:10px; }
+
+.shortcuts_style { 
+  z-index:2; 
+  width:240px;
+  background:#f0f0f0;
+  border:1px solid #808080;
+  position:absolute;
+  padding:2px;
+  margin-left:30px;
+  margin-top:-20px;
+}
+.shortcuts_style table { width:240px; }
+.shortcuts_style th { font-size:10px; vertical-align:middle; text-align:right; padding:1px; background:#f8f8f8; }
+.shortcuts_style td { text-align:left; }
+.shortcuts_style a { text-decoration:none; font-weight:bold; color:blue; }
+.shortcuts_style tbody { background:#e8e8e8; }
+.shortcuts_style span { color:black; font-size:15px; font-weight:200; }
+.shortcuts_style img { height:13px; width:13px; }
+.shortcuts_style div { height:13px; width:13px; border:1px solid #808080; }
+
+.navigacija_style th { background:#ffffff }
+.navigacija_style td { text-align:left; }
+.navigacija_style span { color:black; font-size:15px; font-weight:200;}
+
+.opis_funkcij_style { margin-left:30px; margin-right:40px; }
+.opis_funkcij_style th { background:#ffffff; font-weight:normal; }
+.opis_funkcij_style td { text-align:left; }
+
+.barve_polj_style { margin-left:30px; margin-top:5px; border-width:0px; }
+.barve_polj_style th { border-width:0px; padding:2px; }
+.barve_polj_style td { border-width:0px; padding-left:3px; font-size:12px; text-align:left; vertical-align:middle; }
+.barve_polj_style img, .barve_polj_style div { height:18px; width:18px; border:1px solid #000000; }
+
+.vnos_vidnosti_style { border-width:0px; padding:1px 1px 1px 0px; }
+.vnos_vidnosti_style td { border-width:0px; font-size:12px; text-align:left; padding:1px 1px 1px 5px; }
+
+.top_style { margin-right:30px; text-align:right;}
+
+.veter_style td { width:30px; }
+
+.tbody_style th { font-weight:normal; background:#ffffff; }
+.tbody_style td { text-align:left; }
+.tbody_style img { height:24px; width:24px; } 
+
+.sifriranje_pojavov_primer_style span { margin:20px; }
+
+.kriteriji_style { border-width:0px; padding:5px; }
+.kriteriji_style td { border-width:0px; text-align:left; padding:1px 1px 1px 5px;}
+.kriteriji_style span { color:magenta; }
+
+.kontrola110_style { border-width:0px; margin-left:40px; padding:5px; }
+.kontrola110_style td { border:0px solid #000000; font-size:12px; font-weight:bold; }
+

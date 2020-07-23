@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<library>
+	<dataset name="AmebaMessages">
+		<messages>
+      <!--  sonce -->
+			<sonce>
+        <!-- napake -->
+				<msg id="err1" num="" desc="Vrednost med 4. in 5. uro ni v dovoljenih mejah."/>
+				<msg id="err2" num="152" desc="Napačna oznaka interpolacije. Dovoljene oznake: 0, 11 - 16, 21 - 26, 31 - 36, 41 - 46, 51 - 56."/>
+				<msg id="err3" num="" desc="Število ur trajanja sončnega obsevanja presega omejitev za obravnavani mesec."/>
+				<msg id="err4" num="" desc="Vrednost med 5. in 6. uro ni v dovoljenih mejah."/>
+				<msg id="err5" num="" desc="Vrednost med 6. in 7. uro ni v dovoljenih mejah."/>
+				<msg id="err6" num="" desc="Vrednost med 7. in 8. uro ni v dovoljenih mejah."/>
+				<msg id="err7" num="" desc="Vrednost med 8. in 9. uro ni v dovoljenih mejah."/>
+				<msg id="err8" num="" desc="Vrednost med 9. in 10. uro ni v dovoljenih mejah."/>
+				<msg id="err9" num="" desc="Vrednost med 10. in 11. uro ni v dovoljenih mejah."/>
+				<msg id="err10" num="" desc="Vrednost med 11. in 12. uro ni v dovoljenih mejah."/>
+				<msg id="err11" num="" desc="Vrednost med 12. in 13. uro ni v dovoljenih mejah."/>
+				<msg id="err12" num="" desc="Vrednost med 13. in 14. uro ni v dovoljenih mejah."/>
+				<msg id="err13" num="" desc="Vrednost med 14. in 15. uro ni v dovoljenih mejah."/>
+				<msg id="err14" num="" desc="Vrednost med 15. in 16. uro ni v dovoljenih mejah."/>
+				<msg id="err15" num="" desc="Vrednost med 16. in 17. uro ni v dovoljenih mejah."/>
+				<msg id="err16" num="" desc="Vrednost med 17. in 18. uro ni v dovoljenih mejah."/>
+				<msg id="err17" num="" desc="Vrednost med 18. in 19. uro ni v dovoljenih mejah."/>
+				<msg id="err18" num="" desc="Vrednost med 19. in 20. uro ni v dovoljenih mejah."/> 
+				<!-- opozorila -->
+				<msg id="wrn0" num="147" desc="Ni podatkov."/>
+				<msg id="wrn1" num="146" desc="Vse vrednosti so enake vrednostim za prejšnji dan."/>
+				<msg id="wrn2" num="" desc="Število ur trajanja son. obsevanja med 4. in 5. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn3" num="" desc="Manjka oznaka interpolacije. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn4" num="" desc="Število ur trajanja son. obsevanja med 5. in 6. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn5" num="" desc="Število ur trajanja son. obsevanja med 6. in 7. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn6" num="" desc="Število ur trajanja son. obsevanja med 7. in 8. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn7" num="" desc="Število ur trajanja son. obsevanja med 8. in 9. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn8" num="" desc="Število ur trajanja son. obsevanja med 9. in 10. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn9" num="" desc="Število ur trajanja son. obsevanja med 10. in 11. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn10" num="" desc="Število ur trajanja son. obsevanja med 11. in 12. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn11" num="" desc="Število ur trajanja son. obsevanja med 12. in 13. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn12" num="" desc="Število ur trajanja son. obsevanja med 13. in 14. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn13" num="" desc="Število ur trajanja son. obsevanja med 14. in 15. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn14" num="" desc="Število ur trajanja son. obsevanja med 15. in 16. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn15" num="" desc="Število ur trajanja son. obsevanja med 16. in 17. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn16" num="" desc="Število ur trajanja son. obsevanja med 17. in 18. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn17" num="" desc="Število ur trajanja son. obsevanja med 18. in 19. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn18" num="" desc="Število ur trajanja son. obsevanja med 19. in 20. uro se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+			</sonce>      
+      <!-- padavine -->
+			<padavine>
+        <!-- napake -->
+				<msg id="err4" num="152" desc="Napačna oznaka interpolacije. Dovoljene oznake: 0 - 8."/>
+				<msg id="err46" num="78" desc="Višina padavin ni v dovoljenih mejah."/>
+				<msg id="err47" num="76" desc="Napačna šifra za obliko padavin. Dovoljene šifre: -1, 1 - 9."/>
+				<msg id="err48" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err49" num="110" desc="Višina skupne snežne odeje ni v dovoljenih mejah."/>
+				<msg id="err51" num="110A" desc="Višina novozapadlega snega ni v dovoljenih mejah."/>
+				<msg id="err62" num="83" desc="Oblika padavin mora biti različna od -1 in 9, ker je višina padavin večja od 0.0 mm."/>
+				<msg id="err63" num="84" desc="Oblika padavin mora biti enaka 9, ker je višina padavin 0.0 mm."/>
+				<msg id="err64" num="85A" desc="Oblika padavin mora biti enaka -1, ker je višina padavin -1."/>
+				<msg id="err65" num="120" desc="Višina padavin mora biti med 0.1 mm in 0.3 mm, ker je oblika padavin enaka 8."/>
+				<msg id="err66" num="88" desc="Višina novozapadlega snega je večja od višine skupne snežne odeje."/>
+				<msg id="err69" num="89" desc="Višina padavin mora biti večja ali enaka 0.0 mm, ker je višina novozapadlega snega večja ali enaka 0 cm."/>
+				<msg id="err70" num="91" desc="Višina novozapadlega snega mora biti večja ali enaka 0 cm, ker je oblika padavin med 2 in 7."/>
+				<msg id="err71" num="92" desc="Oblika padavin mora biti ali enaka 9 ali med 2 in 7, ker je višina novozapadlega snega večja ali enaka 0 cm."/>
+				<msg id="err72" num="93" desc="Višina skupne snežne odeje je večja od vsote višine novozapadlega snega in višine skupne snežne odeje prejšnjega dne."/>
+				<msg id="err76" num="77" desc="Manjka podatek za višino padavin ali podatek za obliko padavin preveč."/>
+				<msg id="err77" num="85" desc="Manjka podatek za obliko padavin ali podatek za višino padavin preveč."/>
+				<msg id="err78" num="154" desc="Manjka podatek za višino skupne snežne odeje ali podatek za višino novozapadlega snega preveč."/>
+				<msg id="err79" num="155" desc="Manjka podatek za višino novozapadlega snega ali podatek za višino skupne snežne odeje preveč."/>
+				<msg id="err99" num="126" desc="Manjka pojav snežne odeje, ker je višina snežne odeje večja od 0 cm."/>
+				<msg id="err101" num="127" desc="Pojav snežne odeje je preveč, ker je višina skupne snežne odeje enaka -1 (ni snežne odeje) in ta dan ni snežilo."/>
+				<msg id="err102" num="82" desc="Manjka višina padavin ta ali prejšnji dan, ker so prejšnji dan šifrirani pojavi v stolpcih 54, 55, 56, 57, 58."/>
+				<msg id="err105" num="107" desc="Manjkajo pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan, ker je višina padavin večja od 0.3 mm."/>
+				<msg id="err106" num="109" desc="Manjkajo pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan, ker je višina padavin 0.0 mm (oblika padavin 9)."/>
+				<msg id="err114" num="108" desc="Pojavi v stolpcih 59, 61, 62, 63 ta ali prejšnji dan ne ustrezajo obliki padavin 8."/>
+				<msg id="err149" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err150" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err151" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err152" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0, 1, 2, 4."/>
+				<msg id="err166" num="159" desc="Višina skupne snežne odeje mora biti -1, ker prejšnji dan ni bilo snežne odeje in je višina padavin -1."/>
+				<msg id="err167" num="164A" desc="Višina skupne snežne odeje presega dovoljeno mejo."/>
+        <!-- opozorila -->
+				<msg id="wrn0" num="147" desc="Ni podatkov."/>
+				<msg id="wrn1" num="146" desc="Vse vrednosti so enake vrednostim za prejšnji dan."/>
+				<msg id="wrn2" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn3" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn4" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn5" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn8" num="176" desc="Manjka oznaka interpolacije. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn18" num="160" desc="Višina padavin se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn19" num="161" desc="Oblika padavin se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn20" num="162" desc="Višina skupne snežne odeje se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn21" num="163" desc="Višina novozapadlega snega se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn23" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn24" num="81" desc="Višina padavin je večja od 100.0 mm."/>
+				<msg id="wrn25" num="164" desc="Višina skupne snežne odeje je večja od 200 cm."/>
+				<msg id="wrn68" num="82" desc="Manjka višina padavin ta ali prejšnji dan, ker so prejšnji dan šifrirani pojavi v stolpcih 54, 55, 56, 57, 58. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn71" num="112" desc="Snežna odeja je na hitro izginila, čeprav ni deževalo ali ni padal dež s snegom."/>
+				<msg id="wrn88" num="99" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 1. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn89" num="100" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 2. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn90" num="101" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 3. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn91" num="102" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 4. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn92" num="103" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 5. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn93" num="104" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 6. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn94" num="105" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 7. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn95" num="108" desc="Pojavi v stolpcih 59, 61, 62, 63 ta ali prejšnji dan ne ustrezajo obliki padavin 8. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn162" num="165" desc="Višina novozapadlega snega je večja od 200 cm."/>
+				<msg id="wrn163" num="99" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 1."/>
+				<msg id="wrn164" num="100" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 2."/>
+				<msg id="wrn165" num="101" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 3."/>
+				<msg id="wrn166" num="102" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 4."/>
+				<msg id="wrn167" num="103" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 5."/>
+				<msg id="wrn168" num="104" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 6."/>
+				<msg id="wrn169" num="105" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 7."/>
+				<msg id="wrn175" num="127A" desc="Lahko manjka pojav snežne odeje, ker je danes snežilo."/>
+				<msg id="wrn176" num="108B" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan so preveč, ker je oblika padavin enaka 8."/>
+				<msg id="wrn177" num="98" desc="Višina novozapadlega snega mora biti 0 ali 1 cm, ker je šifra za obliko padavin 9 in je ta ali prejšnji dan snežilo."/>
+			</padavine>      
+      <!-- klima -->
+			<klima>
+        <!-- napake -->
+				<msg id="err0" num="146" desc="Vse vrednosti so enake vrednostim za prejšnji dan."/>
+				<msg id="err1" num="148" desc="Pritisk ob 7. uri ni v dovoljenih mejah."/>
+				<msg id="err3" num="149" desc="Maksimalna temperatura ni v dovoljenih mejah."/>
+				<msg id="err4" num="152" desc="Napačna oznaka interpolacije. Dovoljene oznake: 0 - 8."/>
+				<msg id="err5" num="6" desc="Maksimalna temperatura je nižja od večerne temperature prejšnjega dne."/>
+				<msg id="err6" num="7" desc="Minimalna temperatura je višja od večerne temperature prejšnjega dne."/>
+				<msg id="err7" num="9" desc="Temperatura suhega termometra ob 7. uri je višja od maksimalne temperature."/>
+				<msg id="err8" num="10" desc="Temperatura suhega termometra ob 7. uri je nižja od minimalne temperature."/>
+				<msg id="err9" num="11" desc="Temperatura suhega termometra ob 14. uri je višja od maksimalne temperature."/>
+				<msg id="err10" num="12" desc="Temperatura suhega termometra ob 14. uri je nižja od minimalne temperature."/>
+				<msg id="err11" num="13" desc="Temperatura suhega termometra ob 21. uri je višja od maksimalne temperature."/>
+				<msg id="err12" num="14" desc="Temperatura suhega termometra ob 21. uri je nižja od minimalne temperature."/>
+				<msg id="err13" num="141" desc="Minimalna temperatura na 5 cm je višja od večerne temperature prejšnjega dne."/>
+				<msg id="err14" num="17" desc="Če na krpici ni ledu, temperatura mokrega termometra ob 7. uri ne more biti višja od temperature suhega termometra ob 7. uri."/>
+				<msg id="err15" num="18" desc="Če na krpici ni ledu, temperatura mokrega termometra ob 14. uri ne more biti višja od temperature suhega termometra ob 14. uri."/>
+				<msg id="err16" num="19" desc="Če na krpici ni ledu, temperatura mokrega termometra ob 21. uri ne more biti višja od temperature suhega termometra ob 21. uri."/>
+				<msg id="err17" num="31" desc="Temperatura mokrega termometra ob 7. uri mora biti manjša od 0.0° C, ker je na krpici led."/>
+				<msg id="err18" num="32" desc="Temperatura mokrega termometra ob 14. uri mora biti manjša od 0.0° C, ker je na krpici led."/>
+				<msg id="err19" num="33" desc="Temperatura mokrega termometra ob 21. uri mora biti manjša od 0.0° C, ker je na krpici led."/>
+				<msg id="err20" num="34" desc="Temperatura mokrega termometra ob 7. uri je višja od temperature suhega termometra ob 7. uri, vendar preveč, ker je na krpici led."/>
+				<msg id="err21" num="35" desc="Temperatura mokrega termometra ob 14. uri je višja od temperature suhega termometra ob 14. uri, vendar preveč, ker je na krpici led."/>
+				<msg id="err22" num="36" desc="Temperatura mokrega termometra ob 21. uri je višja od temperature suhega termometra ob 21. uri, vendar preveč, ker je na krpici led."/>
+				<msg id="err23" num="151" desc="Relativna vlaga po higrografu ob 7. uri ni v dovoljenih mejah (0, 100)."/>
+				<msg id="err29" num="52" desc="Napačna šifra za smer vetra ob 7. uri. Dovoljene šifre: 0 - 32 (soda števila)."/>
+				<msg id="err30" num="53" desc="Napačna šifra za smer vetra ob 14. uri. Dovoljene šifre: 0 - 32 (soda števila)."/>
+				<msg id="err31" num="54" desc="Napačna šifra za smer vetra ob 21. uri. Dovoljene šifre: 0 - 32 (soda števila)."/>
+				<msg id="err32" num="145" desc="Negativna hitrost vetra ob 7. uri."/>
+				<msg id="err33" num="145J" desc="Napačna šifra za jakost vetra ob 7. uri. Dovoljene šifre: 0 - 12."/>
+				<msg id="err34" num="64" desc="Napačna šifra za stanje tal ob 7. uri. Dovoljene šifre: 0 - 9."/>
+				<msg id="err35" num="65" desc="Napačna šifra za stanje tal ob 14. uri. Dovoljene šifre: 0 - 9."/>
+				<msg id="err36" num="66" desc="Napačna šifra za stanje tal ob 21. uri. Dovoljene šifre: 0 - 9."/>
+				<msg id="err37" num="73" desc="Napačna šifra za vidnost ob 7. uri. Dovoljene šifre: 0 - 9."/>
+				<msg id="err38" num="74" desc="Napačna šifra za vidnost ob 14. uri. Dovoljene šifre: 0 - 9."/>
+				<msg id="err39" num="75" desc="Napačna šifra za vidnost ob 21. uri. Dovoljene šifre: 0 - 9."/>
+				<msg id="err40" num="79" desc="Negativno število ur trajanja sončnega obsevanja."/>
+				<msg id="err41" num="80" desc="Prekoračena omejitev števila ur trajanja sončnega obsevanja."/>
+				<msg id="err42" num="129" desc="Napačna šifra za oblačnost ob 7. uri. Dovoljene šifre: 0 - 10."/>
+				<msg id="err43" num="130" desc="Napačna šifra za oblačnost ob 14. uri. Dovoljene šifre: 0 - 10."/>
+				<msg id="err44" num="131" desc="Napačna šifra za oblačnost ob 21. uri. Dovoljene šifre: 0 - 10."/>
+				<msg id="err45" num="150" desc="Napačna šifra za led ob 7. uri. Dovoljeni šifri: 0, 1."/>
+				<msg id="err46" num="78" desc="Višina padavin ni v dovoljenih mejah."/>
+				<msg id="err47" num="76" desc="Napačna šifra za obliko padavin. Dovoljene šifre: -1, 1 - 9."/>
+				<msg id="err48" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err49" num="110" desc="Višina skupne snežne odeje ni v dovoljenih mejah."/>
+				<msg id="err50" num="111" desc="Napačen podatek za množino vode v snežni odeji (najmanjša dovoljena vrednost je -1)."/>
+				<msg id="err51" num="110A" desc="Višina novozapadlega snega ni v dovoljenih mejah."/>
+				<msg id="err52" num="37" desc="Dan je precej jasen, število ur trajanja sončnega obsevanja pa je 0."/>
+				<msg id="err53" num="58" desc="Smer vetra ob 7. uri mora biti enaka 0, ker je hitrost vetra ob 7. uri 0 m/s."/>
+				<msg id="err54" num="59" desc="Smer vetra ob 14. uri mora biti enaka 0, ker je hitrost vetra ob 14. uri 0 m/s."/>
+				<msg id="err55" num="60" desc="Smer vetra ob 21. uri mora biti enaka 0, ker je hitrost vetra ob 21. uri 0 m/s."/>
+				<msg id="err56" num="61" desc="Hitrost vetra ob 7. uri mora biti 0 m/s, ker je smer vetra ob 7. uri enaka 0."/>
+				<msg id="err57" num="62" desc="Hitrost vetra ob 14. uri mora biti 0 m/s, ker je smer vetra ob 14. uri enaka 0."/>
+				<msg id="err58" num="63" desc="Hitrost vetra ob 21. uri mora biti 0 m/s, ker je smer vetra ob 21. uri enaka 0."/>
+				<msg id="err59" num="61J" desc="Stopnja jakosti vetra ob 7. uri mora biti 0, ker je smer vetra ob 7. uri enaka 0."/>
+				<msg id="err60" num="62J" desc="Stopnja jakosti vetra ob 14. uri mora biti 0, ker je smer vetra ob 14. uri enaka 0."/>
+				<msg id="err61" num="63J" desc="Stopnja jakosti vetra ob 21. uri mora biti 0, ker je smer vetra ob 21. uri enaka 0."/>
+				<msg id="err62" num="83" desc="Oblika padavin mora biti različna od -1 in 9, ker je višina padavin večja od 0.0 mm."/>
+				<msg id="err63" num="84" desc="Oblika padavin mora biti enaka 9, ker je višina padavin 0.0 mm."/>
+				<msg id="err64" num="85A" desc="Oblika padavin mora biti enaka -1, ker je višina padavin -1."/>
+				<msg id="err65" num="120" desc="Višina padavin mora biti med 0.1 mm in 0.3 mm, ker je oblika padavin enaka 8."/>
+				<msg id="err67" num="86" desc="Šifra za stanje tal ob 7. uri mora biti večja ali enaka 6, ker je višina skupne snežne odeje večja od 0 cm."/>
+				<msg id="err68" num="87" desc="Šifra za stanje tal ob 7. uri mora biti manjša ali enaka 5, ker je višina skupne snežne odeje manjša ali enaka 0 cm."/>
+				<msg id="err66" num="88" desc="Višina novozapadlega snega je večja od višine skupne snežne odeje."/>
+				<msg id="err69" num="89" desc="Višina padavin mora biti večja ali enaka 0.0 mm, ker je višina novozapadlega snega večja ali enaka 0 cm."/>
+				<msg id="err70" num="91" desc="Višina novozapadlega snega mora biti večja ali enaka 0 cm, ker je oblika padavin med 2 in 7."/>
+				<msg id="err71" num="92" desc="Oblika padavin mora biti ali enaka 9 ali med 2 in 7, ker je višina novozapadlega snega večja ali enaka 0 cm."/>
+				<msg id="err72" num="93" desc="Višina skupne snežne odeje je večja od vsote višine novozapadlega snega in višine skupne snežne odeje prejšnjega dne."/>
+				<msg id="err73" num="94" desc="Manjka podatek o množini vode v snežni odeji, ker je skupna višina snežne odeje večja od 10 cm in je datum meritve ustrezen."/>
+				<msg id="err74" num="95" desc="Množina vode v snežni odeji mora biti enaka -1, ker je višina skupne snežne odeje manjša od 10 cm."/>
+				<msg id="err75" num="132" desc="Podatek o množini vode v snežni odeji je ob napačnem dnevu."/>
+				<msg id="err76" num="77" desc="Manjka podatek za višino padavin ali podatek za obliko padavin preveč."/>
+				<msg id="err77" num="85" desc="Manjka podatek za obliko padavin ali podatek za višino padavin preveč."/>
+				<msg id="err78" num="154" desc="Manjka podatek za višino skupne snežne odeje ali podatek za višino novozapadlega snega preveč."/>
+				<msg id="err79" num="155" desc="Manjka podatek za višino novozapadlega snega ali podatek za višino skupne snežne odeje preveč."/>
+				<msg id="err80" num="38" desc="Manjka podatek za temperaturo mokrega termometra ob 7. uri ali podatek za led ob 7. uri preveč."/>
+				<msg id="err81" num="39" desc="Manjka podatek za temperaturo mokrega termometra ob 14. uri ali podatek za led ob 14. uri preveč."/>
+				<msg id="err83" num="38A" desc="Manjka podatek za led ob 7. uri ali podatek za temperaturo mokrega termometra ob 7. uri preveč."/>
+				<msg id="err82" num="40" desc="Manjka podatek za temperaturo mokrega termometra ob 21. uri ali podatek za led ob 21. uri preveč."/>
+				<msg id="err84" num="39A" desc="Manjka podatek za led ob 14. uri ali podatek za temperaturo mokrega termometra ob 14. uri preveč."/>
+				<msg id="err85" num="41" desc="Manjka podatek za led ob 21. uri ali podatek za temperaturo mokrega termometra ob 21. uri preveč."/>
+				<msg id="err86" num="157" desc="Manjka podatek za višino skupne snežne odeje ali podatek za množino vode v snegu preveč."/>
+				<msg id="err87" num="156" desc="Manjka podatek za množino vode v snegu ali podatek za višino skupne snežne odeje preveč."/>
+				<msg id="err88" num="158" desc="Minimalna temperatura je višja od maksimalne."/>
+				<msg id="err89" num="97" desc="Previsoka minimalna temperatura za pojave v stolpcih 55, 56, 57."/>
+				<msg id="err91" num="125" desc="Manjka pojav močnega vetra, ker hitrost vetra v enem od terminov presega 10.8 m/s."/>
+				<msg id="err92" num="125A" desc="Manjkata pojava močnega in viharnega vetra, ker hitrost vetra v enem od terminov presega 17.2 m/s."/>
+				<msg id="err94" num="125C" desc="Manjka pojav viharnega vetra, ker hitrost vetra v enem od terminov presega 17.2 m/s."/>
+				<msg id="err95" num="125J" desc="Manjka pojav močnega vetra, ker je jakost vetra v enem od terminov enaka 6 ali 7."/>
+				<msg id="err96" num="125JA" desc="Manjkata pojava močnega in viharnega vetra, ker je jakost vetra v enem od terminov večja ali enaka 8."/>
+				<msg id="err98" num="125JC" desc="Manjka pojav viharnega vetra, ker je jakost vetra v enem od terminov večja ali enaka 8."/>
+				<msg id="err99" num="126" desc="Manjka pojav snežne odeje, ker je višina snežne odeje je večja od 0 cm."/>
+				<msg id="err100" num="128" desc="Manjka pojav snežne odeje, ker je šifra za stanje tal v enem od terminov večja od 5."/>
+				<msg id="err101" num="127" desc="Pojav snežne odeje je preveč, ker je višina skupne snežne odeje enaka -1 in ta dan ni snežilo."/>
+				<msg id="err102" num="82" desc="Manjka višina padavin ta ali prejšnji dan, ker so prejšnji dan šifrirani pojavi v stolpcih 54, 55, 56, 57, 58."/>
+				<msg id="err104" num="106" desc="Glede na minimalno temperaturo je malo možnosti za snežne padavine."/>
+				<msg id="err105" num="107" desc="Manjkajo pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan, ker je višina padavin večja od 0.3 mm."/>
+				<msg id="err106" num="109" desc="Manjkajo pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan, ker je višina padavin 0.0 mm (oblika padavin 9)."/>
+				<msg id="err114" num="108" desc="Pojavi v stolpcih 59, 61, 62, 63 ta ali prejšnji dan ne ustrezajo obliki padavin 8."/>
+				<msg id="err116" num="46" desc="Relativna vlaga po psihrometru ob 7. uri ni v dovoljenih mejah."/>
+				<msg id="err117" num="47" desc="Relativna vlaga po psihrometru ob 14. uri ni v dovoljenih mejah."/>
+				<msg id="err118" num="48" desc="Relativna vlaga po psihrometru ob 21. uri ni v dovoljenih mejah."/>
+				<msg id="err119" num="58J" desc="Smer vetra ob 7. uri mora biti enaka 0, ker je stopnja jakosti vetra ob 7. uri 0."/>
+				<msg id="err120" num="59J" desc="Smer vetra ob 14. uri mora biti enaka 0, ker je stopnja jakosti vetra ob 14. uri 0."/>
+				<msg id="err121" num="60J" desc="Smer vetra ob 21. uri mora biti enaka 0, ker je stopnja jakosti vetra ob 21. uri 0."/>
+				<msg id="err122" num="148" desc="Pritisk ob 14. uri ni v dovoljenih mejah."/>
+				<msg id="err123" num="148" desc="Pritisk ob 21. uri ni v dovoljenih mejah."/>
+				<msg id="err124" num="149" desc="Minimalna temperatura ni v dovoljenih mejah."/>
+				<msg id="err125" num="149" desc="Minimalna temperatura na 5 cm ni v dovoljenih mejah."/>
+				<msg id="err126" num="149" desc="Temperatura suhega termometra ob 7. uri ni v dovoljenih mejah."/>
+				<msg id="err127" num="149" desc="Temperatura suhega termometra ob 14. uri ni v dovoljenih mejah."/>
+				<msg id="err128" num="149" desc="Temperatura suhega termometra ob 21. uri ni v dovoljenih mejah."/>
+				<msg id="err129" num="149" desc="Temperatura mokrega termometra ob 7. uri ni v dovoljenih mejah."/>
+				<msg id="err130" num="149" desc="Temperatura mokrega termometra ob 14. uri ni v dovoljenih mejah."/>
+				<msg id="err131" num="149" desc="Temperatura mokrega termometra ob 21. uri ni v dovoljenih mejah."/>
+				<msg id="err132" num="150" desc="Napačna šifra za led ob 14. uri. Dovoljeni šifri: 0, 1."/>
+				<msg id="err133" num="150" desc="Napačna šifra za led ob 21. uri. Dovoljeni šifri: 0, 1."/>
+				<msg id="err134" num="151" desc="Relativna vlaga po higrografu ob 14. uri ni v dovoljenih mejah (0, 100)."/>
+				<msg id="err135" num="151" desc="Relativna vlaga po higrografu ob 21. uri ni v dovoljenih mejah (0, 100)."/>
+				<msg id="err136" num="145" desc="Negativna hitrost vetra ob 14. uri."/>
+				<msg id="err137" num="145" desc="Negativna hitrost vetra ob 21. uri."/>
+				<msg id="err138" num="145J" desc="Napačna šifra za jakost vetra ob 14. uri. Dovoljene šifre: 0 - 12."/>
+				<msg id="err139" num="145J" desc="Napačna šifra za jakost vetra ob 21. uri. Dovoljene šifre: 0 - 12."/>
+				<msg id="err140" num="152" desc="Napačna oznaka interpolacije. Dovoljene oznake: 0 - 8."/>
+				<msg id="err141" num="152" desc="Napačna oznaka interpolacije. Dovoljene oznake: 0 - 8."/>
+				<msg id="err142" num="152" desc="Napačna oznaka interpolacije. Dovoljene oznake: 0 - 8."/>
+				<msg id="err143" num="152" desc="Napačna oznaka interpolacije. Dovoljene oznake: 0 - 8."/>
+				<msg id="err144" num="152" desc="Napačna oznaka interpolacije. Dovoljene oznake: 0 - 8."/>
+				<msg id="err145" num="152" desc="Napačna oznaka interpolacije. Dovoljene oznake: 0 - 8."/>
+				<msg id="err146" num="152" desc="Napačna oznaka interpolacije. Dovoljene oznake: 0 - 8."/>
+				<msg id="err147" num="152" desc="Napačna oznaka interpolacije. Dovoljene oznake: 0 - 8."/>
+				<msg id="err148" num="152" desc="Napačna oznaka interpolacije. Dovoljene oznake: 0 - 8."/>
+				<msg id="err149" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err150" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err151" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err152" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err153" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err154" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err155" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err156" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err157" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err158" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err159" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err160" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0, 1, 4, 5, 7."/>
+				<msg id="err161" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err162" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err163" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err164" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err165" num="153" desc="Napačna šifra za pojave. Dovoljene šifre: 0 - 7."/>
+				<msg id="err166" num="159" desc="Višina skupne snežne odeje mora biti -1, ker prejšnji dan ni bilo snežne odeje in je višina padavin -1."/>
+        <!-- opozorila -->
+				<msg id="wrn0" num="147" desc="Ni podatkov."/>
+				<msg id="wrn1" num="166" desc="Pritisk ob 7. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn2" num="1" desc="Prevelika razlika pritiska med dvema zaporednima terminoma."/>
+				<msg id="wrn3" num="2" desc=" Prevelika razlika med tendencama pritiska ponoči in dopoldne."/>
+				<msg id="wrn4" num="3" desc="Prevelika razlika pritiska med dvema zaporednima terminoma."/>
+				<msg id="wrn5" num="4" desc="Prevelika razlika med tendencama pritiska čez dan."/>
+				<msg id="wrn6" num="5" desc="Prevelika razlika pritiska med dvema zaporednima terminoma."/>
+				<msg id="wrn7" num="167" desc="Maksimalna temperatura se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn8" num="176" desc="Manjka oznaka interpolacije. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn9" num="44" desc="Led na krpici ob 7. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn10" num="45" desc="Relativna vlaga ob 7. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn11" num="170" desc="Smer vetra ob 7. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn12" num="171" desc="Hitrost vetra ob 7. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn13" num="171J" desc="Jakost vetra ob 7. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn14" num="172" desc="Stanje tal ob 7. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn15" num="173" desc="Vidnost ob 7. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn16" num="174" desc="Oblačnost ob 7. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn17" num="175" desc="Trajanje sončnega obsevanja se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn18" num="160" desc="Višina padavin se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn19" num="161" desc="Oblika padavin se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn20" num="162" desc="Višina skupne snežne odeje se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn21" num="163" desc="Višina novozapadlega snega se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn22" num="138" desc="Množina vode v snegu se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn23" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn24" num="81" desc="Višina padavin je večja od 100.0 mm."/>
+				<msg id="wrn25" num="164" desc="Višina skupne snežne odeje je večja od 200 cm."/>
+				<msg id="wrn26" num="143" desc="Pojava snežnih vrtincev, pojava nizkih snežnih vrtincev in pojava trombe se ne meri."/> <!-- k66 -->
+				<msg id="wrn27" num="117" desc="Pojava peščenega ali prašnega vrtinca se ne meri."/> <!-- k65 -->
+				<msg id="wrn28" num="142" desc="Pojava polarnega sija se ne meri in pojava svetlobnih stebrov se ne meri."/> <!-- k70 -->
+				<msg id="wrn29" num="124" desc="Pojav močnega vetra je preveč, ker hitrost vetra v nobenem od terminov ne presega 10.8 m/s."/>
+				<msg id="wrn30" num="124A" desc="Pojava močnega in viharnega vetra sta preveč, ker hitrost vetra v nobenem od terminov ne presega 17.2 m/s."/>
+				<msg id="wrn31" num="124J" desc="Pojav močnega vetra je preveč, ker jakost vetra v nobenem od terminov ni enaka 6 ali 7."/>
+				<msg id="wrn32" num="124JA" desc="Pojava močnega in viharnega vetra sta preveč, ker jakost vetra v nobenem od terminov ni večja ali enaka 8."/>
+				<msg id="wrn33" num="28" desc="Na krpici mora biti led, ker je temperatura mokrega termometra ob 7. uri nižja od -5.0° C."/>
+				<msg id="wrn34" num="29" desc="Na krpici mora biti led, ker je temperatura mokrega termometra ob 14. uri nižja od -5.0° C."/>
+				<msg id="wrn35" num="30" desc="Na krpici mora biti led, ker je temperatura mokrega termometra ob 21. uri nižja od -5.0° C."/>
+				<msg id="wrn36" num="70" desc="Tla ob 7. uri ne morejo biti suha, ker so bila prejšnji večer mokra."/>
+				<msg id="wrn37" num="71" desc="Tla ob 14. uri ne morejo biti suha, ker so bila ob 7. uri mokra."/>
+				<msg id="wrn38" num="72" desc="Tla ob 21. uri ne morejo biti suha, ker so bila ob 14. uri mokra."/>
+				<msg id="wrn39" num="8" desc="Minimalna temperatura na 5 cm je višja od minimalne, vendar ni megle ali novega snega ali ne kaže, da je minimum nastopil šele zvečer."/>
+				<msg id="wrn40" num="15" desc="Maksimalna temperatura je za več kot 5.0° C višja od terminskih temperatur."/>
+				<msg id="wrn41" num="15" desc="Maksimalna temperatura je za več kot 8.0° C višja od terminskih temperatur."/>
+				<msg id="wrn42" num="16" desc="Minimalna temperatura je za več kot 6.0° C nižja od terminskih temperatur."/>
+				<msg id="wrn43" num="16" desc="Minimalna temperatura je za več kot 8.0° C nižja od terminskih temperatur."/>
+				<msg id="wrn44" num="16" desc="Minimalna temperatura je za več kot 9.0° C nižja od terminskih temperatur."/>
+				<msg id="wrn45" num="20" desc="Prevelik deficit mokrega termometra."/>
+				<msg id="wrn46" num="21" desc="Prevelik deficit mokrega termometra."/>
+				<msg id="wrn47" num="22" desc="Prevelik deficit mokrega termometra."/>
+				<msg id="wrn48" num="23" desc="Prevelika razlika med spremembama suhega in mokrega termometra."/>
+				<msg id="wrn49" num="24" desc="Prevelika razlika med spremembama suhega in mokrega termometra (pri amplitudi suhega termometra več kot 10.0° C)"/>
+				<msg id="wrn50" num="25" desc="Prevelika razlika med spremembama suhega in mokrega termometra (pri amplitudi suhega termometra manj kot 10.0° C)."/>
+				<msg id="wrn51" num="26" desc="Prevelika razlika med spremembama suhega in mokrega termometra (pri amplitudi suhega termometra več kot 10.0° C)."/>
+				<msg id="wrn52" num="27" desc="Prevelika razlika med spremembama suhega in mokrega termometra (pri amplitudi suhega termometra manj kot 10.0° C)"/>
+				<msg id="wrn53" num="55" desc="Hitrost vetra je večja od 13.8 m/s."/>
+				<msg id="wrn54" num="55" desc="Hitrost vetra je večja od 24.5 m/s."/>
+				<msg id="wrn55" num="56" desc="Hitrost vetra je večja od 13.8 m/s."/>
+				<msg id="wrn56" num="56" desc="Hitrost vetra je večja od 24.5 m/s."/>
+				<msg id="wrn57" num="57" desc="Hitrost vetra je večja od 13.8 m/s."/>
+				<msg id="wrn58" num="57" desc="Hitrost vetra je večja od 24.5 m/s."/>
+				<msg id="wrn59" num="55J" desc="Stopnja jakosti vetra je večja ali enaka 7."/>
+				<msg id="wrn60" num="55J" desc="Stopnja jakosti vetra je večja ali enaka 10."/>
+				<msg id="wrn61" num="56J" desc="Stopnja jakosti vetra je večja ali enaka 7."/>
+				<msg id="wrn62" num="56J" desc="Stopnja jakosti vetra je večja ali enaka 10."/>
+				<msg id="wrn63" num="57J" desc="Stopnja jakosti vetra je večja ali enaka 7."/>
+				<msg id="wrn64" num="57J" desc="Stopnja jakosti vetra je večja ali enaka 10."/>
+				<msg id="wrn65" num="67" desc="Pri temperaturi suhega termometra nad 3.0° C ob 7. uri tla ne morejo biti zmrznjena."/>
+				<msg id="wrn66" num="68" desc="Pri temperaturi suhega termometra nad 3.0° C ob 14. uri tla ne morejo biti zmrznjena. Če je temperatura ob 14. uri višja od 0° C in tla ob 7. uri niso bila zmrznjena, tudi ob 14. uri ne morejo biti zmrznjena."/>
+				<msg id="wrn67" num="69" desc="Pri temperaturi suhega termometra nad 3.0° C ob 21. uri tla ne morejo biti zmrznjena."/>
+				<msg id="wrn68" num="82" desc="Manjka višina padavin ta ali prejšnji dan, ker so prejšnji dan šifrirani pojavi v stolpcih 54, 55, 56, 57, 58. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn69" num="90" desc="Višina novozapadlega snega je prevelika glede na temperature prejšnji dan."/>
+				<msg id="wrn70" num="96" desc="Glede na maksimalno temperaturo je malo možnosti za dež, točo ali sodro."/>
+				<msg id="wrn71" num="112" desc="Snežna odeja je na hitro izginila, čeprav ni deževalo ali ni padal dež s snegom."/>
+				<msg id="wrn72" num="113" desc="Šifra za vidnost je 3 ali manj (vidnost je 0, 005, 02 ali 05), toda ni pojava megle in ni bilo padavin."/>
+				<msg id="wrn73" num="114" desc="Šifra za vidnost je med 4 in 6 (vidnost je 1, 2 ali 4), toda ni pojava meglice, suhe motnosti ali ni bilo padavin."/>
+				<msg id="wrn74" num="115" desc="Glede na temperaturo ob 7. uri, minimalno temperaturo na 5 cm, temperaturo ob 21. uri in stanje tal ob 7. in 21. uri je malo verjetnosti za pojav rose."/>
+				<msg id="wrn75" num="116" desc="Minimalni temperaturi sta za nastanek slane previsoki."/>
+				<msg id="wrn76" num="118" desc="Neskladje med minimalno temperaturo, minimalno temperaturo na 5cm in šifro za poledico."/>
+				<msg id="wrn77" num="121" desc="Minimalna temperatura je previsoka za nastanek ivja (megla je)."/>
+				<msg id="wrn78" num="122" desc="Minimalna temperatura na 5 cm je previsoka za nastanek ivja (megle ni)."/>
+				<msg id="wrn79" num="123" desc="Pogoji za nastanek trdega ivja niso izpolnjeni (minimalna temperatura, megla, terminski veter večji ali enak 5.5 m/s ali pojav močnega vetra pri atmosferskih pojavih)."/>
+				<msg id="wrn80" num="123J" desc="Pogoji za nastanek trdega ivja niso izpolnjeni (minimalna temperatura, megla, terminski veter večji ali enak 4 Beaufortov ali pojav močnega vetra pri atmosferskih pojavih)."/>
+				<msg id="wrn81" num="133" desc="Razlika med minimalno temperaturo na 5 cm in minimalno temperaturo ni v mejah za jasno noč."/>
+				<msg id="wrn82" num="134" desc="Razlika med minimalno temperaturo na 5 cm in minimalno temperaturo ni v mejah za oblačno noč."/>
+				<msg id="wrn83" num="139" desc="Deficit temperature na 5 cm je prevelik glede na terminske temperature."/>
+				<msg id="wrn84" num="140" desc="Temperatura na 5 cm je višja od terminske ob 7. uri in ni megle ali novega snega."/>
+				<msg id="wrn85" num="49" desc="Prevelika razlika med relativno vlago po psihrometru in higrografu (higrometru) ob 7. uri."/>
+				<msg id="wrn86" num="50" desc="Prevelika razlika med relativno vlago po psihrometru in higrografu (higrometru) ob 14. uri."/>
+				<msg id="wrn87" num="51" desc="Prevelika razlika med relativno vlago po psihrometru in higrografu (higrometru) ob 21. uri."/>
+				<msg id="wrn88" num="99" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 1. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn89" num="100" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 2. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn90" num="101" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 3. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn91" num="102" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 4. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn92" num="103" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 5. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn93" num="104" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 6. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn94" num="105" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 7. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn95" num="108" desc="Pojavi v stolpcih 59, 61, 62, 63 ta ali prejšnji dan ne ustrezajo obliki padavin 8. Postaja prejšnji dan ne deluje ali pa se ta ali prejšnji dan pojavi ne merijo."/>
+				<msg id="wrn96" num="135" desc="Prevelik skok delnega pritiska vodne pare ob 7. uri."/>
+				<msg id="wrn97" num="136" desc="Prevelik skok delnega pritiska vodne pare ob 14. uri."/>
+				<msg id="wrn98" num="137" desc="Prevelik skok delnega pritiska vodne pare ob 21. uri."/>
+				<msg id="wrn99" num="166" desc="Pritisk ob 14. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn100" num="166" desc="Pritisk ob 21. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn101" num="168" desc="Minimalna temperatura se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn102" num="169" desc="Minimalna temperatura na 5 cm se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn103" num="42" desc="Temperatura suhega termometra ob 7. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn104" num="42" desc="Temperatura suhega termometra ob 14. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn105" num="42" desc="Temperatura suhega termometra ob 21. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn106" num="43" desc="Temperatura mokrega termometra ob 7. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn107" num="43" desc="Temperatura mokrega termometra ob 14. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn108" num="43" desc="Temperatura mokrega termometra ob 21. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -999."/>
+				<msg id="wrn109" num="44" desc="Led na krpici ob 14. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn110" num="44" desc="Led na krpici ob 21. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn111" num="45" desc="Relativna vlaga ob 14. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn112" num="45" desc="Relativna vlaga ob 21. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn113" num="170" desc="Smer vetra ob 14. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn114" num="170" desc="Smer vetra ob 21. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn115" num="171" desc="Hitrost vetra ob 14. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn116" num="171" desc="Hitrost vetra ob 21. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn117" num="171J" desc="Jakost vetra ob 14. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn118" num="171J" desc="Jakost vetra ob 21. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn119" num="172" desc="Stanje tal ob 14. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn120" num="172" desc="Stanje tal ob 21. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn121" num="173" desc="Vidnost ob 14. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn122" num="173" desc="Vidnost ob 21. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn123" num="174" desc="Oblačnost ob 14. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn124" num="174" desc="Oblačnost ob 21. uri se meri. Če podatka ne vpišete, bo v bazo vnešena vrednost -9."/>
+				<msg id="wrn125" num="176" desc="Manjka oznaka interpolacije. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn126" num="176" desc="Manjka oznaka interpolacije. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn127" num="176" desc="Manjka oznaka interpolacije. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn128" num="176" desc="Manjka oznaka interpolacije. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn129" num="176" desc="Manjka oznaka interpolacije. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn130" num="176" desc="Manjka oznaka interpolacije. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn131" num="176" desc="Manjka oznaka interpolacije. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn132" num="176" desc="Manjka oznaka interpolacije. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn133" num="176" desc="Manjka oznaka interpolacije. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn134" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn135" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn136" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn137" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn138" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn139" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn140" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn141" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn142" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn143" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn144" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn145" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn146" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn147" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn148" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn149" num="177" desc="Pojavi se merijo. Če podatka ne vpišete, bo v bazo vnešena vrednost 9."/>
+				<msg id="wrn162" num="165" desc="Višina novozapadlega snega je večja od 200 cm."/>
+				<msg id="wrn163" num="99" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 1."/>
+				<msg id="wrn164" num="100" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 2."/>
+				<msg id="wrn165" num="101" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 3."/>
+				<msg id="wrn166" num="102" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 4."/>
+				<msg id="wrn167" num="103" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 5."/>
+				<msg id="wrn168" num="104" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 6."/>
+				<msg id="wrn169" num="105" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan ne ustrezajo obliki padavin 7."/>
+				<msg id="wrn170" num="119" desc="Šifra za stanje tal ne ustreza šifri za poledico."/>
+				<msg id="wrn171" num="178" desc="Prevelika razlika med minimalno temperaturo in temperaturo suhega termometra ob 7. uri."/>
+				<msg id="wrn172" num="179" desc="Prevelika razlika med maksimalno temperaturo in temperaturo suhega termometra ob 14. uri."/>
+				<msg id="wrn173" num="125B" desc="Pojav viharnega vetra je lahko preveč, ker hitrost vetra v nobenem od terminov ne presega 17.2 m/s."/>
+				<msg id="wrn174" num="125JB" desc="Pojav viharnega vetra je lahko preveč, ker jakost vetra v nobenem od terminov ni večja ali enaka 8."/>
+				<msg id="wrn175" num="127A" desc="Lahko manjka pojav snežne odeje, ker je danes snežilo."/>
+				<msg id="wrn176" num="108B" desc="Pojavi v stolpcih 54, 55, 56, 57, 58 ta ali prejšnji dan so preveč, ker je oblika padavin enaka 8."/>
+				<msg id="wrn177" num="98" desc="Višina novozapadlega snega mora biti 0 ali 1 cm, ker je šifra za obliko padavin 9 in je ta ali prejšnji dan snežilo."/>
+				<msg id="wrn179" num="143" desc="Pojava peščene megle, pojava prašnih ali peščenih vrtincev in pojava prašnega ali peščenega neurja se ne meri."/> <!-- k67 -->
+				<msg id="wrn180" num="143" desc="Pojava haloja okoli sonca, pojava venca okoli sonca in pojava mavrice se ne meri."/> <!-- k68 -->
+				<msg id="wrn181" num="143" desc="Pojava haloja okoli lune, pojava venca okoli lune in pojava zrcaljenja se ne meri."/><!-- k69 -->
+			</klima>
+		</messages>
+	</dataset>
+</library>

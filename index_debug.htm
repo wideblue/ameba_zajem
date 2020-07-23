@@ -1,0 +1,1891 @@
+<html>
+<head>
+<title>Ameba forme</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script src="lzJS.js" type="text/javascript"></script>
+<style>
+body {font-size:12px; font-family:"Verdana","Tahoma","Helvetica","Sans-Serif"; color:black; margin:5px; padding:2px; background:white;}
+h2,h3, h4,h5,h6 {margin-top:10px;}
+h1,h2 {font-weight:normal;}
+h3,h4,h5,h6 {font-weight:bold;}
+h1 {font-size:50px;}
+h2 {font-size:20px;}
+h3 {font-size:15px;}
+h4 {font-size:12px;}
+p {font-size:12px; color:black;	text-align:justify;}
+table {border-top:1px solid #808080; border-left:1px solid #808080; padding:0px; border-spacing:0px;}
+th {border-bottom:1px solid #808080; border-right:1px solid #808080; 	font-size:11px; font-family:"Verdana", "Tahoma", "Helvetica", "Sans-Serif";vertical-align:top; padding:5px; text-align:center;background-color:#eeeeee}
+td {border-bottom:1px solid #808080; border-right:1px solid #808080; font-size:11px;font-family:	"Verdana", "Tahoma", "Helvetica", "Sans-Serif";vertical-align:top; padding:5px; text-align:center}
+pre {font-size:12px; font-family:Verdana; margin:20px; line-height:120%;}
+/*==================================*/
+.color-blue {background:#66aaff;}
+.color-green {background:#66ff66;}
+.color-white {background:#ffffff;}
+.color-gray {background:#d0d0d0;}
+.aplikacija_style {background:#ffffff; width:845px; height:720px; border:2px solid #000000; margin-bottom:2px;}
+.povezave_style {background:#ffffff; z-index:1; width:240px; height:720px; border:2px solid #ffffff; position:absolute; top:7px; left:855px; padding:2px;}
+.povezave_style p {margin-left:10px; margin-top:10px;}
+.povezave_style hr {margin-left:5px;}
+.povezave_style ul {margin:15px; padding-left:10px;}
+.povezave_style li {padding-bottom:10px;}
+.shortcuts_style {z-index:2; width:240px; background:#f0f0f0; border:1px solid #808080; position:absolute; padding:2px; visibility:hidden; margin-left:30px; margin-top:-20px;}
+.shortcuts_style table {width:240px; border-spacing:0px;}
+.shortcuts_style td {border:1px solid #808080; border-top-width:0px; border-left-width:0px; font-size:11px; font-family:	"Verdana", "Tahoma", "Helvetica", "Sans-Serif";vertical-align:top; padding:5px; text-align:left;}
+.shortcuts_style th {border-bottom:1px solid  #808080; border-right:1px solid #808080; font-size:10px; font-family:	"Verdana", "Tahoma", "Helvetica", "Sans-Serif";vertical-align:middle; padding:1px; text-align:right; background:#f8f8f8;}
+.shortcuts_style a {text-decoration:none; font-weight:bold; color:blue;}
+.shortcuts_style tbody {background:#e8e8e8;}
+.shortcuts_style span {font-size:15px; color:black; font-weight:200; font-family:"Verdana", "Tahoma", "Helvetica", "Sans-Serif";}
+.shortcuts_style img {height:13px; width:13px;}
+.shortcuts_style div {height:13px; width:13px; border:1px solid #808080;}
+.navigacija_style {border:1px solid #808080; border-bottom-width:0px; border-right-width:0px; padding:0px; border-spacing:0px;}
+.navigacija_style th {border:1px solid #808080; border-left-width:0px; border-top-width:0px; font-size:11px;font-family:	"Verdana", "Tahoma", "Helvetica", "Sans-Serif"; vertical-align:top; padding:5px; text-align:center; background:#ffffff}
+.navigacija_style td {border:1px solid #808080; border-left-width:0px; border-top-width:0px; font-size:11px;font-family:	"Verdana", "Tahoma", "Helvetica", "Sans-Serif"; vertical-align:top; padding:5px; text-align:left;}
+.navigacija_style span {font-size:15px; color:black; font-weight:200; font-family:"Verdana", "Tahoma", "Helvetica", "Sans-Serif";}
+.opis_funkcij_style {border:1px solid #808080; border-bottom-width:0px; border-right-width:0px; padding:0px; border-spacing:0px; margin-left:30px; margin-right:40px;}
+.opis_funkcij_style th {border:1px solid #808080; border-left-width:0px; border-top-width:0px; font-size:11px;font-family:	"Verdana", "Tahoma", "Helvetica", "Sans-Serif"; vertical-align:top; padding:5px; text-align:center; background:#ffffff; font-weight:normal;}
+.opis_funkcij_style td {border:1px solid #808080; border-left-width:0px; border-top-width:0px; font-size:11px;font-family:	"Verdana", "Tahoma", "Helvetica", "Sans-Serif"; vertical-align:top; padding:5px; text-align:left;}
+.barve_polj_style {border:0px solid #808080; border-spacing:0px; margin-left:30px; margin-top:5px;}
+.barve_polj_style th {border:0px solid #808080; padding:2px;}
+.barve_polj_style td {border:0px solid #808080; font-size:12px; text-align:left; padding-left:3px; vertical-align:middle;}
+.barve_polj_style img { height:18px;width:18px; border:1px solid #000000;}
+.barve_polj_style div { height:18px;width:18px; border:1px solid #000000;}
+.vnos_vidnosti_style {border:0px solid #808080; padding:1px; padding-left:0px;}
+.vnos_vidnosti_style td {border:0px solid #808080; font-size:12px;font-family:"Verdana", "Tahoma", "Helvetica", "Sans-Serif"; vertical-align:top; padding:1px; padding-left:5px; text-align:left;}
+.top_style {margin-right:30px; text-align:right;}
+.veter_style {border:1px solid #808080; border-bottom-width:0px; border-right-width:0px; border-spacing:0px;}
+.veter_style td {border:1px solid #808080; border-top-width:0px; border-left-width:0px; vertical-align:top; padding:5px; text-align:center; width:30px;}
+.tbody_style th {border:1px solid #808080; border-left-width:0px; border-top-width:0px; font-size:11px;font-family:	"Verdana", "Tahoma", "Helvetica", "Sans-Serif"; vertical-align:top; padding:5px; text-align:center; font-weight:normal; background:#ffffff;}
+.tbody_style td {border:1px solid #808080; border-left-width:0px; border-top-width:0px; font-size:11px;font-family:	"Verdana", "Tahoma", "Helvetica", "Sans-Serif"; vertical-align:top; padding:5px; text-align:left;}
+.tbody_style img {height:24px; width:24px;} 
+.sifriranje_pojavov_primer_style span {margin:20px;}
+.kriteriji_style {border:0px solid  #808080; padding:5px;}
+.kriteriji_style td {border:0px solid  #808080; font-size:11px; font-family:"Verdana", "Tahoma", "Helvetica", "Sans-Serif"; vertical-align:top; padding:1px; padding-left:5px; text-align:left;}
+.kriteriji_style span {color:magenta;}
+.kontrola110_style {margin-left:40px; border:0px solid #808080; padding:5px;}
+.kontrola110_style td {border:0px solid #000000; padding:5px; font-size:12px; font-family:"Verdana", "Tahoma", "Helvetica", "Sans-Serif"; font-weight:bold; padding:5px;}
+</style>
+<script src="embed.js" type="text/javascript"></script>		
+<script type="text/javascript">
+var lists = new Array();
+lists[0] = ['splosno', 'seznam', 'pojavi', 'klima', 'padavine', 'sonce'];
+lists[1] = ['polja', 'simboli'];
+var windows_id = ["news","shortcuts","colors"]; 
+function onTop(id) {
+	for (var i = 0; i < windows_id.length; i++) document.getElementById(windows_id[i]).style.zIndex = 1;
+	document.getElementById(id).style.zIndex = 2;
+}
+function showCurrent(id) {
+	var d = document.getElementById(id).style.display;
+	if (d == 'none') document.getElementById(id).style.display = '';
+	else document.getElementById(id).style.display = 'none';
+}
+function showAll(index) {
+	var list = lists[index];
+	for (var i = 0; i < list.length; i++) {
+		var d = document.getElementById(list[i]).style.display;
+		if (d == 'none') document.getElementById(list[i]).style.display = '';
+	}
+}
+function hideAll(index) {
+	var list = lists[index];
+	for (var i = 0; i < list.length; i++) {
+		var d = document.getElementById(list[i]).style.display;
+		if (d == '') document.getElementById(list[i]).style.display = 'none';
+	}
+}
+function setBg(obj) { 
+	obj.style.background = '#ffffff'; 
+	obj.style.cursor = 'pointer'; 
+	obj.style.textDecoration = 'underline'; 
+	obj.style.color = '#0000ff'; 
+}
+function resetBg(obj) { 
+	obj.style.background = '#c0c0c0'; 
+	obj.style.textDecoration = 'none'; 
+	obj.style.color = '#000000'; 
+}
+</script>		
+</head>
+<body>
+<a name="top"/>
+
+<!-- aplikacija -->
+<div id="mapframe" class="aplikacija_style">
+	<script language="JavaScript" type="text/javascript">
+		lzEmbed({url: 'Ameba_debug_1341.swf?showms=true&ismsie='+_lz_ie, bgcolor: '#FFFFFF', width: '840', height: '720'});
+	</script>
+	<!--	
+	<script language="JavaScript" type="text/javascript">
+		lzEmbed({url: 'Ameba.lzx.swf?showms=false&ismsie='+_lz_ie, bgcolor: '#FFFFFF', width: '840', height: '720'});
+	</script>
+	-->
+</div>
+
+<!-- desna stran -->
+<div class="povezave_style">
+<iframe name="prijava" width="300" height="200" style="display:none;"></iframe>
+<div id="news" class="shortcuts_style" style="z-index:1;margin-left:20px;margin-top:20px"  onmouseover="onTop('news')">
+<table cellspacing="0">
+<tr>
+<th colspan="2" style="padding:5px;text-align:left;" nowrap="true">
+<div style="border-width:0px;padding:0px;width:80px;text-align:left;position:relative;left:0px">Novosti v aplikaciji</div><div style="border-width:0px;padding:0px;width:80px;text-align:right;position:relative;left:148px;margin-top:-16px"><a href="javascript://" onclick="document.getElementById('news').style.visibility='hidden'">&times;</a></div>
+</th>
+</tr>
+<tr>
+<td style="text-align:left">
+<p><b>November 2006<br/>Verzija 1.3.41</b>
+<ul>
+<li>Vrednosti se lahko vpisujejo z vodilnimi ničlami (npr. 003 za vrednost 3). Izjema je vidnost (glej <a href="#vnos_vidnosti">Vnos vidnosti</a> in <a href="#vidnost">Šifriranje vidnosti</a>)</li>
+<li>Kombinacija tipk CTRL+ALT+D postavi pojave na 9 (prej na 0).</li>
+<li>S <a href="#vnos_podatkov">CTRL+ALT+I</a> lahko v bazo vnesemo cel interval, tudi prazne dneve na koncu intervala.</li>
+<li>Dnevi, ki še niso v bazi, imajo vrednost pojavov 9 (prej 0). V formi je to označeno z vijolično barvo (kot manjkajoče vrednosti v vnosnih poljih).</li>
+</ul>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a href="javascript://" onclick="document.getElementById('news').style.visibility='visible';onTop('news')" style="color:red"><b>Novosti v aplikaciji</b></a></p>
+<hr/>
+<!-- kombinacije tipk -->
+<!-- <div id="shortcuts" class="shortcuts_style" onmouseover="onTop('shortcuts')"> -->
+<div id="shortcuts" class="shortcuts_style" style="z-index:1;margin-left:60px;margin-top:20px" onmouseover="onTop('shortcuts')">
+<table cellspacing="0">
+<tr><th colspan="2" style="padding:5px;text-align:left;" nowrap="true"><div style="border-width:0px;padding:0px;width:80px;text-align:left;position:relative;left:0px">Pomen tipk</div><div style="border-width:0px;padding:0px;width:80px;text-align:right;position:relative;left:148px;margin-top:-16px"><a href="javascript://" onclick="showAll(0)">&#x25BC;</a>&nbsp;<a href="javascript://" onclick="hideAll(0)">&#x25B2;</a>&nbsp;<a href="javascript://" onclick="document.getElementById('shortcuts').style.visibility='hidden'">&times;</a></div></th></tr>
+<tr><td colspan="2" style="background:#c0c0c0" onclick="showCurrent('seznam')" onmouseover="setBg(this);" onmouseout="resetBg(this);">Statusna vrstica - seznam napak in opozoril</td></tr>
+<tbody id="seznam" style="display:none">
+<tr><td><b>HOME</b></td><td>Začetek seznama</td></tr>
+<tr><td><b>END</b></td><td>Konec seznama</td></tr>
+<tr><td><b>PAGE UP</b></td><td>Prejšnja stran</td></tr>
+<tr><td><b>PAGE DOWN</b></td><td>Naslednja stran</td></tr>
+<tr><td><b>CTRL+PAGE UP</b></td><td>Prejšnji datum</td></tr>
+<tr><td><b>CTRL+PAGE DOWN</b></td><td>Naslednji datum</td></tr>
+<tr><td><b>CTRL+<span>&#8593;</span></span></b></td><td>Prejšnja napaka</td></tr>
+<tr><td><b>CTRL+<span>&#8595;</span></b></td><td>Naslednja napaka</td></tr>
+<tr><td><b>CTRL+ENTER</b></td><td>Izberi napako</td></tr>
+<tr><th colspan="2"><a href="javascript://" onclick="document.getElementById('seznam').style.display='none'">&#x25B2;</a></th></tr>
+</tbody>
+<tr><td colspan="2" style="background:#c0c0c0" onclick="showCurrent('splosno')" onmouseover="setBg(this);" onmouseout="resetBg(this);">Forme splošno</td></tr>
+<tbody id="splosno" style="display:none">
+<tr><td><b>TAB</b></td><td>Naslednje polje</td></tr>
+<tr><td><b>SHIFT+TAB</b></td><td>Prejšnje polje</td></tr>
+<tr><td><b><span>&#8592;</span>, <span>&#8594;</span>, <span>&#8593;</span>, <span>&#8595;</span></b></td><td>Premik po poljih</td></tr>
+<tr><td><b>CTRL+ALT+D</b></td><td>Ponastavi dan.</td></tr>
+<tr><td><b>CTRL+ALT+I</b></td><td>Vnos vseh dni na izbranem časovnem intervalu.</td></tr>
+<tr><th colspan="2"><a href="javascript://" onclick="document.getElementById('splosno').style.display='none'">&#x25B2;</a></th></tr>
+</tbody>
+<tr><td colspan="2" style="background:#c0c0c0" onclick="showCurrent('klima')" onmouseover="setBg(this);" onmouseout="resetBg(this);">Klima</td></tr>
+<tbody id="klima"  style="display:none">
+<tr><td><b>ENTER</b></td><td>Polja višina padavin, oblika padavin, skupni sneg, novi sneg, gostota vode: prazno polje postavi na -1. Skok v naslednje polje.<br/>Ostala polja: skok v naslednje polje.<br/></td></tr>
+<tr><td><b>CTRL+ALT+L</b></td><td>Postavi višino padavin, obliko padavin, skupni sneg, novi sneg in gostoto vode na -1.</td></tr>
+<tr><th colspan="2"><a href="javascript://"onclick="document.getElementById('klima').style.display='none'">&#x25B2;</a></th></tr>
+</tbody>
+<tr><td colspan="2" style="background:#c0c0c0" onclick="showCurrent('padavine')" onmouseover="setBg(this);" onmouseout="resetBg(this);">Padavine</td></tr>
+<tbody  id="padavine" style="display:none">
+<tr><td><b>ENTER</b></td><td>Prazno polje postavi na -1, skok v naslednje polje.</td></tr>
+<tr><td><b>CTRL+ALT+L</b></td><td>Postavi višino padavin, obliko padavin, skupni sneg in novi sneg na -1, pojave na 0. Skok na naslednji dan.</td></tr>
+<tr><th colspan="2"><a href="javascript://" onclick="document.getElementById('padavine').style.display='none'">&#x25B2;</a></th></tr>
+</tbody>
+<tr><td colspan="2" style="background:#c0c0c0"  onclick="showCurrent('sonce')" onmouseover="setBg(this);" onmouseout="resetBg(this);">Trajanje sončnega obsevanja</td></tr>
+<tbody id="sonce"  style="display:none">
+<tr><td><b>ENTER</b></td><td>Prazno polje postavi na 0. Skok v naslednje polje.</td></tr>
+<tr><td><b>CTRL+ALT+L</b></td><td>Vrednosti za cel dan postavi na 0. Skok na naslednji dan.</td></tr>
+<tr><td><b>+ (num)</b></td><td>Vrednost polja postavi na 10.</td></tr>
+<tr><th colspan="2"><a href="javascript://" onclick="document.getElementById('sonce').style.display='none'">&#x25B2;</a></th></tr>
+</tbody>
+<tr><td colspan="2" style="background:#c0c0c0" onclick="showCurrent('pojavi')" onmouseover="setBg(this);" onmouseout="resetBg(this);">Pojavi</td></tr>
+<tbody id="pojavi"  style="display:none">
+<tr><td><b>TAB</b></td><td>Izhod</td></tr>
+<tr><td><b>SPACE</b></td><td>Dodaj/odvzemi pojav</td></tr>
+<tr><td><b>INS</b></td><td>Dodaj/odvzemi pojav</td></tr>
+<tr><td><b>ENTER</b></td><td>Dodaj/odvzemi pojav</td></tr>
+<tr><td><b><span>&#8592;</span>, <span>&#8594;</span>, <span>&#8593;</span>, <span>&#8595;</span></b></td><td>Premik po pojavih</td></tr>
+<tr><td><b>SHIFT+SPACE</b></td><td>Postavi vrednost stolpca na 9</td></tr>
+<tr><td><b>SHIFT+ENTER</b></td><td>Postavi vrednost stolpca na 9</td></tr>
+<tr><td><b>SHIFT+klik</b></td><td>Postavi vrednost stolpca na 9</td></tr>
+<tr><th colspan="2"><a href="javascript://" onclick="document.getElementById('pojavi').style.display='none'">&#x25B2;</a></th></tr>
+</tbody>
+</table>
+</div>
+<!-- barve -->
+<div id="colors" class="shortcuts_style" style="z-index:1;margin-left:40px;margin-top:0px" onmouseover="onTop('colors')">
+<table cellspacing="0">
+<tr>
+<th colspan="2" style="padding:5px;text-align:left;"  nowrap="true"><div style="border-width:0px;padding:0px;width:80px;text-align:left;">Pomen barv</div><div style="border-width:0px;padding:0px;width:80px;text-align:right;position:relative;left:148px;margin-top:-16px"><a href="javascript://" onclick="showAll(1)">&#x25BC;</a>&nbsp;<a href="javascript://" onclick="hideAll(1)">&#x25B2;</a>&nbsp;<a href="javascript://" onclick="document.getElementById('colors').style.visibility='hidden'">&times;</a></div></th>
+</tr>
+<tr><td colspan="2" style="background:#c0c0c0" onclick="showCurrent('polja')" onmouseover="setBg(this);" onmouseout="resetBg(this);">Vnosna polja</td></tr>
+<tbody id="polja" style="display:none">
+<tr><td><div><img src="images/color/blue.jpg"/></div></td><td>Prazno polje (manjkajoča vrednost)</td></tr>
+<tr><td><div><img src="images/color/green.jpg"/></div></td><td>Trenutno polje</td></tr>
+<tr><td><div><img src="images/color/red.jpg"/></div></td><td>Polje z napako</td></tr>
+<tr><td><div><img src="images/color/yellow.jpg"/></div></td><td>Polje z opozorilom</td></tr>
+<tr><td><div><img src="images/color/gray.jpg"/></div></td><td>Parametra se ne meri</td></tr>
+<tr><td><div class="color-white"/></div></td><td>Polje z vrednostjo</td></tr>
+<tr><th colspan="2"><a href="javascript://" onclick="document.getElementById('polja').style.display='none'">&#x25B2;</a></th></tr>
+</tbody>
+<tr><td colspan="2" style="background:#c0c0c0" onclick="showCurrent('simboli')" onmouseover="setBg(this);" onmouseout="resetBg(this);">Pojavi</td></tr>
+<tbody id="simboli" style="display:none">
+<tr><td><div class="color-blue"/></div></td><td>Manjkajoča vrednost (9)</td></tr>
+<tr><td><div class="color-green"/></div></td><td>Pojav je izbran (1-7)</td></tr>
+<tr><td><div class="color-white"/></div></td><td>Pojav ni izbran (0-7)</td></tr>
+<tr><td><div class="color-gray"/></div></td><td>Pojava se ne meri</td></tr>
+<tr><th colspan="2"><a href="javascript://" onclick="document.getElementById('simboli').style.display='none'">&#x25B2;</a></th></tr>
+</tbody>
+</table>
+</div>
+<!-- povezave -->
+<p><a href="javascript://" onclick="document.getElementById('colors').style.visibility='visible';onTop('colors')">Pomen barv</a></p>
+<p><a href="javascript://" onclick="document.getElementById('shortcuts').style.visibility='visible';onTop('shortcuts')">Pomen tipk</a></p>
+<hr/>
+<ul>
+<li><a href="#aplikacija">Uporaba aplikacije</a></li>
+<li><a href="#meritve">Meritve</a></li>
+<li><a href="#veter_smer">Šifriranje smeri vetra</a></li>
+<li><a href="#veter_hitrost">Pretvarjanje hitrosti vetra iz Beaufortov v m/s</a></li>
+<li><a href="#veter_pretvorbe">Tabela pretvornikov med različnimi enotami za veter</a></li>
+<li><a href="#tla">Šifriranje stanja tal</a></li>
+<li><a href="#vidnost">Šifriranje vidnosti</a></li>
+<li><a href="#oblika">Šifriranje oblike padavin</a></li>
+<li><a href="#pojavi_seznam">Pojavi</a></li>
+<li><a href="#kljuc">Ključ za šifriranje pojavov</a></li>
+<li><a href="#nacin">Način šifriranja pojavov</a></li>
+<li><a href="#parametri_klima">Klimatološki parametri</a></li>
+<li><a href="#parametri_padavine">Padavinski dnevni podatki</a></li>
+<li><a href="#parametri_sonce">Parametri trajanja sončnega obsevanja (urni podatki)</a></li>
+<li><a href="#sifre_interpolacija">Šifre za označevanje interpolacij</a></li>
+<li><a href="#kriteriji">Kriteriji za kontrolo klimatoloških in padavinskih  podatkov</a></li>
+<li><a href="#kriteriji_seznam">Seznam kriterijev po številkah</a></li>        
+</ul>
+</div>
+<br/>
+
+<!-- uporaba aplikacije -->
+<h3>NEKAJ INFORMACIJ ZA VNOS PODATKOV</h3>
+<a name="aplikacija"/>
+<h4>Uporaba aplikacije</h4>
+<p>
+Aplikacija je namenjena pregledovanju in vnosu klimatoloških dnevnih podatkov (klimatološke in glavne meteorološke postaje), padavinskih podatkov (padavinske postaje) 
+ter podatkov o trajanju sončnega obsevanja (postaje s heliografom). Delovanje aplikacije se loči glede na vlogo uporabnika. Kontrolor lahko popravlja in vnaša podatke za
+katerokoli časovno obdobje, vnašalec pa lahko popravlja in vnaša samo podatke, ki niso starejši od 3 mesecev (starejše podatke lahko samo pregleduje). Nekatere kontrole 
+se izvajajo samo za kontrolorja.
+</p>		
+<p>Aplikacija je prilagojena ekranom z resolucijo najmanj 1024 x 768 pik.</p>
+<p><b style="color:red">Uporaba gumbov brskalnika povzroči ponovno nalaganje aplikacije.</b></p>
+<p>Kadar se pojavi okno za nastavitve za Flash, vedno izberemo možnost <i>Allow</i>. S tem omogočimo shranjevanje varnostnih kopij.<br/><br/><img src="images/zacetna.gif"/></p>
+<br/><p><b>DELOVANJE APLIKACIJE</b></p>
+<p>
+Aplikacija je sestavljena iz dveh delov; iz strežniškega dela ter dela na odjemalcu. Na odjemalcu so prikaz podatkov, kontrola vnosa podatkov (kontrola grobih mej) ter interpretacija 
+napak in opozoril (označevanje polj z napakami), ki jih pošlje strežnik. Vse ostalo poteka na strežniku. 
+Ko vnesemo časovno obdobje, številko postaje ter tip forme, se na strežniku zgradi ustrezni objekt, ki vsebuje začetno stanje podatkov (vrednosti podatkov iz baze, grobe meje, 
+informacija o uporabniku). Vsak tako nastali objekt dobi tudi svojo identifikacijsko številko. Iz nastalega objekta se zgenerira xml dokument, katerega se pošlje odjemalcu, ki 
+potem podatke prikaže v formah. Pri preverjanju ali vnosu podatkov odjemalec dopolnjeni xml dokument pošlje strežniku. Strežnik na podlagi identifikacijske številke poišče ustrezni 
+objekt, izvede kontrole ter vrne xml dokument z morebitnimi napakami in opozorili. Če strežnik ne najde objekta z identifikacijsko številko, ki jo je poslal odjemalec, se izpiše ustrezno 
+opozorilo (o poteku seje ali o napačnem uporabniškem imenu). Seja lahko poteče iz različnih razlogov: lahko se na primer v tej ali neki drugi aplikaciji na istem odjemalcu prijavimo z drugačnim
+uporabniškim imenom, lahko se ugasne strežnik ipd.
+</p>		
+<br/><p><b>PRIJAVA</b></p>
+<p>
+<ol style="line-height:120%">    
+<li>
+<b>Izbira forme</b><br/>Vnašamo lahko tri vrste podatkov: klimatološke podatke (forma Dnevni podatki (klima)), padavinske podatke (forma Padavine) in podatke o trajanju 
+sončnega obsevanja (forma Trajanje sončnega obsevanja).
+</li>
+<li>
+<b>Določanje časovnega intervala</b><br/>Časovni interval lahko določimo na dva načina. Izberemo lahko bodisi celoten mesec (opcija <i>Leto/mesec</i>) bodisi interval 
+med dvema datumoma (opcija <i>Datum od &amp; Datum do</i>). Med opcijama <i>Leto/mesec</i> in <i>Datum od &amp; Datum do</i> preklopimo s klikom na 'Leto/mesec' 
+(preklop na opcijo <i>Datum od &amp; Datum do</i>) oz. 'Datum od' (preklop na opcijo <i>Leto/mesec</i>).<br/>Izbrani interval ne sme presegati 31 dni.<br/>Pri opciji 
+<i>Datum od &amp; Datum do</i> se pojavi še gumb <i>Včeraj</i>, s katerim lahko postavimo obdobje na včerajšnji dan. Primer: danes je 2006-01-01. Z <i>Včeraj</i> postavimo 
+obdobje na od 2005-12-31 do 2005-12-31.
+</li>
+<li><b>Številka postaje</b><br/>Vpišemo številko postaje (npr. 3, 26, 192). Številka postaje ima lahko vodilne ničle (npr. 003, 026, 192).</li>
+<li>
+<b>Tip postaje</b><br/>Vpišemo tip postaje. Tip postaje vpisujemo le pri klimatoloških podatkih (dovoljena sta tipa 2 in 3). Pri formi Padavine je tip postaje 1, pri formi 
+Trajanje sončnega obsevanja pa 14.
+</li>
+<a name="sprememba_u"/>
+<li><b>Odjava in ponovna prijava uporabnika</b><br/><img src="images/icon/signout.gif"/><br/>Uporabimo za odjavo, ponovno prijavo ali spremembo uporabnika.</li>
+
+
+</ol>
+</p>
+
+<br/><p><b>STATUSNA VRSTICA</b></p>
+<ol>
+<li>
+<p>Statusna vrstica je ves čas prisotna v spodnjem delu, vanjo pa se vpisujejo:
+<ul type="disc">
+<li><p>tekoča sporočila programa. To so na primer sporočila za napačno vpisan datum, neveljavno šifro ter sporočila s strežnika,</p></li>
+<li>
+napake in opozorila (seznam vseh), ki jih dobimo s preverjanjem forme na strežniku. Zapis napake (opozorila) je sestavljen iz ustrezne oznake, datuma, pri katerem je prišlo 
+do napake, številke kriterija (glej Seznam kriterijev po številkah) v oglatih oklepajih ter opisa napake (opozorila). Napake in opozorila v seznamu so urejena po datumu ter 
+glede na vrstni red izvajanja, razen če ni vklopljena funkcija za urejanje po številki. Napaka (opozorilo), na kateri se trenutno nahajamo, je v seznamu pobarvana sivo, 
+napake (opozorila), ki smo jih že pogledali (ne nujno popravili), pa so označene z zeleno. Če kliknemo na napako (opozorilo) v seznamu, se označijo vsa polja v formi, na katere se 
+nanaša izbrana napaka (opozorilo). Polja ostanejo označena vse do takrat, ko obravnavamo naslednjo napako (opozorilo) s seznama. Kadar se napaka (opozorilo) nanaša na pojav, 
+je ta v oknu za izbiranje pojavov označen tako, da je ikona pojava obrobljena z rdečo (rumeno) barvo (npr. <img src="images/pojavi/07_error.gif"/>, <img src="images/pojavi/07_warning.gif"/>).<br/>
+<p>Pomen oznak: <img src="images/icon/error.gif"/> napaka, <img src="images/icon/warning_00.gif"/> opozorilo, <img src="images/icon/warning_01.gif"/> posebno opozorilo.	</p>
+<!-- navigacija - statusna vrstica -->
+<p>Navigacija:<br/><br/>
+<table cellspacing="0" class="navigacija_style" style="margin-left:80px;margin-right:40px;margin-top:-25px">
+<tr><th>CTRL + PUŠČICA GOR (<span>&#8593;</span>)</th><td>Skok na prejšnjo napako v seznamu.</td></tr>
+<tr><th>CTRL + PUŠČICA DOL (<span>&#8595;</span>)</th><td>Skok na naslednjo napako v seznamu.</td></tr>
+<tr><th>CTRL + ENTER</th><td>Izbira napake.</td></tr>
+<tr><th>PAGE UP</th><td>Skok na prejšnjo stran seznama.</td></tr>
+<tr><th>PAGE DOWN</th><td>Skok na naslednjo stran seznama.</td></tr>
+<tr><th>HOME</th><td>Skok na začetek seznama.</td></tr>
+<tr><th>END</th><td>Skok na konec seznama.</td></tr>
+<tr><th>CTRL + PAGE UP</th><td>Skok na začetek napak in opozoril za prejšnji datum.</td></tr>
+<tr><th>CTRL + PAGE DOWN</th><td>Skok na začetek napak in opozoril za naslednji datum.</td></tr>
+</table>
+</p>
+</li>
+</ul>
+</p>
+</li>
+<li>
+<!-- opis funkcij - statusna vrstica -->
+<p>Opis funkcij:</p>
+<p>
+<table cellspacing="0" class="opis_funkcij_style">
+<tr><th><b>N</b></th><th nowrap="true"><i>Pokaži / skrij napake</i></th><td>Prikaz napak v seznamu napak in opozoril. Zelena barva pomeni, da so napake prikazane, siva barva pa, da niso prikazane.</td></tr>
+<tr><th><b>O</b></th><th nowrap="true"><i>Pokaži / skrij opozorila</i></th><td>Prikaz opozoril v seznamu napak in opozoril. Zelena barva pomeni, da so opozorila prikazana, siva barva pa, da niso prikazana.</td></tr>
+<tr><th><b>Š</b></th><th nowrap="true"><i>Urejanje po številki</i></th><td>Urejanje seznama napak in opozoril glede na datum in številko kriterija (glej Seznam kriterijev po številkah). Seznam je vedno urejen po datumu. Zelena barva pomeni, da je seznam dodatno urejen po številki kriterija, siva barva pa pomeni ureditev seznama glede na izvajanje kontrol.</td></tr>
+<tr><th nowrap="true"><img src="images/icon/switch_left.gif"/>, <img src="images/icon/switch_right.gif"/></th><th nowrap="true"><i>Zamenjava pogleda</i></th><td>Preklop med sporočili in seznamom napak in opozoril.</td></tr>
+<tr><th><img src="images/icon/view.gif"/></th><th nowrap="true"><i>Pregled napak in opozoril</i></th><td>Pregled napak in opozoril v večjem oknu (hkrati tudi preklop med formo in seznamom). Napake in opozorila je možno pregledovati tudi iz tega okna in sicer s klikom na besedilo napake (opozorila) v seznamu. Vse že obravnavane napake (opozorila) so označena z zeleno barvo. Na formo preklopimo z gumbom Nazaj (samodejni preklop v primeru klika na napako ali opozorilo).</td></tr>
+<tr><th><img src="images/icon/print.gif"/></th><th nowrap="true"><i>Tiskanje napak in opozoril</i></th><td>Tiskanje napak in opozoril v HTML obliki.</td></tr>
+</table>
+</p>
+</li>
+</ol>
+
+<br/><p><b>FORME</b></p>
+<ol>
+<li><p><b>Vedno, ko uporabnik zapusti vnosno polje, program preveri, ali vrednost polja ustreza grobim mejam, ne glede na to, katera možnost za izhod iz polja je bila uporabljena.</b></p></li>
+<li><p>V forme se lahko vnašajo vrednosti z vodilnimi ničlami (npr. 009 pomeni vrednost 9).</p></li>
+<li><p>Dnevi, ki še niso vnešeni v bazo, imajo na začetku vrednosti 9. Vrednosti pojavov za dan se postavijo na 0, če za ta dan vnesemo kakšno vrednost. Če to vrednost pobrišemo, se vrednosti pojavov ne popravijo, ampak ostanejo 0.</p></li>
+<li>
+<p>V formah so vedno prikazane samo vrednosti parametrov, ki se na obravnavani dan merijo. Izjema sta parametra temperatura mokrega termometra in led (forma Klima). Pri teh dveh parametrih sta vrednosti, če obstajata, vedno v formi.</p>
+<p>Vrednosti interpolacij so vedno v formi. Pri dnevu, ki še ni bil obravnavan, so vrednosti interpolacij 0, pri že obravnavanih dnevih pa vrednosti iz baze. Če vrednosti za interpolacijo ni, je polje prazno. Podatke lahko interpolira samo uporabnik, ki ima vlogo kontrolorja.</p>
+<li>Prikaz pojavov: opaženi pojavi so v formi označeni s črno barvo (npr. <img src="images/pojavi/07_normal.gif"/>). Manjkajoči pojavi (vrednost stolpca je 9) so v formi označeni z modro barvo (npr. <img src="images/pojavi/07_missing.gif"/>)</li>
+</li>
+<li><p>S klikom na datum skočimo na prvo napako ali opozorilo za ta datum v seznamu napak in opozoril v statusni vrstici. Če za ta datum ni napak in opozoril, se ne zgodi nič.</p></li>
+<li>Okno za izbiranje pojavov:
+<p>
+<ul type="disc">
+<li>Forma Klima: <p style="margin-left:90px;margin-right:40px;margin-top:-10px"><img src="images/pojavi/izbor_pojavov_klima.jpg" style="border:1px outset #808080;"/></p></li>
+<li>Forma Padavine: <p style="margin-left:115px;margin-right:40px;margin-top:-10px"><img src="images/pojavi/izbor_pojavov_padavine.jpg" style="border:1px outset #808080;"/></p></li>
+<li>Izbiranje pojavov: Pojave izbiramo z miško ali s tipkama ENTER in SPACE. Če želimo postaviti vrednost stolpca na 9, hkrati pritisnemo še tipko SHIFT.</li>
+</ul>
+</p>
+</li>
+<li>Barve polj:
+<ul type="disc">
+<li>
+<p>Splošno:
+<table cellspacing="0" class="barve_polj_style">
+<tr><th><img src="images/color/blue.jpg"/></th><td>(vijolična): prazno polje ali manjkajoča vrednost,</td></tr>
+<tr><th><img src="images/color/green.jpg"/></th><td>(zelena): polje, v katerem se trenutno nahajamo,</td></tr>
+<tr><th><img src="images/color/red.jpg"/></th><td>(rdeča): polje z napako,</td></tr>
+<tr><th><img src="images/color/yellow.jpg"/></th><td>(rumena): polje z opozorilom,</td></tr>
+<tr><th><img src="images/color/gray.jpg"/></th><td>(siva): parametra se ne meri,</td></tr>
+<tr><th><div class="color-white"/></div></th><td>(bela): polje z vrednostjo.</td></tr>
+</table>
+</p>
+</li>
+<li>
+<p>Okno za izbiranje pojavov:
+<table cellspacing="0" class="barve_polj_style">
+<tr><th><div class="color-blue"/></div></th><td>(modra): pojavi v stolpcu imajo šifro 9,</td></tr>
+<tr><th><div class="color-green"/></div></th><td>(zelena): pojav je bil opažen (pojavi v stolpcu imajo vrednosti 1-7),</td></tr>
+<tr><th><div class="color-white"/></div></th><td>(bela): pojav ni bil opažen (pojavi v stolpcu imajo vrednosti 0-7),</td></tr>
+<tr><th><div class="color-gray"/></div></th><td>(siva): pojava se ne meri.</td></tr>
+</table>
+</p>
+</li>
+</ul>
+</li>
+<!-- navigacija forme -->
+<li>Navigacija:			
+<ul type="disc">
+<li>
+<p>Splošno:
+<table cellspacing="0" class="navigacija_style" style="margin-left:65px;margin-right:40px;margin-top:-10px">
+<tr><th>ENTER</th><td>Skok v naslednje polje. Pri nekaterih poljih se samodejno vpišejo vrednosti (glej opise form).</td></tr>
+<tr><th>TAB</th><td>Skok na naslednje polje.</td></tr>
+<tr><th>SHIFT + TAB</th><td>Skok v prejšnje polje.</td></tr>
+<tr><th>PUŠČICE (<span>&#8592;</span>, <span>&#8594;</span>, <span>&#8593;</span>, <span>&#8595;</span>)</th><td>Premikanje po poljih.</td></tr>
+</table>
+</p>
+</li>
+<li>
+<p>Okno za izbiranje pojavov:
+<table cellspacing="0" class="navigacija_style" style="margin-left:180px;margin-right:40px;margin-top:-10px">
+<tr><th>SPACE</th><td>Dodajanje ali odvzemanje označenege simbola.</td></tr>
+<tr><th>INS</th><td>Dodajanje ali odvzemanje označenege simbola.</td></tr>
+<tr><th>ENTER</th><td>Dodajanje ali odvzemanje označenege simbola.</td></tr>
+<tr><th>PUŠČICE (<span>&#8592;</span>, <span>&#8594;</span>, <span>&#8593;</span>, <span>&#8595;</span>)</th><td>Premikanje po simbolih.</td></tr>
+<tr><th>SHIFT + SPACE</th><td>Postavitev stolpca na 9.</td></tr>
+<tr><th>SHIFT + ENTER</th><td>Postavitev stolpca na 9.</td></tr>
+<tr><th>SHIFT + klik</th><td>Postavitev stolpca na 9.</td></tr>
+</table>
+</p>
+</li>
+</ul>
+</li>
+<!-- opis funkcij forme -->
+<li>Opis funkcij:
+<p>
+<table cellspacing="0" class="opis_funkcij_style">
+<tr><th><img src="images/icon/signout.gif"/></th><th><i>Odjava in ponovna prijava uporabnika</i></th><td>Gumb je aktiven samo v primeru, ko poteče seja (v statusni vrstici je sporočilo o poteku seje). V takem primeru se, če želimo nadaljevati z delom, ponovno prijavimo (z uporabniškim imenom in geslom, s katerima smo bili prijavljeni, ko smo vnašali podatke v formo) ter izberemo ustrezno varnostno kopijo.</td></tr>
+<tr><th><img src="images/button/interpolate.gif"/></th><th><i>Interpolacija (ON/OFF)</i></th><td>Interpolacijo lahko vklaplja in izklaplja samo kontrolor. Če je interpolacija vključena, se vrednosti interpolacije lahko vpisujejo, v nasprotnem primeru pa program ta polja preskoči.</td></tr>
+<tr><th><img src="images/button/check.gif"/></th><th><i>Preverjanje podatkov</i></th><td>Podatki se pošljejo na strežnik, ki jih preveri in vrne morebitna opozorila in sporočila o napakah.</td></tr>
+<tr><th><img src="images/button/save.gif"/></th><th><i>Vnos podatkov v bazo</i></td><td>Podatki se vnesejo v bazo. Strežnik vrne obvestilo o številu vnešenih dni. Pred vnosom v bazo je podatke vedno potrebno preveriti.</td></tr>
+<tr><th><img src="images/button/logoff.gif"/></th><th><i>Nazaj na prijavo</i></td><td>Ponoven izbor forme, postaje in časovnega intervala. S tem izgubimo trenutne podatke.</td></tr>
+<tr><th colspan="3">Samo za formo Klima</th></tr>
+<tr><th><img src="images/button/first.gif"/></th><th><i>Prvi zapis</i></th><td>Postavimo se na prvi dan izbranega časovnega intervala.</td></tr>
+<tr><th><img src="images/button/last.gif"/></th><th><i>Zadnji zapis</i></th><td>Postavimo se na zadnji dan izbranega časovnega intervala.</td></tr>
+<tr><th><img src="images/button/prev.gif"/></th><th><i>Predhodni zapis</i></th><td>Postavimo se na prejšnji dan.</td></tr>
+<tr><th><img src="images/button/next.gif"/></th><th><i>Naslednji zapis</i></th><td>Postavimo se na naslednji dan.</td></tr>
+<tr><th colspan="3">Samo za formi Padavine in Trajanje sončnega obsevanja</th></tr>
+<tr><th><img src="images/button/sum.gif"/></th><th><i>Izračun vsot po vrsticah in stolpcih</i></th><td>Forma Padavine: izračunata se vsota višine padavin ter vsota skupne snežne odeje v izbranem časovnem intervalu.<br/> Forma Trajanje sončnega obsevanja: izračunajo se dnevne vsote ter vsote za posamezne ure v izbranem časovnem intervalu.</td></tr>
+</table>
+</p>
+</li>      
+
+<li><a name="vnos_podatkov"/>Vnos podatkov v bazo:
+<p style="padding-left:10px">
+Podatke vnašamo v bazo s klikom na gumb Vnos podatkov v bazo. V bazo se lahko vpisujejo le preverjeni podatki.<br/>
+Dan, ki ne vsebuje podatkov o meritvah, se vpiše v bazo, kadar mu v izbranem obdobju sledi kakšen dan, ki vsebuje podatke o meritvah.<br/> 
+Primer: izberemo interval od 1. do 20. v mesecu, vpišemo podatke za 5. in 10. dan. V tem primeru se v bazo vnesejo vsi dnevi do vključno 10. v mesecu, 
+saj je ta dan zadnji, ki še vsebuje podatke.<br/>To velja samo za dneve, ki še niso bili vnešeni v bazo. Pri dnevih, za katere je program prebral podatke iz baze, 
+gre v takem primeru za spremembo podatkov, zato se tak dan vpiše v bazo.
+</p>
+<p style="padding-left:10px">
+Posebne kombinacije tipk:
+<table cellspacing="0" class="navigacija_style" style="margin-left:170px;margin-right:40px;margin-top:-10px">
+<tr><th>CTRL+ALT+I</th><td>Vnos vseh vrednosti na izbranem časovnem intervalu. Na tak način lahko v bazo vnesemo tudi prazne dneve. Funkcijo izključimo, če ponovno uporabimo isto kombinacijo tipk. Funkcija velja vedno le za trenutno formo; funkcijo moramo vklopiti za vsak izbrani časovni interval posebej. Ob vklopu/izklopu funkcije nas program na to opozori.</td></tr>
+</table>
+<p style="padding-left:10px">Vedno je označen datum, ki ga obravnavamo (ima črno podlago).</p>  
+</li>
+<a name="varnostna"/>
+<li><b>Varnostna kopija</b>: 
+<p style="padding-left:10px">
+Med vnašanjem podatkov se na disku tvori varnostna kopija. Varnostnih kopij je lahko več; vsaka nova varnostna kopija, ki se ustvari, je v seznamu vseh varnostnih kopij na zadnjem 
+mestu.  Ob pravilnem zaključku vnosa (pregleda) podatkov se varnostna kopija zbriše. Vnos (pregled) podatkov je pravilno zaključen, kadar shranimo podatke v bazo ali kadar gremo 
+iz forme s klikom na gumb <i>Nazaj na prijavo</i>. Kadar vnos (pregled) podatkov ni pravilno zaključen, nas program ob ponovni prijavi na to opozori. Sporočilo vsebuje datum in uro 
+zadnjega vnašanja podatkov ter podatke o formi. Če izberemo možnost <i>DA</i>, se naložijo podatki iz varnostne kopije. Če izberemo možnost <i>NE</i>, se ponujena varnostna 
+kopija zbriše, program pa nam ponudi naslednjo (če obstaja) varnostno kopijo iz seznama.</p>
+<p style="padding-left:10px"><img src="images/varnostna.jpg" /></p>
+</li>
+
+
+<li>Opisi form:
+<ul type="disc">
+<li>
+<p><u>forma Klima</u></p>
+<ol type="i">
+<li>				
+<p><i>Določanje vrednosti temerature mokrega termometra in ledu na strežniku:</i></p>
+<p>Vrednosti se določita v naslednjih primerih:</p>
+<ol>
+<li>V formi manjkata vrednosti za temperaturo mokrega termometra in led (ne glede na vlogo uporabnika), obstajata pa vrednosti temperature suhega termometra in relativne vlage in je vrednost relativne vlage pozitivna. V tem primeru se izračunata vrednosti temperature mokrega termometra in ledu, interpolacija dobi vrednost 2.</li>
+<li>Vrednost interpolacije je 2 ali 3 in se je spremenila ali vrednost temperature suhega termometra ali vrednost relativne vlage (ali obe). V tem primeru se izračunata vrednosti temperature mokrega termometra in ledu, interpolacija pa dobi vrednost 2, če se vrednosti temperature suhega termometra in relativne vlage glede na vrednosti v bazi nista spremenili, oziroma 3, če sta se.</li>       
+<li>Vrednost interpolacije je 2 ali 3 in manjka temepratura suhega termometra, manjka relativna vlaga ali pa je relativna vlaga 0. V tem primeru se interpolacija postavi na 0, vrednosti temperature mokrega termometra in ledu pa se zbrišeta.</li>
+</ol>
+<p>V ostalih primerih se vrednosti temperature mokrega termometra, ledu in interpolacije mokrega termometra na strežniku ne spreminjajo.</p>
+</li>
+<li>
+<p><a name="vnos_vidnosti"/><i>Vnos vidnosti:</i></p>
+<p>Vidnost vnašamo v km. Kadar je podatek za vidnost podan v m, se vpiše vrednost v km brez decimalne pike. Vrednosti v km zaokrožimo navzdol (odrežemo decimalke). Vnešena vrednost po vnosu dobi vrednost spodnje meje intervala, ki mu pripada glede na šifriranje vidnosti (glej Šifriranje vidnosti).
+<table cellspacing="0" class="vnos_vidnosti_style">
+<tr><td rowspan="5" style="padding-left:0px">Primeri:</td><td>2 m vnesemo kot 0002 (0.002 km). Vrednost se spremeni v 0.</td></tr>      
+<tr><td>25 m vnesemo kot 0025 (0.025 km). Vrednost se spremeni v 005.</td></tr>
+<tr><td>700 m vnesemo kot 07 (0.7 km). Vrednost se spremeni v 05.</td></tr>
+<tr><td>1.2 km zaokrožimo na 1 km in vnesemo 1. Vrednost se spremeni v 1.</td></tr>
+<tr><td>19.9 km zaokrožimo na 19 km in vnesemo 19. Vrednost se spremeni v 10.</td></tr>
+</table>
+</p>
+</li>
+<li><p>Desno zgoraj je seznam datumov, ki so trenutno prikazani. Če se z miško postavimo nanj, se odpre seznam vseh datumov, ki jih vsebuje izbrani interval. S klikom na datum v tem seznamu se postavimo na izbrani datum.</p></li>
+<li><p>Okno s pojavi se odpre, če so pojavi naslednje ali prejšnje zaporedno aktivno polje oziroma s klikom na 'POJAVI'. Okno zapremo ali s klikom v neko drugo polje ali s tipko TAB. Okno lahko preskočimo, če dvakrat pritisnemo ENTER (pri tem ne sme biti izbran noben simbol) ali pa s tipko TAB.</p></li>
+<li>
+<p>Posebne kombinacije tipk:
+<table cellspacing="0" class="navigacija_style" style="margin-left:170px;margin-right:40px;margin-top:-10px">
+<tr><th>CTRL+ALT+D</th><td>Vse vrednosti polj se zbrišejo, pojavi se postavijo na 9, interpolacije se postavijo na 0.</td></tr>
+<tr><th>CTRL+ALT+L</th><td>Velja za polja višina padavin, oblika padavin, višina skupne snežne odeje, višina novozapadlega snega in množina vode. Našteta polja (če se parameter meri) hkrati postavi na -1 in se postavi v naslednje vnosno polje (trajanje sončnega obsevanja oz. pojavi).</td></tr>
+<tr><th>ENTER</th><td>Velja za polja višina padavin, oblika padavin, višina skupne snežne odeje, višina novozapadlega snega in množina vode. Če je polje prazno, se vpiše vrednost -1, sicer skok v naslednje polje.</td></tr>
+</table>
+</p>
+</li></ol>
+</li>
+<li>			
+<p><u>forma Padavine</u></p>
+<ol type="i">
+<li><p>Dostop do podatkov o vnašalcu in opazovalcu: miško premaknemo na datum (drugi stolpec z leve).</p></li>
+<li><p>Okno s pojavi se odpre, če so pojavi naslednje ali prejšnje zaporedno aktivno polje oziroma s klikom na 'POJAVI'. Okno zapremo ali s klikom v neko drugo polje ali s tipko TAB. Okno lahko preskočimo, če dvakrat pritisnemo ENTER (pri tem ne sme biti izbran noben simbol) ali pa s tipko TAB.</p></li>
+<li>
+<p>Posebne kombinacije tipk:
+<table cellspacing="0" class="navigacija_style" style="margin-left:170px;margin-right:40px;margin-top:-10px">
+<tr><th>CTRL+ALT+D</th><td>Vse vrednosti polj se zbrišejo, pojavi se postavijo na 9, interpolacija se postavi na 0.</td></tr>
+<tr><th>CTRL+ALT+L</th><td>Vse vrednosti za ta dan se postavijo na -1, pojavi se postavijo na 0.</td></tr>
+<tr><th>ENTER</th><td>Če je polje prazno, se vpiše vrednost -1, sicer skok v naslednje polje.</td></tr>
+</table>
+</p>
+</p>
+</li>
+</ol>
+</li>
+<li>
+<p><u>forma Trajanje sončnega obsevanja</u></p>
+<ol type="i">
+<li><p>Dostop do podatkov o vnašalcu in opazovalcu: miško premaknemo na datum (drugi stolpec z leve).</p></li>
+<li>
+<p>Posebne kombinacije tipk:
+<table cellspacing="0" class="navigacija_style" style="margin-left:170px;margin-right:40px;margin-top:-10px">
+<tr><th>CTRL+ALT+D</th><td>Vse vrednosti polj se zbrišejo, interpolacija se postavi na 0.</td></tr>
+<tr><th>CTRL+ALT+L</th><td>Vse vrednosti za ta dan se postavijo na 0, skok na naslednji dan.</td></tr>
+<tr><th>ENTER</th><td>Če je polje prazno, se vpiše vrednost 0, sicer skok v naslednje polje.</td></tr>
+<tr><th>+ (numerična tipkovnica)</th><td>Vrednost v polju se postavi na 10.</td></tr>
+</table>
+</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<p class="top_style"><a href="#top">Na vrh</a></p>
+<hr/>
+<a name="meritve"/>
+<h4>Meritve</h4>
+<p>Pri meritvah se za čas merjenja upošteva sončni čas.</p>
+<p>Maksimalna in minimalna temperatura se merita od 21. ure prejšnjega dne do 21. ure danega dne in se zapišeta k danemu dnevu. Ekstremna temperatura ob 21. uri se šteje za dan, ko je bila izmerjena.<br/>Primer: ob 22. uri prejšnjega dne je bila izmerjena maksimalna temperatura. To temperaturo je potrebno zapisati k danemu dnevu.</p>
+<p>Temperatura na 5 cm se meri od 21. ure prejšnjega dne do 7. ure danega dne in se jo vpiše k danemu dnevu.</p>
+<p>Padavine se merijo od 7. ure danega dne do 7. ure naslednjega dne enkrat in sicer ob 7. uri zjutraj in se štejejo za padavine naslednjega dne.<br/>Primer: Padavine izmerjene 27. 9. 1998 ob 7. uri zjutraj predstavljajo vsoto padavin od 7. ure zjutraj 26. 9. do 7. ure zjutraj 27. 9. 1998. Te padavine se izpišejo pod datum 27. 9. 1998.<br/>Količina padavin se meri v enotah:litri na kvadratni meter ali v milimetrih.</p>
+<p>Višina snežne oddeje se prav tako kot padavine meri ob 7. uri zjutraj. V primeru sneženja se količino padavin določi tako, da se sneg stopi v pokriti posodi pri sobni temperaturi in izmeri količino padavin.</p>
+<p>Pojavi se vpišejo v dan, ko so opaženi.</p>
+
+<p><i>ENOTE IN NATANČNOST MERITEV METEOROLOŠKIH PARAMETROV:</i></p>
+<p style="padding-left:20px">
+<i>Zračni pritisk</i> se meri v mm Hg z natančnostjo 0.1 mm. V formo se vpisuje vrednost v desetinah.<br/><br/>
+<i>Temperatura</i> se meri v ºC z natančnostjo 0.1º C. V formo se vpisuje vrednost v desetinah. Manjkajoči podatek za temperaturo mokrega termometra se izračuna iz podatka za temperaturo suhega termometra in podatka za relativno vlago (če obstajata oba podatka).<br/><br/>
+<i>Led na krpici mokrega termometra</i> označimo z 0 (ni ledu) ali 1 (led je).<br/><br/>
+<i>Relativna vlaga</i> se meri v % z natančnostjo 1 %.<br/><br/>
+<i>Smer vetra</i> označujemo z mednarodnimi kraticami strani neba po roži vetrov na 16 smeri. V formo se vpisujejo mednarodne kratice.<br/><br/>
+<i>Jakost vetra</i> se meri po Beaufortovi lestvici (0 - 12).<br/><br/>
+<i>Hitrost vetra</i> se meri v m/s z natančnostjo 0.1 m/s. V formo se vpisuje vrednost v desetinah.<br/><br/>
+<i>Stanje tal</i> se meri z oznakami od 0 do 9.<br/><br/>
+<i>Vidnost</i> se meri v km. V formo se vpisujejo vrednosti v km (1km se vpiše z 1, 10m se vpiše z 001 brez decimalne pike). <br/><br/>
+<i>Oblačnost</i> se meri v desetinkah (0 - 10).<br/><br/>
+<i>Trajanje sončnega obsevanja</i> se meri v urah. V formo se vpisuje vrednost v desetinah.<br/><br/>
+<i>Padavine</i> se merijo v mm z natančnostjo 0.1 mm. V formo se vpisuje vrednost v desetinah. Če ni padavin, se vpiše vrednost -1.<br/><br/>
+<i>Višina snežne odeje</i> se meri v cm z natančnostjo 1 cm. Če ni snežne odeje, se vpiše vrednost -1.<br/>
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>
+<hr/>
+<p>
+<a name="veter_smer"/>
+<h4>Šifriranje smeri vetra:</h4>
+<table cellspacing="0" class="veter_style">
+<tr><th>Smer vetra</th><td>C</td><td>NNE</td><td>NE</td><td>ENE</td><td>E</td><td>ESE</td><td>SE</td><td>SSE</td><td>S</td><td>SSW</td><td>SW</td><td>WSW</td><td>W</td><td>WNW</td><td>NW</td><td>NNW</td><td>N</td></tr>
+<tr><th>Šifra</th><td>00</td><td>02</td><td>04</td><td>06</td><td>08</td><td>10</td><td>12</td><td>14</td><td>16</td><td>18</td><td>20</td><td>22</td><td>24</td><td>26</td><td>28</td><td>30</td><td>32</td></tr>
+</table>
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>    
+<hr/>
+<p>
+<a name="veter_hitrost"/>
+<h4>Pretvarjanje hitrosti vetra iz Beaufortov v m/s:</h4>
+<table cellspacing="0" class="veter_style">
+<tr><th>Stopnja po Beaufortu</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr>
+<tr><th>Srednja hitrost (m/s)</th><td>0</td><td>0,9</td><td>2,4</td><td>4,4</td><td>6,7</td><td>9,3</td><td>12,3</td><td>15,5</td><td>18,9</td><td>22,6</td><td>26,4</td><td>30,5</td><td>34,8</td></tr>
+</table>
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>
+<p>
+<a name="veter_pretvorbe"/>
+<h4>Tabela pretvornikov med različnimi enotami za veter:</h4>
+<table cellspacing="0">
+<tr><th colspan="2"><br/></th><th colspan="5">Ustrezne hitrosti na dogovorjeni višini 10 m nad ravnim odprtim zemljiščem</th><th><br/></th></tr>
+<tr><th width="40px">Stopnja po Beaufortu</th><th>Naziv vetra</th><th width="40px">Hitrost v vozlih</th><th width="55px">Hitrost v m/s</th><th width="55px">Srednja hitrost v m/s</th><th width="55px">Hitrost v km/h</th><th width="90px">Hitrost v angleških miljah na uro</th><th>Opis pojava na kopnem</th></tr>
+<tbody class="tbody_style">
+<tr><th>0</th><th>C (Tišina)</th><th>&lt; 1</th><th nowrap="true">0 - 0,2</th><th>0</th><th>&lt; 1</th><th>&lt; 1</th><td>Mirno. Dim se dviga navpično.</td></tr>
+<tr><th>1</th><th nowrap="true">Lahna sapica</th><th>1 - 3</th><th nowrap="true">0,3 - 1,5</th><th>0,9</th><th>1 - 5</th><th>1 - 3</th><td>Smer vetra opazimo po gibanju dima, ne pa po vetrokazu.</td></tr>
+<tr><th>2</th><th>Sapica</th><th>4 - 6</th><th nowrap="true">1,6 - 3,3</th><th>2,4</th><th>6 - 11</th><th>4 - 7</td></th><td>Veter čutimo na obrazu, listje trepeta, vetrokaz se giblje.</td></tr>
+<tr><th>3</th><th nowrap="true">Šibak veter</th><th>7 - 10</th><th nowrap="true">3,4 - 5,4</th><th>4,4</th><th>12 - 19</th><th>8 - 12</th><td>Listje in vejice na drevju se ves čas gibljejo. Lahke zastave plapolajo.</td></tr>
+<tr><th>4</th><th nowrap="true">Zmeren veter</th><th>11 - 16</th><th nowrap="true">5,5 - 7,9</th><th>6,7</th><th>20 - 28</th><th>13 - 18</th><td>Veter dviga prah in papir, giblje tanjše veje.</td></tr>
+<tr><th>5</th><th nowrap="true">Precej močan veter</th><th>17 - 21</th><th nowrap="true">8,0 - 10,7</th><th>9,3</th><th>29 - 38</th><th>19 - 24</th><td>Zibljejo se tanjša listnata drevesa, na stoječih vodah nastajajo manjši valovi z grebeni.</td></tr>
+<tr><th>6</th><th nowrap="true">Močan veter</th><th>22 - 27</th><th nowrap="true">10,8 - 13,8</th><th>12,3</th><th>39 - 49</th><th>25 - 31</th><td>Gibljejo se debele veje, sliši se žvižganje telegrafskih žic, uporaba dežnika je otežkočena.</td></tr>
+<tr><th>7</th><th nowrap="true">Zelo močan veter</th><th>28 - 33</th><th nowrap="true">13,9 - 17,1</th><th>15,5</th><th>50 - 61</th><th>32 - 38</th><td>Majejo se cela drevesa, otežkočena je hoja proti vetru.</td></tr>
+<tr><th>8</th><th nowrap="true">Viharni veter</th><th>34 - 40</th><th nowrap="true">17,2 - 20,7</th><th>18,9</th><th>62 - 74</th><th>39 - 46</th><td>Veter lomi veje na drevju, hoja proti vetru v splošnem ni možna.</td></tr>
+<tr><th>9</th><th>Vihar</th><th>41 - 47</th><th nowrap="true">20,8 - 24,4</th><th>22,6</th><th>75 - 88</th><th>47 - 54</th><td>Prihaja do lažjih poškodb na stavbah (Vihar trga žlebove, ruši dimnike, odkriva opeko s streh.</td></tr>
+<tr><th>10</th><th>Hud vihar</th><th>48 - 55</th><th nowrap="true">24,5 - 28,4</th><th>26,4</th><th>89 - 102</th><th>55 - 63</th><td>V notranjosti kopne zemlje se redko pojavlja, ruje drevje, povzroča veliko škodo na stavbah.</td></tr>
+<tr><th>11</th><th nowrap="true">Orkanski vihar</th><th>56 - 63</th><th nowrap="true">28,5 - 32,6</th><th>30.5</th><th nowrap="true">103 - 117</th><th>64 - 72</th><td>Zelo redek pojav, ki povzroča rušenje velikega obsega. </td></tr>
+<tr><th>12</th><th>Orkan</th><th>64 - 71</th><th nowrap="true">32,7 - 36,9</th><th>34.8</th><th nowrap="true">118 - 133</th><th>73 - 82</th><td><br/></td></tr>
+</tbody>
+</table>
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>
+<hr/>
+<p>
+<a name="tla"/>
+<h4>Šifriranje stanja tal:</h4>
+<table cellspacing="0">
+<tr><th>Šifra</th><th>Stanje tal</th></tr>
+<tbody class="tbody_style">
+<tr><th>0</th><td>Površina tal suha</td></tr>
+<tr><th>1</th><td>Površina tal vlažna</td></tr>
+<tr><th>2</th><td>Površina tal mokra (na tleh manjše ali večje luže)</td></tr>
+<tr><th>3</th><td>Površina tal zmrznjena</td></tr>
+<tr><th>4</th><td>Poledica ali led na tleh, vendar brez snega ali snega, ki se tali</td></tr>
+<tr><th>5</th><td>Sneg ali sneg, ki se tali (z delom ali brez) pokriva manj kot polovico tal</td></tr>
+<tr><th>6</th><td>Sneg ali sneg, ki se tali (z ledom ali brez), pokriva več kot polovico tal, vendar tla niso popolnoma pokrita</td></tr>
+<tr><th>7</th><td>Sneg ali sneg, ki se tali (z ledom ali brez), popolnoma pokriva tla</td></tr>
+<tr><th>8</th><td>Pršič (suh, droben sneg) pokriva več kot polovico tal (vendar ne popolnoma)</td></tr>
+<tr><th>9</th><td>Pršič (suh, droben sneg) popolnoma pokriva tla</td></tr>
+</tbody>
+</table>
+<br/>
+Opomba:
+<ol>
+<li>Številke od 0 do 3 se nanašajo na reprezentativno površino golih tal, številke od 4 do 9 pa na odprto reprezentativno zemljišče okoli meteorološke postaje.</li>
+<li>Kadar lahko pri določevanju stanja tal uporabimo več številk, vzamemo največjo številko.</li>
+</ol>
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>    
+<hr/>
+<p>
+<a name="vidnost"/>
+<h4>Šifriranje vidnosti:</h4>
+<table cellspacing="0">
+<tr><th>Šifra</th><th>Vrednost v formi</th><th>Vidnost</th></tr>
+<tbody class="tbody_style">
+<tr><th>0</th><th>0</th><td>Od vključno 0 m do 50 m</td></tr>
+<tr><th>1</th><th>005</th><td>Od vključno 50 m do 200 m</td></tr>
+<tr><th>2</th><th>02</th><td>Od vključno 200 m do 500 m</td></tr>
+<tr><th>3</th><th>05</th><td>Od vključno 500 m do 1 km</td></tr>
+<tr><th>4</th><th>1</th><td>Od vključno 1 km do 2 km</td></tr>
+<tr><th>5</th><th>2</th><td>Od vključno 2 km do 4 km</td></tr>
+<tr><th>6</th><th>4</th><td>Od vključno 4 km do 10 km</td></tr>
+<tr><th>7</th><th>10</th><td>Od vključno 10 km do 20 km</td></tr>
+<tr><th>8</th><th>20</th><td>Od vključno 20 km do 50 km</td></tr>
+<tr><th>9</th><th>50</th><td>50 km in več</td></tr>
+</tbody>
+</table>
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>    
+<hr/>
+<p>
+<a name="oblika"/>
+<h4>Šifriranje oblike padavin:</h4>
+<table cellspacing="0">
+<tr>
+<th>Šifra</th><th colspan="2">Oblika padavin</th></tr>
+<tbody class="tbody_style">
+<tr><th>-1</th><td>Ni padavin.</td></tr>
+<tr><th>1</th><td>Tekoče padavine (<img src="images/11.gif"/>, <img src="images/12.gif"/>, <img src="images/13.gif"/>, <img src="images/21.gif"/>, <img src="images/22.gif"/>, <img src="images/51.gif"/>, <img src="images/52.gif"/>)</td></tr>
+<tr><th>2</th><td>Trde padavine (<img src="images/23.gif"/>, <img src="images/31.gif"/>, <img src="images/32.gif"/>, <img src="images/33.gif"/>, <img src="images/42.gif"/>)</td></tr>
+<tr><th>3</th><td>Mešane padavine (<img src="images/41.gif"/>, <img src="images/43.gif"/>)</td></tr>
+<tr><th>4</th><td>Tekoče in trde padavine v različnem času (1 in 2)</td></tr>
+<tr><th>5</th><td>Tekoče in mešane padavine v različnem času (1 in 3)</td></tr>
+<tr><th>6</th><td>Trde in mešane padavine v različnem času (2 in 3)</td></tr>
+<tr><th>7</th><td>Tekoče, trde in mešane padavine v različnem času (1, 2 in 3)</td></tr>
+<tr><th>8</th><td>Padavine, ki nastanejo na zemeljski površini (<img src="images/81.gif"/>, <img src="images/82.gif"/>, <img src="images/91.gif"/>, <img src="images/61.gif"/>, <img src="images/101.gif"/>)</td></tr>
+<tr><th>9</th><td>Višina padavin je 0.0 mm.</td></tr>
+</tbody>
+</table>
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>
+<hr/>
+<p>
+<a name="pojavi_seznam"/>
+<h4>Pojavi:</h4>
+<table cellspacing="0">
+<tbody class="tbody_style">
+<tr><th><img src="images/11.gif"/></th><td>DEŽ - Kapljice vode, ki padajo iz oblakov. Kapljice so debele večinoma več kot 0,5mm.</td></tr>
+<tr><th><img src="images/12.gif"/></th><td>PRŠENJE - Zelo majhne kapljice, ki dajejo videz, kakor da lebdijo v zraku. Njihov premer je pod 0,5 mm. Take padavine so običajno iz megle ali zelo nizkih oblakov. Njihovo padanje se v luži ne pozna.</td></tr>
+<tr><th><img src="images/13.gif"/></th><td>PLOHA - Padavine v obliki plohe vpišemo tako, da dodamo pod ustrezen znak za to padavino znak za ploho npr.:  deževna ploha. Plohe prepoznamo po nenadnem začetku in koncu, po hitri spremembi jakosti in po hitri zamenjavi gostih, temnih oblakov s svetlejšimi, včasih pa tudi s kratkotrajno razjasnitvijo (''marčevsko'' ali ''aprilsko'' vreme). V obliki ploh so lahko naslednje padavine:Dež, sneg, dež s snegom, babje pšeno in toča.</td></tr>
+<tr><th><img src="images/21.gif"/></th><td>DEŽ, KI ZMRZUJE - Dež katerega kapljice zmrznejo ob stiku s tlemi ali s predmeti na tleh in naredijo poledico.</td></tr>
+<tr><th><img src="images/22.gif"/></th><td>PRŠENJE, KI ZMRZUJE - Pršenje katerega kapljice zmrznejo ob stiku s tlemi ali s predmeti na tleh.</td></tr>
+<tr><th><img src="images/23.gif"/></th><td>LEDENE IGLICE - Zelo drobni nerazvejani kristalčki v obliki ploščic ali paličic; padajo pri jasnem in mirnem vremenu in pri zelo nizkih temperaturah.</td></tr>
+<tr><th><img src="images/31.gif"/></th><td>SNEG - Padavine v obliki razvejanih ledenih kristalov (snežink), ki so lahko združene v kosme.</td></tr>
+<tr><th><img src="images/32.gif"/></th><td>ZRNAT SNEG - To so bela neprozorna več ali manj ploščata in podolgovata zrna, vsaj v eni smeri tanjša kakor 1mm. Po zgradbi so podobna snegu. Ko padajo na trdo podlago, ne odskočijo. Padajo v zelo majhnih količinah, nikdar v obliki plohe in iz enakih oblakov kot rosenje.</td></tr>
+<tr><th><img src="images/33.gif"/></th><td>PLOHA - Padavine v obliki plohe vpišemo tako, da dodamo pod ustrezen znak za to padavino znak za ploho npr.:  deževna ploha. Plohe prepoznamo po nenadnem začetku in koncu, po hitri spremembi jakosti in po hitri zamenjavi gostih, temnih oblakov s svetlejšimi, včasih pa tudi s kratkotrajno razjasnitvijo (''marčevsko'' ali ''aprilsko'' vreme). V obliki ploh so lahko naslednje padavine:Dež, sneg, dež s snegom, babje pšeno in toča.</td></tr>
+<tr><th><img src="images/41.gif"/></th><td>DEŽ S SNEGOM - Dež in sneg padata hkrati.</td></tr>
+<tr><th><img src="images/42.gif"/></th><td>BABJE PŠENO - Bela neprozorna zrna s premerom 2-5mm, ki po zgradbi spominjajo na sneg, so pa okrogle ali stožičaste oblike. Če padejo na trdo podlago, odskočijo in se razlete. Babje pšeno pada navadno v obliki ploh, skupaj s snegom ali dežjem, in pri temperaturah pri tleh okoli 0 st.C.</td></tr>
+<tr><th><img src="images/43.gif"/></th><td>PLOHA - Padavine v obliki plohe vpišemo tako, da dodamo pod ustrezen znak za to padavino znak za ploho npr.:  deževna ploha. Plohe prepoznamo po nenadnem začetku in koncu, po hitri spremembi jakosti in po hitri zamenjavi gostih, temnih oblakov s svetlejšimi, včasih pa tudi s kratkotrajno razjasnitvijo (''marčevsko'' ali ''aprilsko'' vreme). V obliki ploh so lahko naslednje padavine:Dež, sneg, dež s snegom, babje pšeno in toča.</td></tr>
+<tr><th><img src="images/51.gif"/></th><td>TOČA - Pada v obliki ledenih kroglic ali koščkov ledu s premerom 5-50mm ali celo več. Zrna so lahko prozorna, polprozorna ali neprozorna. Toča pada navadno pri nevihtah in temperaturi nad 0 st.C.</td></tr>
+<tr><th><img src="images/52.gif"/></th><td>ZMRZNJEN DEŽ (po novih kriterijih je zmrznjen dež isto kot sodra) - Padavine v obliki prozornih ledenih delcev. Na trdi podlagi odskakujejo in udarec se sliši. Ti delci so navadno kroglaste ali neenakomerne in redkeje stožčaste oblike. Njihov premer je manjši od 5mm.</td></tr>
+<tr><th><img src="images/53.gif"/></th><td>DIM - V atmosferi lebdijo drobni delci, produkti gorenja.</td></tr>
+<tr><th><img src="images/61.gif"/></th><td>MEGLA - Drobne vodne kapljice, ki lebdijo v zraku in zmanjšujejo vodoravno vidnost pod 1km. Če se vidi nebo ali oblaki uporabljamo znak s pretrgano zgornjo črto MEGLA Z VIDNIM NEBOM. Kadar se pojavlja megla v pramenih, ki jih nosi veter, pri tem pa se občasno vidi nebo, vpišemo poleg znaka še pr.</td></tr>
+<tr><th><img src="images/62.gif"/></th><td>MEGLA - Drobne vodne kapljice, ki lebdijo v zraku in zmanjšujejo vodoravno vidnost pod 1km. Če se vidi nebo ali oblaki uporabljamo znak s pretrgano zgornjo črto  MEGLA Z VIDNIM NEBOM. Kadar se pojavlja megla v pramenih, ki jih nosi veter, pri tem pa se občasno vidi nebo, vpišemo poleg znaka še pr.</td></tr>
+<tr><th><img src="images/63.gif"/></th><td>LEDENA MEGLA - V zraku lebdi množica drobnih ledenih kristalčkov, kar zmanjšuje vidnost v prizemni plasti.</td></tr>
+<tr><th><img src="images/71.gif"/></th><td>ZAMEGLJENOST - V zraku vise še manjše kapljice kot pri megli ali pa majhni higroskopni delci, ki zmanjšujejo vodoravno vidnost, vendar manj kot pri megli, tako da je vidnost 1km ali več (do 10km).</td></tr>
+<tr><th><img src="images/72.gif"/></th><td>SUHA MOTNOST - Ozračje je motno inzmanjšana vidnost zaradi navzočnosti drobnih suhih delcev prahuali saj, katerih ne moremo videti s prostim očesom. Suha motnost povzroči, da izgleda pokrajina kakor pokrita s pajčolanom. Temno ozadje je modrikasto, svetlo ozadje pa rumenkasto ali oranžno.</td></tr>
+<tr><th><img src="images/73.gif"/></th><td>NIZKA (TALNA) MEGLA - Na postaji je tanka plast megle, nižja od človeka. Vidnost nad to plastjo megle je 1km in več.</td></tr>
+<tr><th><img src="images/81.gif"/></th><td>ROSA - prevleka iz vodnih kapljic na predmetih pri tleh, ki je nastala neposredno s kondenzacijo vodne pare iz zraka. Rosa nastane zaradi nočne ohladitve zraka pri jasnem in mirnem vremenu.</td></tr>
+<tr><th><img src="images/82.gif"/></th><td>SLANA - Nastane na enak način kot rosa, le da je temperatura pod 0 st.C. Vodna para se izloča v obliki ledenih kristalov, ki izgledajo od blizu kot luskinice, iglice, peresa ali pahljače.</td></tr>
+<tr><th><img src="images/83.gif"/></th><td>PRŠEC - Oblak vodnih kapljic, ki jih je odtrgal veter z vodne površine in jih prenesel na krajšo razdaljo.</td></tr>
+<tr><th><img src="images/91.gif"/></th><td>POLEDICA - Poledica je gladka ledena prevleka na vodoravnih in tudi na pokončnih površinah. Nastane takrat, ko padeta dež ali rosenje, ki zmrzujeta.</td></tr>
+<tr><th><img src="images/92.gif"/></th><td>POLEDICA NA TLEH - To je gladka plast prozornega ledu samo na tleh. Nastane pri dežju ali rosenju, ki zmrzujeta, in pri deževanju na zmrznjeno zemljo. K poledici na tleh ne prištevamo primerov, ko zmrzne voda od staljenega snega, tudi ne ledene skorje, ki je nastala na zgaženemu snegu, niti zamrznjenih dežnih mlakužic.</td></tr>
+<tr><th><img src="images/93.gif"/></th><td>Znak opisuje pojav, ko voda zaradi stopljenega snega zmrzuje(ledena skorja na tleh). Pojava se ne opazuje več. S poledico na tleh ne štejemo ledu, ki pokriva tla, nastal pa je po enem izmed naslednjih procesov. Voda iz rosnih ali deževnih kapljic, ki pozneje zaledeni na tleh; voda, ki je nastala z delnim ali popolnim taljenjem snega na tleh, ki se znova zaledeni; sneg na tleh, ki je zaradi teptanja postal kompakten in trd (cestni promet). V teh primerih pojav ledu na tleh označimo s tem znakom in ne z znakom za poledico.<br/>Vir: Zvezni hidrometeorološki zavod, Navodila za delo navadnih meteoroloških postaj, Beograd 1982. Se več ne vpisuje (upoštevano v stanju tal).</td></tr>
+<tr><th><img src="images/101.gif"/></th><td>IVJE - To so ledeni kristali, nakloženi v belih slojih, predvsem na pokončnih predmetih. Navadno nastane s primrzovanjem podhlajenih vodnih kapljic iz megle ali oblaka pri temperaturi pod 0 st.C. V smeri proti vetru doseže včasih zelo velike debeline in je koničaste oblike.</td></tr>
+<tr><th><img src="images/102.gif"/></th><td>TRDO IVJE - To je ivje prevlečeno z ledeno skorjo, ki po obliki spominja na sodro. Nastaja na podoben način kot ivje in pri večjih hitrostih vetra.</td></tr>
+<tr><th><img src="images/103.gif"/></th><td>ELIJEV OGENJ - S koničastih koncev predmetov, in na morju , poteka včasih razelektrevanje tiho ali pa s prasketanjem, ki ga vidimo kot šopek z rdeče belim držalom (pozitivna elektrika) ali v obliki kratkih rdečih storžev s svetlo pego namesto držaja (negativna elektrika).</td></tr>
+<tr><th><img src="images/111.gif"/></th><td>NEVIHTA - Pod imenom nevihta razumemo pojav električne praznitve v atmosferi, pri katerem vidimo blisk in slišimo grom. Nevihto pogosto spremljajo padavine, ki pa jih moramo posebej zabeležiti.</td></tr>
+<tr><th><img src="images/112.gif"/></th><td>GRMENJE - Pri električni praznitvi slišimo grmenje, ne vidimo pa bliskov.</td></tr>
+<tr><th><img src="images/113.gif"/></th><td>BLISKANJE - Pri električni praznitvi vidimo bliske, ne slišimo pa grmenja.</td></tr>
+<tr><th><img src="images/121.gif"/></th><td>MOČAN VETER - Veter v prizemni plasti, jakosti 6 in 7 po Beaufortovi skali.</td></tr>
+<tr><th><img src="images/122.gif"/></th><td>VIHARNI VETER - Veter v prizemni plasti, jakosti 8 ali več po Beaufortovi skali.</td></tr>
+<tr><th><img src="images/123.gif"/></th><td>PEŠČENI ALI PRAŠNI VRTINEC - Zračni vrtinec s približno navpično osjo, v katerem je veter dvignil prah, pesek ali druge predmete s tal. Sem ne sodijo majhni vrtinci, ki nastajajo na ulicah in poljih zaradi močne pregretosti zraka.</td></tr>
+<tr><th><img src="images/131.gif"/></th><td>SNEŽNI VRTINCI - Veter dviga sneg s tal do take višine, da je vodoravna vidnost v višini oči opazovalca močno zmanjšana.</td></tr>
+<tr><th><img src="images/132.gif"/></th><td>NIZKI SNEŽNI VRTINCI - Veter nosi sneg samo pri tleh, tako da vodoravna vidnost v višini oči opazovalca ni bistveno zmanjšana.</td></tr>
+<tr><th><img src="images/133.gif"/></th><td>TROMBA(TORNADO) - Zelo močan zračni vrtinec v obliki rilca, ki se spušča iz spodnjih delov oblaka do tal ali vodne površine, pri tem pa se zelo hitro vrti okrog približno navpične osi.</td></tr>
+<tr><th><img src="images/141.gif"/></th><td>PEŠČENA MEGLA - To so prah ali drobni delci, ki jih je dvignilo prašno ali peščeno neurje in še vedno lebdijo v zraku.</td></tr>
+<tr><th><img src="images/142.gif"/></th><td>PRAŠNI ALI PEŠČENI VRTINCI - Delci prahu ali peska,ki jih je s tal dvignil do majhne ali zmerne višine dovolj močan turbolenten veter na opazovalnem prostoru ali v njegovi bljižini. Ločimo:- nizke prašne ali peščene vrtince, kjer vodoravna vidnost v višini opazevalčevih oči ni bistveno zmanjšana.- visoke prašne ali peščene vrtince kjer je vodoravna vidnost v višini opazevalčevih oči bistveno zmanjšana.</td></tr>
+<tr><th><img src="images/143.gif"/></th><td>PRAŠNO ALI PEŠČENO NEURJE - Prašni ali peščeni vrtinci, ki jih je močan turbolenten veter dvignil s tal do velike višine. Sprednji del prašnega ali peščenega neurja lahko izgleda kot ogromna stena.</td></tr>
+<tr><th><img src="images/151.gif"/></th><td>HALO OKOLI SONCA ALI LUNE - Svetel obroč okoli Sonca ali Lune, katerega polmer znaša 22 st. Nastane zaradi loma svetlobnih žarkov na ledenih kristalčkih cirusnih oblakov. Obroč je navadno belkaste barve, včasih pa tudi mavričast. Okoli tega obroča se lahko pojavi še eden s polmerom 46 st., je pa precej manj svetel od prvega. Poleg tega se lahko halo izraža tudi na druge načine:svetli loki (v dotiku s svetlim obročem), lažna sonca, svetli stebri.</td></tr>
+<tr><th><img src="images/152.gif"/></th><td>VENEC OKOLI SONCA ALI LUNE - Svetlo rožno polje(avreola) okoli Sonca ali Lune, ki nastane zaradi zaradi uklona svetlobnih žarkov na tekočih ali trdih delcih oblakov. Velikost venca je večinoma nekaj premerov Sonca. Notranjost venca je navadno belkasta, lahko pa je mavričast. Venec okoli Lune je večkrat viden kot venec okoli Sonca, ker močnejša sončna svetloba otežuje opazovanje.</td></tr>
+<tr><th><img src="images/153.gif"/></th><td>MAVRICA - Večbarven svetlobni lok, ki ga vidimo v smeri proti deževnim oblakom, v nasprotni smeri od Sonca. Barve so v mavrici razporejene od vijoličaste (na notranji strani) do rdeče (na zunanji strani). Pogosto se poleg glavne mavrice pojavi tudi stranska, ki ima barve razporejene v obratnem vrstnem redu. Mavrica nastane zaradi loma in odboja svetlobe pri prehodu skozi dežne kapljice.</td></tr>
+<tr><th><img src="images/161.gif"/></th><td>HALO OKOLI SONCA ALI LUNE - Svetel obroč okoli Sonca ali Lune, katerega polmer znaša 22 st. Nastane zaradi loma svetlobnih žarkov na ledenih kristalčkih cirusnih oblakov. Obroč je navadno belkaste barve, včasih pa tudi mavričast. Okoli tega obroča se lahko pojavi še eden s polmerom 46 st., je pa precej manj vetel od prvega. Poleg tega se lahko halo izraža tudi na druge načine:svetli loki (v dotiku s svetlim obročem), lažna sonca, svetli stebri.</td></tr>
+<tr><th><img src="images/162.gif"/></th><td>VENEC OKOLI SONCA ALI LUNE - Svetlo rožno polje(avreola) okoli Sonca ali Lune, ki nastane zaradi zaradi uklona svetlobnih žarkov na tekočih ali trdih delcih oblakov. Velikost venca je večinoma nekaj premerov Sonca. Notranjost venca je navadno belkasta, lahko pa je mavričast. Venec okoli Lune je večkrat viden kot venec okoli Sonca, ker močnejša sončna svetloba otežuje opazovanje.</td></tr>
+<tr><th><img src="images/163.gif"/></th><td>ZRAČNO ZRCALJENJE (OPTIČNA PREVARA) - To je optični pojav, ki ga tvori enkratna ali večkratna pokončna ali obrnjena, vertikalnopodaljšana ali lomljena slika predmeta. Zračno zrcaljenje je posledica loma svetlobnih žarkov, ki gredo skozi različno goste plasti zraka.</td></tr>
+<tr><th><img src="images/171.gif"/></th><td>SNEŽNA ODEJA - Polovica ali več kot polovica tal v vidnem polju postaje na približno enaki nadmorski višini je pokrita s snegom.</td></tr>
+<tr><th><img src="images/172.gif"/></th><td>POLARNI SIJ - Pojavlja se na severni strani obzorja, ima razne oblike, navadno kot svetel lok, pod katerim izgleda nebo temnejše kot v okolici. Iz loka pogosto izhajajo kot žarek svetli trakovi, ki so usmerjeni proti zenitu. Pri nas je polarni sij redek pojav.</td></tr>
+<tr><th><img src="images/173.gif"/></th><td>SVETLOBNI STEBRI - To je redek pojav v obliki svetlih stebrov nad in pod Soncem. Navadno se vidi svetlobni steber nad soncem pri položaju Sonca nizko nad obzorjem. Lahko je rdeče obarvan ali bleščeče bel.</td></tr>
+</tbody>
+</table>
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>
+<p>
+<a name="kljuc"/>
+<h4>KLJUČ ZA ŠIFRIRANJE POJAVOV</h4> 
+</p>
+<p>
+<h4>Tabela atmosferskih pojavov za klimatološke in glavne meteorološke postaje</h4>
+<table cellspacing="0">
+<tr><td><img src="images/r7.jpg" width="30" height="35"/></td><td><br/></td><td><img src="images/r5.jpg" width="30" height="35"/></td><td><img src="images/m4.jpg" width="30" height="35"/></td><td><img src="images/m1.jpg" width="30" height="35"/></td><td><img src="images/11.gif"/></td><td><img src="images/21.gif"/></td><td><img src="images/31.gif"/></td><td><img src="images/41.gif"/></td><td><img src="images/51.gif"/></td><td><img src="images/61.gif"/></td><td><img src="images/71.gif"/></td><td><img src="images/81.gif"/></td><td><img src="images/91.gif"/></td><td><img src="images/101.gif"/></td><td><img src="images/111.gif"/></td><td><img src="images/121.gif"/></td><td><img src="images/131.gif"/></td><td><img src="images/141.gif"/></td><td><img src="images/151.gif"/></td><td><img src="images/161.gif"/></td><td><img src="images/171.gif"/></td></tr>
+<tr><td><img src="images/r.jpg" width="30" height="35"/></td><td><img src="images/z6.jpg" width="30" height="35"/></td><td><br/></td><td><img src="images/m.jpg" width="30" height="35"/></td><td><img src="images/o2.jpg" width="30" height="35"/></td><td><img src="images/12.gif"/></td><td><img src="images/22.gif"/></td><td><img src="images/32.gif"/></td><td><img src="images/42.gif"/></td><td><img src="images/52.gif"/></td><td><img src="images/62.gif"/></td><td><img src="images/72.gif"/></td><td><img src="images/82.gif"/></td><td><img src="images/92.gif"/></td><td><img src="images/102.gif"/></td><td><img src="images/112.gif"/></td><td><img src="images/122.gif"/></td><td><img src="images/132.gif"/></td><td><img src="images/142.gif"/></td><td><img src="images/152.gif"/></td><td><img src="images/162.gif"/></td><td><img src="images/172.gif"/></td></tr>
+<tr><td><img src="images/r.jpg" width="30" height="35"/></td><td><img src="images/z.jpg" width="30" height="35"/></td><td><img src="images/r5.jpg" width="30" height="35"/></td><td><br/></td><td><img src="images/p3.jpg" width="30" height="35"/></td><td><img src="images/13.gif"/></td><td><img src="images/23.gif"/></td><td><img src="images/33.gif"/></td><td><img src="images/43.gif"/></td><td><img src="images/53.gif"/></td><td><img src="images/63.gif"/></td><td><img src="images/73.gif"/></td><td><img src="images/83.gif"/></td><td><img src="images/93.gif"/></td><td><img src="images/103.gif"/></td><td><img src="images/113.gif"/></td><td><img src="images/123.gif"/></td><td><img src="images/133.gif"/></td><td><img src="images/143.gif"/></td><td><img src="images/153.gif"/></td><td><img src="images/163.gif"/></td><td><img src="images/173.gif"/></td></tr>
+</table>
+</p>
+<p>
+<h4>Tabela atmosferskih pojavov za padavinske postaje</h4>
+<table cellspacing="0">
+<tr><td><img src="images/r7.jpg" width="30" height="35"/></td><td><br/></td><td><img src="images/r5.jpg" width="30" height="35"/></td><td><img src="images/m4.jpg" width="30" height="35"/></td><td><img src="images/m1.jpg" width="30" height="35"/></td><td><img src="images/11.gif"/></td><td><img src="images/51.gif"/></td><td><img src="images/101.gif"/></td><td><img src="images/91.gif"/></td><td><img src="images/171.gif"/></td></tr>
+<tr><td><img src="images/r.jpg" width="30" height="35"/></td><td><img src="images/z6.jpg" width="30" height="35"/></td><td><br/></td><td><img src="images/m.jpg" width="30" height="35"/></td><td><img src="images/o2.jpg" width="30" height="35"/></td><td><img src="images/31.gif"/></td><td><img src="images/82.gif"/></td><td><img src="images/52.gif"/></td><td><img src="images/111.gif"/></td><td><img src="images/81.gif"/></td></tr>
+<tr><td><img src="images/r.jpg" width="30" height="35"/></td><td><img src="images/z.jpg" width="30" height="35"/></td><td><img src="images/r5.jpg" width="30" height="35"/></td><td><br/></td><td><img src="images/p3.jpg" width="30" height="35"/></td><td><img src="images/41.gif"/></td><td><img src="images/61.gif"/></td><td><img src="images/42.gif"/></td><td><img src="images/122.gif"/></td><td><br/></td></tr>
+</table>
+<br/>Opomba: Veter se zapisuje samo če je njegova moč enaka ali večja od 8 Beaufortov. 
+</p>
+<br/>
+<p>
+<a name="nacin"/>
+<h4>Način šifriranja pojavov:</h4>
+(Lahko si pomagate z barvno predstavitvijo na levi strani tabele.)<br/>
+Če je bil opažen pojav, ki ima simbol v prvi vrstici, potem je pod ustrezno rubriko v arhivu št.1.<br/>
+Če je bil opažen pojav, ki ima simbol v drugi vrstici, potem je pod ustrezno rubriko v arhivu št.2.<br/>
+Če je bil opažen pojav, ki ima simbol v tretji vrstici, potem je pod ustrezno rubriko v arhivu št.3.<br/>
+Če je bil opažen pojav, ki ima  simbol v prvi in drugi vrstici, potem je pod ustrezno rubriko v arhivu št.4.<br/>
+Če je bil opažen pojav, ki ima simbol v prvi in tretji vrstici, potem je pod ustrezno rubriko v arhivu št.5.<br/>
+Če je bil opažen pojav, ki ima simbol v drugi in tretji vrstici, potem je pod ustrezno rubriko v arhivu št.6.<br/>
+Če je bil opažen pojav, ki ima simbol v prvi, drugi in tretji vrstici, potem je pod ustrezno rubriko v arhivu št.7.<br/>Če pojava ni bilo, je pod rubriko v arhivu št.0.
+<br/><br/>
+Opomba: Šifriranje za veter se malo razlikuje od zgoraj opisanega in sicer št. 2 ni možna. Veter manjši od 8 Beaufortov in večji ali enak 6 Beaufortov se šifrira s št.1. Veter večji ali enak 8 Beaufortov (<img src="images/122.gif"/>), se v klimatološko datoteko šifrira s št.4. 
+</p>
+<br/><br/>
+<p class="sifriranje_pojavov_primer_style">
+<b>Primer šifriranja pojavov za pojave pod št. 54 (128 mesto) v klimatološkem direktoriju (dež, pršenje, dežna ploha):</b><br/>
+<span/>Če je bil opažen pojav <img src="images/11.gif"/>, je v klimatološki datoteki na 128 mestu št.1.<br/>
+<span/>Če je bil opažen pojav <img src="images/12.gif"/>, je v klimatološki datoteki na 128 mestu št.2.<br/>
+<span/>Če je bil opažen pojav <img src="images/13.gif"/>, je v klimatološki datoteki na 128 mestu št.3.<br/>
+<span/>Če sta bila opažena pojava <img src="images/11.gif"/> in <img src="images/12.gif"/>, je v klimatološki datoteki na 128 mestu št.4.<br/>
+<span/>Če sta bila opažena pojava <img src="images/11.gif"/> in <img src="images/13.gif"/>, je v klimatološki datoteki na 128 mestu št.5.<br/>
+<span/>Če sta bila opažena pojava <img src="images/12.gif"/> in <img src="images/13.gif"/>, je v klimatološki datoteki na 128 mestu št.6.<br/>
+<span/>Če so bili opaženi pojavi <img src="images/11.gif"/>, <img src="images/12.gif"/> in <img src="images/13.gif"/>, je v klimatološki datoteki na 128 mestu št.7.<br/>
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>   
+<hr/>
+<p>
+<a name="parametri_klima"/>
+<h4>Klimatološki parametri</h4>
+<table cellspacing="0">
+<tr><th width="150px">Zaporedna številka parametra</th><th width="280px">Opis parametra</th><th width="300px">Enota ali možne vrednosti</th><th width="50px">Manjkajoče vrednosti</th></tr>
+<tbody class="tbody_style">
+<tr><th>1</th><td>postaja</td><th><br/></th><th><br/></th></tr>
+<tr><th>2</th><td>leto</td><th><br/></th><th><br/></th></tr>
+<tr><th>3</th><td>mesec</td><th><br/></th><th><br/></th></tr>
+<tr><th>4</th><td>dan</td><th><br/></th><th><br/></th></tr>
+<tr><th>5</th><td>pritisk ob  7h</td><th>0.1 mm Hg</th><th>-999</th></tr>
+<tr><th>6</th><td>pritisk ob 14h</td><th>0.1 mm Hg</th><th>-999</th></tr>
+<tr><th>7</th><td>pritisk ob 21h</td><th>0.1 mm Hg</th><th>-999</th></tr>
+<tr><th>8</th><td>maksimalna temperatura</td><th>0.1 st.C</th><th>-999</th></tr>
+<tr><th>9</th><td>minimalna temperatura</td><th>0.1 st.C</th><th>-999</th></tr>
+<tr><th>10</th><td>minimalna temperatura na 5 cm</td><th>0.1 st.C</th><th>-999</th></tr>
+<tr><th>11</th><td>temperatura suhi termometer ob  7h</td><th>0.1 st.C</th><th>-999</th></tr>
+<tr><th>12</th><td>temperatura suhi termometer ob 14h</td><th>0.1 st.C</th><th>-999</th></tr>
+<tr><th>13</th><td>temperatura suhi termometer ob 21h</td><th>0.1 st.C</th><th>-999</th></tr>
+<tr><th>14</th><td>temperatura mokri  termometer ob  7h</td><th>0.1 st.C</th><th>-999</th></tr>
+<tr><th>15</th><td>temperatura mokri  termometer  ob 14h</td><th>0.1 st.C</th><th>-999</th></tr>
+<tr><th>16</th><td>temperatura mokri termometer ob 21h</td><th>0.1 st.C</th><th>-999</th></tr>
+<tr><th>17</th><td>led ob  7h</td><th>voda=0,led=1</th><th>9</th></tr>
+<tr><th>18</th><td>led ob  14h</td><th>voda=0,led=1</th><th>9</th></tr>
+<tr><th>19</th><td>led ob  21h</td><th>voda=0,led=1</th><th>9</th></tr>
+<tr><th>20</th><td>rel.vlaga ob 7h</td><th>%</th><th>-9</th></tr>
+<tr><th>21</th><td>rel.vlaga ob 14h</td><th>%</th><th>-9</th></tr>
+<tr><th>22</th><td>rel.vlaga ob 21h</td><th>%</th><th>-9</th></tr>
+<tr><th colspan="4">interpolacije</th></tr>
+<tr><th>23</th><td>maksimalna temperatura</td><th><br/></th><th>9</th></tr>
+<tr><th>24</th><td>minimalna temperatura</td><th><br/></th><th>9</th></tr>
+<tr><th>25</th><td>minimalna temperatura na 5 cm</td><th><br/></th><th>9</th></tr>
+<tr><th>26</th><td>temperatura suhi termometer ob 7h</td><th><br/></th><th>9</th></tr>
+<tr><th>27</th><td>temperatura suhi termometer ob 14h</td><th><br/></th><th>9</th></tr>
+<tr><th>28</th><td>temperatura suhi termometer ob 21h</td><th><br/></th><th>9</th></tr>
+<tr><th>29</th><td>temperatura mokri termometer  ob  7h</td><th><br/></th><th>9</th></tr>
+<tr><th>30</th><td>temperatura mokri  termometer ob 14h</td><th><br/></th><th>9</th></tr>
+<tr><th>31</th><td>temperatura mokri termometer ob 21h</td><th><br/></th><th>9</th></tr>
+<tr><th>32</th><td>padavine</td><th><br/></th><th>9</th></tr>
+<tr><th>33</th><td>smer vetra ob 7h</td><th>0 - 32</th><th>-9</th></tr>
+<tr><th>34</th><td>hitrost vetra ob 7h</td><th>0.1 m/s</th><th>-9</th></tr>
+<tr><th>35</th><td>smer vetra ob 14h</td><th>0 - 32</th><th>-9</th></tr>
+<tr><th>36</th><td>hitrost vetra ob 14h</td><th>0.1 m/s</th><th>-9</th></tr>
+<tr><th>37</th><td>smer vetra ob 21h</td><th>0 - 32</th><th>-9</th></tr>
+<tr><th>38</th><td>hitrost vetra ob 21h</td><th>0.1 m/s</th><th>-9</th></tr>
+<tr><th>39</th><td>stanje tal ob 7h</td><th>0 - 9</th><th>-9</th></tr>
+<tr><th>40</th><td>stanje tal ob 14h</td><th>0 - 9</th><th>-9</th></tr>
+<tr><th>41</th><td>stanje tal  ob 21h</td><th>0 - 9</th><th>-9</th></tr>
+<tr><th>42</th><td>vidnost ob  7h</td><th>0 - 9</th><th>-9</th></tr>
+<tr><th>43</th><td>vidnost ob 14h</td><th>0 - 9</th><th>-9</th></tr>
+<tr><th>44</th><td>vidnost ob 21h</td><th>0 - 9</th><th>-9</th></tr>
+<tr><th>45</th><td>trajanje sonca</td><th>0.1 ure</th><th>-9</th></tr>
+<tr><th>46</th><td>oblačnost ob  7h</td><th>1 - 10</th><th>-9</th></tr>
+<tr><th>47</th><td>oblačnost ob 14h</td><th>1 - 10</th><th>-9</th></tr>
+<tr><th>48</th><td>oblačnost ob 21h</td><th>1 - 10</th><th>-9</th></tr>
+<tr><th>49</th><td>padavine</td><th>0.1 mm  (-1 brez pad.)</th><th>-999</th></tr>
+<tr><th>50</th><td>oblika padavin</td><th>1 - 9</th><th>-9</th></tr>
+<tr><th>51</th><td>sneg - skupaj</td><th>cm  (-1 ni snež.od)</th><th>-9</th></tr>
+<tr><th>52</th><td>sneg - novi</td><th>cm   (-1 ni nov.sne.)</th><th>-9</th></tr>
+<tr><th>53</th><td>voda v snegu</td><th>0.1 mm (-1 ni snega)</th><th>-9</th></tr>
+<tr><th colspan="4">pojavi</th></tr>
+<tr><th>54</th><td>dež,rosenje,deževna ploha</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>55</th><td>dež-zmrzuje;rosenje-zmrzuje,iglice</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>56</th><td>sneg,zrnat sneg,ploha snega</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>57</th><td>dež s snegom,babje pšeno,ploha d-s</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>58</th><td>toča, sodra,dim</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>59</th><td>megla,megla z vid.neb.,ledena m.</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>60</th><td>meglica,suha motnost,talna megla</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>61</th><td>rosa, slana,pršec-z vodne površine</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>62</th><td>poledica-žled,poledica na tleh</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>63</th><td>ivje,trdo ivje</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>64</th><td>nevihta,grmenje,bliskanje</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>65</th><td>močan veter 6BF, 8Bf</td><th>0, 1-7 (Možna vrednost 2 odpade. Ponavadi sta vrednosti 1 in 4.)</th><th>9</th></tr>
+<tr><th>66</th><td>snežni vrtinci, tromba*</td><th>0</th><th><br/></th></tr>
+<tr><th>67</th><td>prašni ali peščeni vrtinci*</td><th>0</th><th><br/></th></tr>
+<tr><th>68</th><td>halo ali venec okoli Sonca, mavrica*</td><th>0</th><th><br/></th></tr>
+<tr><th>69</th><td>halo ali venec okoli Lune, zračno zrcaljenje*</td><th>0</th><th><br/></th></tr>
+<tr><th>70</th><td>snežna odeja</td><th>0, 1</th><th>9</th></tr>
+</tbody>
+</table>
+<br/>
+Opomba: * Se ne opazuje več od leta 1991. V arhivu so vrednosti 0.
+</p>
+<p>
+V bazi so zapisani vsi dnevi. V primeru, da je v bazi dan, ko ni bilo padavin, je za padavine zapisana vrednost "-1". Enako velja za snežno odejo (skupno in novo) in za vodo v snegu, če se na postaji meri.<br/> 
+Če ni bilo pojava, je tam vrednost "0".<br/>
+Če ni katere od meritev, so na odgovarjajočih mestih zapisane manjkajoče vrednosti, ki so navedene v zgornji tabeli.
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>
+<hr/>
+<p>
+<a name="parametri_padavine"/>
+<h4>Padavinski dnevni parametri</h4>
+<table cellspacing="0">
+<tr><th width="150px">Zaporedna številka parametra</th><th width="220px">Opis parametra</th><th width="120px">Enota ali možne vrednosti</th><th width="50px">Manjkajoče vrednosti</th></tr>
+<tbody class="tbody_style">
+<tr><th>1</th><td>postaja</td><th><br/></th><th><br/></th></tr>
+<tr><th>2</th><td>leto</td><th><br/></th><th><br/></th></tr>
+<tr><th>3</th><td>mesec</td><th><br/></th><th><br/></th></tr>
+<tr><th>4</th><td>dan</td><th><br/></th><th><br/></th></tr>
+<tr><th>5</th><td>padavine</td><th>0.1 mm</th><th>-999</th></tr>
+<tr><th>6</th><td>oblika padavin</td><th>1 - 9</th><th>-9</th></tr>
+<tr><th>7</th><td>sneg - skupaj</td><th>cm</th><th>-9</th></tr>
+<tr><th>8</th><td>sneg - novi</td><th>cm</th><th>-9</th></tr>
+<tr><th colspan="4">pojavi</th></tr>
+<tr><th>9</th><td>dež, sneženje, dež s snegom</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>10</th><td>toča, slana, megla</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>11</th><td>ivje, sodra, babje pšeno</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>12</th><td>poledica, nevihta, viharni veter</td><th>0, 1-7</th><th>9</th></tr>
+<tr><th>13</th><td>snežna odeja, rosa</td><th>0, 1-4</th><th>9</th></tr>
+<tr><th colspan="4">interpolacije</th></tr>
+<tr><th>14</th><td>padavine</td><th>0, 1-8</th><th>9</th></tr>
+</tbody>
+</table>
+</p>
+<p>Pravila za številke pojavov so naslednja:</p>
+<p>
+V arhivu so samo dnevi, ko so bile padavine ali pa kakšen od pojavov. Če v datoteki dneva ni, to pomeni, da so opazovanja in meritve bila, vendar ta dan ni bilo niti padavin, 
+niti snežne odeje, niti kakšnega od naštetih pojavov. V kolikor ni v kakšnem mesecu nobenega podatka, v datoteki nobenega dneva za ta mesec, potem je to znak, da tisti 
+mesec postaja ni delovala. Če so opazovanja in meritve v določenem mesecu bila pa ni bilo padavin ali pojavov, potem je tisti mesec v  datoteki vsaj en dan z vrednostmi -1 
+(ni padavin) in 0 (ni pojava).  Če postaja ne opazuje pojavov, potem so namesto vrednosti 0 vrednosti 9. Če ne beleži oblike padavin pa namesto -1 vrednosti -9.
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>   
+<hr/>
+<p>
+<a name="parametri_sonce"/>
+<h4>Parametri trajanja sončnega obsevanja (urni podatki)</h4>
+<table cellspacing="0">
+<tr><th width="150px">Zaporedna številka parametra</th><th width="220px">Opis parametra</th><th width="120px">Enota ali možne vrednosti</th><th width="50px">Manjkajoče vrednosti</th></tr>
+<tbody class="tbody_style">
+<tr><th>1</th><td>postaja</td><th><br/></th><th><br/></th></tr>
+<tr><th>2</th><td>leto</td><th><br/></th><th><br/></th></tr>
+<tr><th>3</th><td>mesec</td><th><br/></th><th><br/></th></tr>
+<tr><th>4</th><td>dan</td><th><br/></th><th><br/></th></tr>
+<tr><th>5</th><td nowrap="true">traj. son. obsevanja (ura:04-05)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>6</th><td>traj. son. obsevanja (ura:05-06)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>7</th><td>traj. son. obsevanja (ura:06-07)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>8</th><td>traj. son. obsevanja (ura:07-08)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>9</th><td>traj. son. obsevanja (ura:08-09)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>10</th><td>traj. son. obsevanja (ura:09-10)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>11</th><td>traj. son. obsevanja (ura:10-11)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>12</th><td>traj. son. obsevanja (ura:11-12)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>13</th><td>traj. son. obsevanja (ura:12-13)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>14</th><td>traj. son. obsevanja (ura:13-14)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>15</th><td>traj. son. obsevanja (ura:14-15)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>16</th><td>traj. son. obsevanja (ura:15-16)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>17</th><td>traj. son. obsevanja (ura:16-17)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>18</th><td>traj. son. obsevanja (ura:17-18)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>19</th><td>traj. son. obsevanja (ura:18-19)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>20</th><td>traj. son. obsevanja (ura:19-20)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th>21</th><td>traj. son. obsevanja (ura:20-21)</td><th>ura/10</th><th>-9</th></tr>
+<tr><th colspan="4">interpolacije</th></tr>
+<tr><th>22</th><td>trajanje sončnega obsevanja</td><th><br/></th><th><br/></th></tr>
+</tbody>
+</table>
+<br/>
+Opomba: termin med 20-21 se sicer vnaša vendar se ne beleži v arhivu, ker je vrednost za Slovenijo nič.  
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>
+<hr/>
+<p>
+<a name="sifre_interpolacija"/>
+<h4>Šifre za označevanje interpolacij</h4>
+<ol>
+<li>
+<b>Klimatološki in padavinski podatki</b>
+<p>Od 1.12.1993 označujemo interpolacije(popravke), ki so v spodnjem spisku, v arhivu klimatoloških(KKD) in  padavinskih(PPD) podatkov.</p>
+<table cellspacing="0">
+<tr><th>Oznaka</th><th>Pomen</th></tr>
+<tbody class="tbody_style">
+<tr><th>0</th><td>merjena vrednost</td></tr>
+<tr><th>1</th><td>subjektivni popravek podatka glede na okoliške postaje</td></tr>
+<tr><th>2</th><td>klima:izračunana temperatura mokrega termometra iz podatka o relativni vlagi po Hg</td></tr>
+<tr><th>3</th><td>klima:popravljena prečitana vlaga po Hg in potem izračunan TM</td></tr>
+<tr><th>4</th><td>popravek podatka glede na instument na postaji RR-Og</td></tr>
+<tr><th>5</th><td>subjektivni popravek podatka v časovni vrsti- glede na sosednje termine na postaji</td></tr>
+<tr><th>6</th><td>interpolacijo parametra po drugem parametru (npr. višina snega po količini 	padavin in obratno)</td></tr>
+<tr><th>7</th><td>premik podatka v drug dan (označena sta oba dneva-izjemoma tudi trije, ki so bili po oceni kontrole zamenjani)</td></tr>
+<tr><th>8</th><td>objektivna interpolacija padavin po Shearmanovi metodi</td></tr>
+<tr><th>9</th><td>manjkajoča vrednost</td></tr>
+</tbody>
+</table>
+<br/>Opomba: 2 in 3 sta prosti oznaki za vse parametre, razen za TM7, TM14, TM21.<br/><br/>
+</li>
+<li>
+<b>Podatki za trajanje sončnega obsevanja</b>
+<p>S  1.12.1993 velja naslednji sistem:</p>
+<table cellspacing="0">
+<tr><th>Oznaka</th><th>Pomen</th></tr>
+<tbody class="tbody_style">
+<tr><th>00</th><td>Merjene vrednosti</td></tr>
+<tr><th>X1</th><td>Subjektivno popravljeno glede na sosednje postaje</td></tr>
+<tr><th>X2</th><td>Objektivno popravljeno glede na sosednje postaje</td></tr>
+<tr><th>X3</th><td>Subjektivno popravljeno glede na drug parameter na postaji</td></tr>
+<tr><th>X4</th><td>Objektivno popravljeno glede na drug parameter na postaji (globalno, difuzno sevanje, oblačnost)</td></tr>
+<tr><th>X5</th><td>Subjektivno odpravljanje ovir</td></tr>
+<tr><th>X6</th><td>Objektivno odpravljanje ovir</td></tr>
+<tr>
+<td colspan="2" style="padding:10px;padding-left:20px">
+X ... oznaka za ČASOVNI INTERVAL v dnevu, v katerem je bila interpolacija narejena<br/><br/>
+X = 1 v času med 4. in 10. uro<br/>
+X = 2 v času med 10. in 15. uro<br/>
+X = 3 v času med 15. in 20. uro<br/>
+X = 4 v času med 4. in 10. uro in v času med 15. in 20. uro<br/>
+X = 5 cel dan
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</p>
+<p class="top_style"><a href="#top">Na vrh</a></p>   
+<hr/>    
+<p>
+<a name="kriteriji"/>
+<h4>Kriteriji za kontrolo klimatoloških in padavinskih  podatkov</h4>
+</p>
+<p>Seznam številk kriterijev po parametrih:
+<table cellspacing="0" class="kriteriji_style">
+<tr><td>I.</td><td>ZRAČNI PRITISK: 1 - 5, <span>148</span>, <span>152</span>, 166 </td></tr>
+<tr><td>II.</td><td>TEMPERATURNI EKSTREMI (Tmax, Tmin): 6, 7, 8, 9, 10, 11, 12, 13, (14), 15, 16, (90), (96), (97), (106), (115), (116), (118), (119), (122), (123), (123J), 133, 134, <span>149</span>, <span>152</span>, 158, 167, 168, 178, 179 </td></tr>
+<tr><td>III.</td><td>TEMPERATURA ZRAKA NA 5 CM: 8, (115), (116), (118), (122), 133, 134, 139 - 141, <span>149</span>, <span>152</span>, 169</td></tr>
+<tr><td>IV.</td><td>SUHI IN MOKRI TERMOMETER: (6 - 8), 9 - 14, (15, 16), 17 - 36, 38 - 44, (49 - 51), (68, 69), (115), (139 - 141), <span>149</span>, 150, <span>152</span>, 178, 179</td></tr>
+<tr><td>V.</td><td>RELATIVNA VLAGA ZRAKA: 45 - 51, 135 - 137, 151 </td></tr>
+<tr><td>VI.</td><td>VETER: 52 - 63J, (122), 124 - 125JC, 145, 145J, 170 - 171J</td></tr>
+<tr><td>VII.</td><td>STANJE TAL: 64 - 72, 86, 87, (115), (119), 128, 172</td></tr>
+<tr><td>VIII.</td><td>VIDNOST: 73 - 75, 113, 114, 173</td></tr>
+<tr><td>IX.</td><td>TRAJANJE SONČNEGA OBSEVANJA: 37, 79, 80, <span>152</span>, 175</td></tr>
+<tr><td>X.</td><td>OBLAČNOST: (37), 129 - 131, (133), (134), 174 </td></tr>
+<tr><td>XI.</td><td>PADAVINE: 76 - 78, 81 - 85A, 120, <span>152</span>, 160, 161</td></tr>
+<tr><td>XII.</td><td>SNEG: (8),86 - 93, (94), 98, 110, 112, 126, 127, (134), (141), 154, (155), (156), 157, 159, 162 – 165</td></tr>        
+<tr><td>XIII.</td><td>MNOŽINA VODE V SNEGU: 94, 95, 111, 132, 138, 156, 157</td></tr>
+<tr><td rowspan="8">XIV.</td><td>POJAVI: <span>153</span>, 177 in vsi spodnji posamezno </td></tr>        
+<tr><td style="padding-left:15px">PADAVINSKI: 82, 96, 97, 99 - 109, <span>153</span></td></tr>
+<tr><td style="padding-left:15px">ROSA, SLANA: 115, 116, <span>153</span></td></tr>
+<tr><td style="padding-left:15px">POLEDICA: 118, 119, <span>153</span></td></tr>
+<tr><td style="padding-left:15px">IVJE: 121 - 123J, <span>153</span></td></tr>
+<tr><td style="padding-left:15px">IZREDNI POJAVI: 142, 143, <span>153</span>, 177</td></tr>
+<tr><td style="padding-left:15px">SNEŽNA ODEJA: 126 - 128, 142, <span>153</span></td></tr>
+<tr><td style="padding-left:15px">PRAŠNI VRTINEC: 117</td></tr>        
+<tr><td>XV.</td><td>INTERPOLACIJA: 152, 176</td></tr>
+<tr><td colspan="2"><br/>Violična barva - grobe meje<br/>Kontrola v oklepaju: kontrola drugih spremenljivk, ki vsebuje tudi ta parameter (npr SNEG: (8) – kjer teče kontrola Tmin5)</td></tr>
+</table>
+</p>
+<br/>
+<p>Legenda:
+<table cellspacing="0" class="kriteriji_style">    
+<tr><td>PP</td><td>pritisk zraka  (mm Hg)</td></tr>
+<tr><td>VP</td><td>delni parni pritisk v zraku (mm Hg)</td></tr>
+<tr><td>Tmax</td><td>maksimalna temperatura zraka (oC)</td></tr>
+<tr><td>Tmin</td><td>minimalna temperatura zraka   (oC)</td></tr>   
+<tr><td>Tmin5</td><td>minimalna temperatura zraka na 5cm   (oC)</td></tr>
+<tr><td>T</td><td>temperatura suhega termometra   (oC)</td></tr>
+<tr><td>TM</td><td>temperatura mokrega termometra (oC)</td></tr>
+<tr><td>LED</td><td>šifra za led na krpici (0,1)</td></tr>
+<tr><td>U</td><td>relativna vlaga zraka po psihrometru (%)</td></tr>
+<tr><td>Uh</td><td>relativna vlaga zraka po higrografu (higrometru) (%)</td></tr>
+<tr><td>FF</td><td>hitrost vetra (m/s)</td></tr>
+<tr><td>JAK</td><td>jakost vetra (0 - 12)</td></tr>
+<tr><td>DD</td><td>smer vetra (0-32 enot)</td></tr>
+<tr><td>TLA</td><td>šifra za stanje tal (0-9)</td></tr>
+<tr><td>VID</td><td>šifra za vidnost (0-9)</td></tr>
+<tr><td>SON</td><td>trajanje sončnega obsevanaja (ure)</td></tr>
+<tr><td>OBL</td><td>stopnja oblačnosti (v desetinah neba)</td></tr>
+<tr><td>RR</td><td>višina padavin ob 7. uri (mm)</td></tr>
+<tr><td>Robl</td><td>šifra za obliko padavin (1-9) </td></tr>
+<tr><td>SS</td><td>višina skupnega snega ob 7. uri (cm)</td></tr>
+<tr><td>NS</td><td>višina novega snega ob 7. uri (cm)</td></tr>
+<tr><td>VODA</td><td>množina vode v snegu (mm)</td></tr>
+<tr><td>PRAVI DATUM</td><td>množica datumov, na katere se vpisuje množina vode v snegu</td></tr>
+<tr><td>P56</td><td>šifra za atmosferski pojav v stolpcu 56; enako so označeni vsi atmosferski pojavi še za stolpce 57 do 72</td></tr>
+<tr><td>(n)</td><td>podatek danes</td></tr>
+<tr><td>(n-1)</td><td>podatek včeraj</td></tr>
+<tr><td>(n,n-1)</td><td>podatek danes ali včeraj</td></tr>
+<tr><td>A</td><td>pomožna konstanta, ki jo po potrebi pri vsakem kriteriju posebej določimo</td></tr>
+<tr><td>//</td><td>zakomentirana stara kontrola</td></tr>
+<tr><td colspan="2"><br/>Za vse parametre, ki so vezani na merjenja in opazovanja na tri termine dnevno, stoji za oznako za parameter v podpisu vedno ura, na katero se podatek nanaša, kot na primer T7, kar pomeni temperatura suhega termometra  ob 7. uri.</td></tr>
+<tr><td colspan="2"><br/>Nadalje se v oklepaju označi dan, za katerega velja določen podatek, kot na primer T7(n), kar pomeni temperatura suhega termometra danes ob 7. uri.</td></tr>
+<tr><td colspan="2"><br/>MAX(T7(n),T14(n)) oznaka pomeni, da velja maksimalna vrednost izmed obeh temperatur v oklepaju.</td></tr>
+</table>
+</p>  
+<p class="top_style"><a href="#top">Na vrh</a></p>   
+
+<a name="kriteriji_seznam"/>
+<h4>SEZNAM KRITERIJEV PO ŠTEVILKAH</h4>
+<pre>
+1        Prevelika razlika pritiska med dvema zaporednima terminoma. Opozorilo, če je |PP21(n-1) - PP7(n)| &gt; 15 mm.
+
+2        Prevelika razlika med tendencama pritiska ponoči in dopoldne. Opozorilo, če je |2 * PP7(n) - PP14(n) - PP21(n-1)| &gt; 8 mm.
+
+3        Prevelika razlika pritiska med dvema zaporednima terminoma. Opozorilo, če je |PP14(n) - PP7(n)| &gt; 15 mm.
+
+4        Prevelika razlika med tendencama pritiska čez dan. Opozorilo, če je |2 * PP14(n) - PP7(n) - PP21(n)| &gt; 6 mm.
+
+5        Prevelika razlika pritiska med dvema zaporednima terminoma. Opozorilo, če je |PP21(n) - PP14(n)| &gt; 15 mm.
+
+<u>6</u>        <b>Maksimalna temperatura ne more biti nižja od večerne temperature. Napaka, če je Tmax(n) - T21(n-1) &lt; 0°C.</b>
+
+<u>7</u>        <b>Minimalna temperatura ne sme biti višja od večerne temperature. Napaka, če je T21(n-1) - Tmin(n) &lt; 0°C.</b>
+
+8        Minimalna temperatura na 5 cm je višja od minimalne, vendar ni megle ali novega snega ali ne kaže, da je minimum nastopil šele zvečer.
+          Pri meglenem vremenu ocenjujemo, da je lahko minimalna temperatura na 5 cm do 0.5°C višja od minimalne. 
+          Če pa je termometer na 5 cm prekrit z novim snegom, ocenjujemo, da je lahko razlika do 1.5°C.
+       
+          A = Tmin5(n) - Tmin(n)
+        
+          Opozorilo, če sta hkrati izpolnjena naslednja pogoja: 
+          1. če je A &gt; 0.5°C in hkrati T21(n) - Tmin(n) &gt; 2.5°C in 
+          2. če je ali (1.5°C &gt;= A &gt; 0.5°C in NS(n) &lt; 0) ali (A &gt; 1.5°C).
+       
+          (Opomba: opozorilo za razliko A v negativno smer je v napaki 133).
+
+<u>9</u>        <b>Temperatura ob 7. uri ne more biti višja od maksimalne. Napaka, če je T7(n) - Tmax(n) &gt; 0°C.</b>
+
+<u>10</u>       <b>Temperatura ob 7. uri ne more biti nižja od minimalne. Napaka, če je T7(n) - Tmin(n) &lt; 0°C.</b>
+
+<u>11</u>       <b>Temperatura ob 14. uri ne more biti višja od maksimalne. Napaka, če je T14(n) - Tmax(n) &gt; 0°C.</b>
+
+<u>12</u>       <b>Temperatura ob 14. uri ne more biti nižja od minimalne. Napaka, če je T14(n) - Tmin(n) &lt; 0°C.</b>
+
+<u>13</u>       <b>Temperatura ob 21. uri ne more biti višja od maksimalne. Napaka, če je T21(n) - Tmax(n) &gt; 0°C.</b>
+
+<u>14</u>       <b>Temperatura ob 21. uri ne more biti nižja od minimalne. Napaka, če je T21(n) - Tmin(n) &lt; 0°C.</b>
+
+15       Opozorilo, če je maksimalna temperatura za več kot 5.0°C višja od terminskih temperatur, razen če se nenadoma 
+           ohladi zaradi padavin (plohe ali dežja). V primeru, da je bila ta dan ploha ali dež, je lahko ta razlika do 8.0°C.
+        
+           A = Tmax(n) - MAX (T21(n-1), T7(n), T14(n), T21(n))
+        
+           Opozorilo, če je izpolnjen eden od pogojev:
+           1. če je A &gt;= 8.0°C ali 
+           2. če je 8.0°C &gt; A &gt;= 5.0°C in hkrati P54(n) != (1,3,4,5,7). 
+
+16       Opozorilo je, če je minimalna temperatura več kot za razliko A nižja od terminskih temperatur. V spomladanskih in poletnih mesecih, 
+           ko sonce zgodaj vzhaja, so lahko razlike večje.
+         
+           Opozorilo, če je MIN(T21(n-1), T7(n), T14(n), T21(n)) - Tmin(n) &gt; A.         
+         
+           Za mesece 1, 2, 10, 11, 12 velja A = 6.0°C, za mesece 3, 4, 9 velja A = 8.0°C, za mesece 5, 6, 7, 8 velja A = 9.0°C.
+
+<u>17</u>       <b>Če ni ledu na krpici, mokri termometer ob 7. uri ne more biti višji od suhega.  
+           Napaka, če je LED7(n) = 0 in hkrati TM7(n) - T7(n) &gt; 0°C.</b>
+
+<u>18</u>       <b>Če ni ledu na krpici, mokri termometer ob 14. uri ne more biti višji od suhega. 
+           Napaka, če je LED14(n) = 0 in hkrati TM14(n) - T14(n) &gt; 0°C.</b>
+
+<u>19</u>       <b>Če ni ledu na krpici, mokri termometer ob 21. uri ne more biti višji od suhega. 
+           Napaka, če je LED21(n) = 0 in hkrati TM21(n) - T21(n) &gt; 0°C.</b>
+
+20       Pri temperaturah pod 0°C je razlika med suhim in mokrim termometrom ob 7. uri prevelika (prevelik deficit mokrega termometra). 
+           Dovoljeno odstopanje R smo ocenili pri temperaturah pod -20.0°C kot konstantno, od -20.0°C do 0°C pa raste linearno 
+           odvisno od temperature do vrednosti 5.0°C.
+          
+           A = T7(n) - TM7(n) 
+           
+           Če je T7(n) &lt; -20.0 °C, je R = 1.0°C. 
+           Če je T7(n) &gt;= -20.0 °C, je R = 0.2 * T7(n) + 5.0°C.
+         
+           Opozorilo, če je T7(n) &lt; 0.0°C in hkrati A &gt; R.
+
+21       14. ura glede na definicije pod točko 20.
+
+22       21. ura glede na definicije pod točko 20.
+
+23       Prevelika razlika med spremembama suhega in mokrega termometra včeraj ob 21. uri in danes ob 7. uri.
+  
+           D1 = T21(n-1) - T7(n)
+           D2 = TM21(n-1) - TM7(n)
+         
+           Opozorilo, če je |D1-D2| &gt; 6.0°C.
+
+24       Prevelika razlika med spremembama suhega in mokrega termometra danes med 7. in 14. uro (pri amplitudi suhega 
+           termometra več kot 10.0°C).
+
+           D1 = T7(n) - T14(n)
+           D2 = TM7(n) - TM14(n)
+         
+          Opozorilo, če je |D1| &gt;= 10.0°C in |D1-D2| &gt; 11.0°C.
+
+25       Prevelika razlika med spremembama suhega in mokrega termometra danes med 7. in 14. uro (pri amplitudi suhega 
+           termometra manj kot 10.0°C).
+
+           D1 = T7(n) - T14(n)
+           D2 = TM7(n) - TM14(n)
+         
+           Opozorilo, če je izpolnjen eden od pogojev: 
+           1. če je |D1| &lt; 5.0°C in |D1-D2| &gt; 5.5°C ali 
+           2. če je 5.0°C &lt;= |D1| &lt; 10.0°C in |D1-D2| &gt; |D1| * 1.1.
+
+26       Prevelika razlika med spremembama suhega in mokrega termometra danes med 14. in 21. uro (pri amplitudi suhega 
+           termometra več kot 10.0°C).
+
+           D1 = T14(n) - T21(n)
+           D2 = TM14(n) - TM21(n)
+         
+          Opozorilo, če je |D1| &gt;= 10.0°C in |D1-D2| &gt; 11°C.
+
+27       Prevelika razlika med spremembama suhega in mokrega termometra danes med 14. in 21. uro (pri amplitudi suhega 
+           termometra manj kot 10.0°C).
+
+           D1 = T14(n) - T21(n)
+           D2 = TM14(n) - TM21(n)
+        
+           Opozorilo, če je izpolnjen eden od pogojev: 	
+           1. če je |D1| &lt; 5.0°C in |D1-D2| &gt; 5.5°C ali 
+           2. če je 5.0°C &lt;= |D1| &lt; 10.0°C in |D1-D2| &gt; |D1| * 1.1.
+
+28       Mokri termometer ob 7. uri je nižji od -5.0°C in ni ledu na krpici. Opozorilo, če je TM7(n) &lt; -5.0°C in LED7(n) = 0.
+
+29       Mokri termometer ob 14. uri je nižji od -5.0°C in ni ledu na krpici. Opozorilo, če je TM14(n) &lt; -5.0°C in LED14(n) = 0.
+
+30       Mokri termometer ob 21. uri je nižji od -5.0°C in ni ledu na krpici. Opozorilo, če je TM21(n) &lt; -5.0°C in LED21(n) = 0.
+
+<u>31</u>       <b>Led je na krpici, mokri termometer ob 7. uri pa je višji ali enak 0.0°C. Napaka, če je LED7(n) = 1 in TM7(n) &gt;= 0°C.</b>
+
+<u>32</u>       <b>Led je na krpici, mokri termometer ob 14. uri pa je višji ali enak 0.0°C. Napaka, če je LED14(n) = 1 in TM14(n) &gt;= 0°C.</b>
+
+<u>33</u>       <b>Led je na krpici, mokri termometer ob 21. uri pa je višji ali enak 0.0°C. Napaka, če je LED21(n) = 1 in TM21(n) &gt;= 0°C.</b>
+
+<u>34</u>       <b>Led je na krpici, mokri termometer ob 7. uri je višji od suhega, vendar preveč.
+     
+           LED7(n) = 1        
+           A = TM7(n) - T7(n)
+       
+           Kontroliramo primere, ko je A &gt; 0.0°C.
+           Napaka je: 
+           1. če je A &gt; 0.0°C in T7(n) &gt; -1.6°C ali 
+           2. če je A &gt; 0.1°C in T7(n) &gt; -4.1°C ali 
+           3. če je A &gt; 0.2°C in T7(n) &gt; -7.8°C ali 
+           4. če je A &gt; 0.3°C.</b>
+
+<u>35</u>       <b>Led je na krpici, mokri termometer ob 14. uri je višji od suhega, vendar preveč. Za 14. uro so enaki kriteriji kot pri 34. točki.</b>
+
+<u>36</u>       <b>Led je na krpici, mokri termometer ob 21. uri je višji od suhega, vendar preveč. Za 21. uro so enaki kriteriji kot pri 34. točki.</b>
+
+<u>37</u>       <b>Dan je precej jasen, število ur sonca pa je 0.
+    
+           I = OBL7(n)+ OBL14(n)+ OBL21(n)
+        
+           Napaka, če je SON(n) = 0 in I &lt; 10.</b>
+
+<u>38</u>       <b>Manjka podatek za temperaturo mokrega termometra ob 7. uri ali podatek za led ob 7. uri preveč. 
+           Napaka, če velja TM7(n) = -999 in LED7(n) = 0 ali 1.
+           Če podatka za temperaturo mokrega termometra ne napišemo, se v bazo vpiše vrednost -999 (opozorilo 43).</b>
+
+<u>38A</u>     <b>Manjka podatek za led ob 7. uri ali podatek za temperaturo mokrega termometra ob 7. uri preveč.
+           Napaka, če velja velja LED7(n) = 9 in TM7(n) &gt;= -50.0°C in TM7(n) &lt;= 50.0°C.
+           Če podatka za led ne napišemo, se v bazo vpiše vrednost 9 (opozorilo 44).</b>
+
+<u>39</u>       <b>Manjka podatek za temperaturo mokrega termometra ob 14. uri ali podatek za led ob 14. uri preveč. 
+           Napaka, če velja TM14(n) = -999 in LED14(n) = 0 ali 1.
+           Če podatka za temperaturo mokrega termometra ne napišemo, se v bazo vpiše vrednost -999 (opozorilo 43).</b>					 
+
+<u>39A</u>     <b>Manjka podatek za led ob 14. uri ali podatek za temperaturo mokrega termometra ob 14. uri preveč.
+           Napaka, če velja velja LED14(n) = 9 in TM14(n) &gt;= -50.0°C in TM14(n) &lt;= 50.0°C.
+           Če podatka za led ne napišemo, se v bazo vpiše vrednost 9 (opozorilo 44).</b>
+					 
+<u>40</u>       <b>Manjka podatek za temperaturo mokrega termometra ob 21. uri ali podatek za led preveč. 
+           Napaka, če velja TM21(n) = -999 in LED21(n) = 0 ali 1.
+           Če podatka za temperaturo mokrega termometra ne napišemo, se v bazo vpiše vrednost -999 (opozorilo 43).</b>
+
+<u>41</u>       <b>Manjka podatek za led ob 21. uri ali podatek za temperaturo mokrega termometra ob 21. uri preveč.
+           Napaka, če velja velja LED21(n) = 9 in TM21(n) &gt;= -50.0°C in TM21(n) &lt;= 50.0°C.
+           Če podatka za led ne napišemo, se v bazo vpiše vrednost 9 (opozorilo 44).</b>
+					 
+42       Manjka podatek za temperaturo suhega termometra. Kadar ni podatka, se v bazo vpiše vrednost -999. 
+           Opozorilo, kadar se parameter meri in je T7(n) = -999 ali  T14(n) = -999 ali  T21(n) = -999.
+
+43       Manjka podatek za temperaturo mokrega termometra. Kadar ni podatka, se v bazo vpiše vrednost -999.
+           Opozorilo, kadar se parameter meri in je TM7(n) = -999 ali  TM14(n) = -999 ali  TM21(n) = -999.
+
+44       Manjka podatek za led na krpici. Kadar ni podatka, se v bazo vpiše vrednost 9. 
+           Opozorilo, kadar se parameter meri in je LED7(n) = 9 ali LED14(n) = 9 ali LED21(n) = 9.
+
+45       Manjka podatek za relativno vlago po higrografu. Kadar ni podatka, se v bazo vpiše vrednost -9. 
+           Opozorilo, kadar se parameter meri in je Uh7(n) = -9 ali Uh14(n) = -9 ali Uh21(n) = -9.
+
+<u>46</u>       <b>Relativna vlaga po psihrometru ob 7. uri je &lt;= 10% (0%) ali &gt; 100%, za višinske postaje je spodnja meja kontrole &gt;= 0%. 
+           Napaka, če je 10% &gt;= U7(n) ali U7(n) &gt; 100 %. 
+           Za postaje 3-Krvavec, 48-Kredarica in 437-Vogel je napaka, če je 0% &gt;= U7(n) ali U7(n) &gt; 100 %.</b>
+
+<u>47</u>       <b>Relativna vlaga po psihrometru ob 14. uri je &lt;= 10% ali &gt; 100%, za višinske postaje je spodnja meja kontrole &lt;= 0%.
+           Napaka, če je 10% &gt;= U14(n) ali U14(n) &gt; 100 %. 
+           Za postaje 3-Krvavec, 48-Kredarica in 437-Vogel je napaka, če je 0% &gt;= U14(n) ali U14(n) &gt; 100 %.</b>
+
+<u>48</u>       <b>Relativna vlaga po psihrometru ob 21. uri je &lt;= 10% ali &gt; 100%, za višinske postaje je spodnja meja kontrole &lt;= 0%. 
+           Napaka, če je 10% &gt;= U21(n) ali U21(n) &gt; 100 %. 
+           Za postaje 3-Krvavec, 48-Kredarica in 437-Vogel je napaka, če je 0% &gt;= U21(n) ali U21(n) &gt; 100 %.</b>
+
+49       Prevelika razlika med relativno vlago po psihrometru in higrografu (higrometru) ob 7. uri.
+           Opozorilo, če je 
+           1. T7(n) &gt; -10.0°C in |U7(n) - Uh7(n)| &gt;= 5% + 160/(30+T7(n)) ali 
+           2. T7(n) &lt;= -10.0°C in |U7(n) - Uh7(n)| &gt;= 20%.
+
+           Opozorilo velja za kontrolo podatkov od 1. 1. 1992 dalje, ker so starejši podatki čitani po higrometru, ki je bil nezanesljiv.
+
+50       Prevelika razlika med relativno vlago po psihrometru in higrografu (higrometru) ob 14. uri. 
+           Opozorilo, če je 
+           1. T14(n) &gt; -10.0°C in |U14(n) - Uh14(n)| &gt;= 5% + 160/(30+T14(n)) ali 
+           2. T14(n) &lt;= -10.0°C in |U14(n) - Uh14(n)| &gt;= 20%.
+
+           Opozorilo velja za kontrolo podatkov od 1.1.1992 dalje, ker so starejši podatki čitani po higrometru, ki je bil nezanesljiv.
+
+51       Prevelika razlika med relativno vlago po psihrometru in higrografu (higrometru) ob 21. uri.
+           Opozorilo, če je 
+           1. T21(n) &gt; -10.0°C in |U21(n) - Uh21(n)| &gt;= 5% + 160/(30+T21(n)) ali 
+           2. T21(n) &lt;= -10.0°C in |U21(n) - Uh21(n)| &gt;= 20%.
+           
+           Opozorilo velja za kontrolo podatkov od 1.1.1992 dalje, ker so starejši podatki čitani po higrometru, ki je bil nezanesljiv.
+
+<u>52</u>       <b>Napačna šifra za smer vetra ob 7. uri. Napaka, če DD7(n) &lt; 0, ali DD7(n) &gt; 32 ali če DD7(n) ni sodo število.</b>
+
+<u>53</u>       <b>Napačna šifra za smer vetra ob 14. uri. Napaka, če DD14(n) &lt; 0, ali DD14(n) &gt; 32 ali če DD14(n) ni sodo število.</b>
+
+<u>54</u>       <b>Napačna šifra za smer vetra ob 21. uri. Napaka, če DD21(n) &lt; 0 ali DD21(n) &gt; 32 ali če DD21(n) ni sodo število.</b>
+
+55       Hitrost vetra ob 7. uri je večja kot 13.8m/s (24.5m/s).
+           Opozorilo, če je FF7(n) &gt; 13.8 m/s. 
+           Opozorilo za višinske postaje 3-Krvavec, 48-Kredarica in 437-Vogel, če je FF7(n) &gt; 24.5 m/s.
+
+55J      Jakost vetra ob 7. uri je večja ali enaka 7 (10).
+           Opozorilo, če je JAK7(n) &gt;= 7. 
+           Opozorilo za višinske postaje  3-Krvavec, 48-Kredarica in 437-Vogel, če je JAK7(n) &gt;= 10.
+
+56       Hitrost vetra ob 14. uri je večja kot 13.8m/s (24.5 m/s).
+           Opozorilo, če je FF14(n) &gt; 13.8 m/s. 
+           Opozorilo za višinske postaje  3-Krvavec, 48-Kredarica in 437-Vogel, če je FF14(n) &gt; 24.5 m/s.
+
+56J      Jakost vetra ob 14. uri je večja ali enaka 7 (10).
+           Opozorilo, če je JAK14(n) &gt;= 7. 
+           Opozorilo za višinske postaje  3-Krvavec, 48-Kredarica in 437-Vogel, če je JAK14(n) &gt;= 10.
+
+57       Hitrost vetra ob 21. uri je večja kot 13.8m/s (24.5m/s). 	
+           Opozorilo, če je FF21(n) &gt; 13.8 m/s. 
+           Opozorilo za višinske postaje  3-Krvavec, 48-Kredarica in 437-Vogel, če je FF21(n) &gt; 24.5 m/s.
+
+57J      Jakost vetra ob 21. uri je večja ali enaka 7 (10).
+           Opozorilo, če je JAK21(n) &gt;= 7. 
+           Opozorilo za višinske postaje  3-Krvavec, 48-Kredarica in 437-Vogel, če je JAK21(n) &gt;= 10.
+
+<u>58</u>       <b>Ker je brezvetrje ob 7. uri, bi morala biti smer vetra 00. Napaka, če je FF7(n) = 0 in DD7(n) != 0.</b>
+
+<u>58J</u>      <b>Ker je brezvetrje ob 7. uri, bi morala biti smer vetra 00. Napaka, če je JAK7(n) = 0 in DD7(n) != 0.</b>
+
+<u>59</u>       <b>Ker je brezvetrje ob 14. uri, bi morala biti smer vetra 00. Napaka, če je FF14(n) = 0 in DD14(n) != 0.</b>
+
+<u>59J</u>      <b>Ker je brezvetrje ob 14. uri, bi morala biti smer vetra 00. Napaka, če je JAK14(n) = 0 in DD14(n) != 0.</b>
+
+<u>60</u>       <b>Ker je brezvetrje ob 21. uri, bi morala biti smer vetra 00. Napaka, če je FF21(n) = 0 in DD21(n) != 0.</b>
+
+<u>60J</u>      <b>Ker je brezvetrje ob 21. uri, bi morala biti smer vetra 00. Napaka, če je JAK21(n) = 0 in DD21(n) != 0.</b>
+
+<u>61</u>       <b>Ker je smer vetra ob 7. uri 00, bi morala biti hitrost 0.0 m/s. Napaka, če je DD7(n) = 0  in FF7(n) != 0.</b>
+
+<u>61J</u>      <b>Ker je smer vetra ob 7. uri 00, bi morala biti jakost 0. Napaka, če je DD7(n) = 0 in JAK7(n) != 0.</b>
+
+<u>62</u>       <b>Ker je smer vetra ob 14. uri 00, bi morala biti hitrost 0.0 m/s. Napaka, če je DD14(n) = 0 in FF14(n) != 0.</b>
+
+<u>62J</u>      <b>Ker je smer vetra ob 14. uri 00, bi morala biti jakost 0. Napaka, če je DD14(n) = 0 in JAK14(n) != 0.</b>
+
+<u>63</u>       <b>Ker je smer vetra ob 21. uri 00, bi morala biti hitrost 0.0 m/s. Napaka, če je DD21(n) = 0 in FF21(n) != 0.</b>
+
+<u>63J</u>      <b>Ker je smer vetra ob 21. uri 00, bi morala biti jakost 0. Napaka, če je DD21(n) = 0 in JAK21(n) != 0.</b>
+
+<u>64</u>       <b>Šifra za stanje tal ob 7. uri ne more biti manjša od 0 ali večja od 9. Napaka, če je 9 &lt; TLA7(n) in TLA7(n) &lt; 0.</b>
+
+<u>65</u>       <b>Šifra za stanje tal ob 14. uri ne more biti manjša od 0 ali večja od 9. Napaka, če je 9 &lt; TLA14(n) in TLA14(n) &lt; 0.</b>
+
+<u>66</u>       <b>Šifra za stanje tal ob 21. uri ne more biti manjša od 0 ali večja od 9. Napaka, če je 9 &lt; TLA21(n) in TLA21(n) &lt; 0.</b>
+
+67       Pri pozitivni temperaturi nad 3.0°C ob 7. uri tla ne morejo biti zmrznjena. Temperatura zraka na višini 2 metrov je lahko nekoliko 
+           pozitivna, kljub temu pa je zaradi radiacijskega ohlajanja ponoči temperatura pri tleh negativna in tla zato zmrznjena.
+           Opozorilo, če so TLA7(n) = 3 in T7(n) &gt; 3.0°C.
+
+68       Opozorilo, temperatura zraka ob 14. uri je previsoka, da bi bila tla lahko zmrznjena ali pa drug pogoj, če je temperatura ob 14. uri 
+           višja od 0°C in tla zjutraj ob 7. uri niso bila zmrznjena, tudi ob 14. uri ne morejo biti zmrznjena. 
+           Opozorilo, če so TLA14(n) = 3 in T14(n)> 3.0°C ali TLA14(n) = 3 in 3.0°C &gt;= T14(n) &gt; 0°C in TLA7(n) != 3.
+
+69       Pri pozitivni temperaturi nad 2.0°C ob 21. uri tla ne morejo biti zmrznjena. Ker se tla zvečer že radiacijsko ohlajajo, je na višini 
+           2 metrov temperatura še vedno lahko nekoliko pozitivna, tla pa so že zmrznjena. 
+           Opozorilo, če so TLA21(n) = 3 in T21(n) &gt; 2.0°C.
+
+70       Če so bila zvečer tla mokra, potem ob 7. uri ne morejo biti suha. Opozorilo, Če so TLA21(n-1) = 2 in TLA7(n) = 0.
+
+71       Če so bila tla ob 7. uri mokra, potem ob 14. uri ne morejo biti suha. Opozorilo, če so TLA7(n) = 2 in TLA14(n) = 0.
+
+72       Če so bila tla ob 14. uri mokra, potem ob 21. uri ne morejo biti suha. Opozorilo, če so TLA14(n) = 2 in TLA21(n) = 0.
+
+<u>73</u>       <b>Šifra za vidnost ob 7. uri ni v pravilnih mejah. Napaka, če je VID7(n) != -9 in VID7(n) &lt; 0 ali VID7(n) &gt; 9.</b>
+
+<u>74</u>       <b>Šifra za vidnost ob 14. uri ni v pravilnih mejah. Napaka, če je VID14(n) != -9 in VID14(n) &lt; 0 ali VID14(n) &gt; 9.</b>
+
+<u>75</u>       <b>Šifra za vidnost ob 21. uri ni v pravilnih mejah. Napaka, če je VID21(n) != -9 in VID21(n) &lt; 0 ali VID21(n) &gt; 9.</b>
+
+<u>76</u>       <b>Šifra za obliko padavin mora biti med 1 in 9 ali pa -1, če ni padavin. 
+           Napaka, če Robl(n) != -1 in (Robl(n) &lt; 1 ali Robl(n) &gt; 9).</b>       
+					 
+<u>77</u>       <b>Manjka podatek za višino padavin ali podatek za obliko padavin preveč. 
+           Napaka, če je RR(n) = -999 in Robl(n) != -9 in Robl(n) != 0 in (Robl(n) =  -1 ali Robl(n) &gt;= 1 in Robl(n) &lt;= 9). 
+           Če podatka za višino padavin ne napišemo, se v bazo vpiše vrednost -9 (opozorilo 160).</b>
+
+<u>78</u>       <b>Višina padavin ni v dovoljenih mejah. Napaka, če je RR(n) &lt; -1 in RR(n) != -999 ali RR(n) &gt; 900.0 mm.</b>
+
+<u>79</u>       <b>Število ur sončnega obsevanja je manjše od 0. Napaka, če je SON(n) &lt; 0 in SON(n) != -9.</b>
+
+<u>80</u>       <b>Prekoračeno trajanje sončnega obsevanja za ta dan. Napaka, če je SON(n) &gt; OMEJITEV (število ur na dan).
+
+           ure       9.4   10.6   13.0   14.0   15.5   16.0   16.0   14.5   13.0   11.5   10.0   8.5	
+           mesec  jan    feb     mar     apr     maj     jun      jul      avg     sep     okt     nov    dec</b>
+
+81       Višina padavin je večja od 100 mm. Opozorilo, če je RR(n) &gt; 100.0 mm.
+
+<u>82</u>       <b>Prejšnji dan so bili šifrirani pojavi od 54. do 58. stolpca, manjka pa višina padavin za včeraj ali danes. 
+           Napaka, če je P55(n-1) = (1-7) ali P54(n-1) = (1-7) ali P56(n-1) = (1-7) ali P57(n-1) = (1-7) ali P58(n-1) = (1,2,4-7)
+           in hkrati RR(n) &lt; 0 mm in RR(n-1) &lt; 0 mm.
+           Opozorilo, če postaja prejšnji dan ni delovala (ni nobenega idmm za to postajo) ali pa se ta ali prejšnji dan pojavi 
+           niso merili.</b>
+
+<u>83</u>       <b>Kadar je višina padavin večja od 0.0 mm, mora biti oblika padavin v pravih mejah. 
+           Napaka, če je RR(n)>0.0 mm in (Robl(n) &lt; 1 ali Robl(n) &gt; 8).</b>
+
+//PREJ <u>84</u>       <b>Napačna oblika padavin, kadar je višina 0.0 mm. Če je RR(n) = 0.0 mm in (Robl(n) &lt; 8 ali Robl(n) &lt; 9), je napaka.</b>
+
+<u>84</u>       <b>Napačna oblika padavin, kadar je višina 0.0 mm. Napaka, če je RR(n) = 0.0 mm in Robl(n) != 9.</b>
+
+<u>85</u>       <b>Manjka podatek za obliko padavin ali podatek za višino padavin preveč. 
+           Napaka, če je Robl(n) != -9 in RR(n) &gt;= -1.					 
+           Če podatka za obliko padavin ne napišemo, se v bazo vpiše vrednost -9 (opozorilo 161).</b>
+
+<u>85A</u>     <b>Napačna oblika padavin, kadar je višina padavin -1. Napaka, če je RR(n) = -1 in Robl(n) != -1.</b>
+
+<u>86</u>       <b>Kadar je višina skupne snežne odeje večja od 0 cm, mora biti šifra za stanje tal ob 7. uri enaka ali večja od 6. 
+           Napaka, če je SS(n) &gt; 0 cm in TLA7(n) &lt; 6.</b>
+
+<u>87</u>       <b>Kadar ni podatka o višini snežne odeje, mora biti šifra za stanje tal ob 7. uri manjša ali enaka 5. 
+           Napaka, če je SS(n) &lt;= 0 cm in TLA7(n) &gt; 5.
+           Komentar: če sneg pokriva več kot 50% površine tal, se višina skupnega snega zaokroži na 1 cm, tudi če ga izmerimo 
+           manj (npr. 0.5 cm).</b>
+
+<u>88</u>       <b>Višina novega snega ne more biti večja od skupne snežne odeje. Napaka, če je SS(n) &lt; NS(n).</b>
+
+<u>89</u>       <b>Kadar je višina novega snega večja ali enaka 0 cm, mora biti tudi višina padavin večja ali enaka 0.0 mm 
+           oziroma ne sme biti -1. Napaka, če je NS(n) &gt;= 0 cm in RR(n) = -1.</b>
+
+90       Višina novega snega je prevelika glede na temperature prejšnji dan. Tukaj primerjamo številčno vrednost višine padavin 
+           in višine novega snega. Samo pri suhem snegu je možno, da izda 1 mm padavin več kot  1 cm snega, torej morajo biti 
+           takrat nizke temperature. Opozorilo, če je NS(n) &gt; RR(n)+5.0 in (Tmax(n-1)+Tmin(n-1))/2 &gt; -3.0°C.
+
+<u>91</u>       <b>Kadar je šifra za obliko padavin 2 - 7, mora biti višina novega snega večja ali enaka 0 cm. 
+           Napaka, če je NS(n) &lt; 0 cm in 2 &lt;= Robl(n) &lt;= 7.</b>
+
+<u>92</u>       <b>Kadar je na voljo podatek o višini novega snega, mora biti šifra za obliko padavin od 2 - 7 ali 9. 
+           Napaka, če je NS(n) &gt;= 0 cm in Robl(n) != -9 in (Robl(n) &lt; 2 ali Robl(n) = 8).</b>
+
+<u>93</u>       <b>Skupna višina snežne odeje tega dne ne sme biti večja od vsote novozapadlega snega in skupne višine snežne 
+           odeje prejšnjega dne. Napaka, če je NS(n)+SS(n-1) &lt; SS(n).</b>
+
+<u>94</u>       <b>Manjka podatek o množini vode v snežni odeji, čeprav je skupna višina snežne odeje višja od 10 cm ter ustrezen 
+           datum meritve. Napaka, če je SS(n) &gt;= 10 cm in PRAVI DATUM in VODA(n) = -1, 
+           PRAVI DATUM = (5., 10., 15., 20., 25. in zadnjega v mesecu).</b>
+
+<u>95</u>       <b>Množina vode se ne meri, če je debelina snežne odeje manjša od 10 cm. Množina vode mora biti -1. 
+           Napaka, če je SS(n) &lt; 10 cm in VODA(n) &gt; -1.</b>
+					 
+96       Glede na maksimalno temperaturo je malo možnosti za dež, točo ali sodro. 
+           Opozorilo, če je Tmax(n) &lt; 0.5°C in (P54(n) = (1-7) ali P58(n) = (1,2,4-7)).
+
+<u>97</u>       <b>Za pojave v stolpcih od 55. do 57. je previsoka minimalna temperatura. 	
+           Napaka, če je (P55(n) = (1-7) ali P56(n) = (1-7) ali P57(n) = (1-7)) in Tmin(n) &gt; 5.0°C.</b>
+
+98       Kadar je šifra za obliko padavin 9 in so bile včeraj ali danes snežne padavine, mora biti podatek o višini novega snega včeraj ali 
+           danes 0 ali 1 cm. (Napaka je, če je snežilo danes do 7. ure). 	
+           Opozorilo, če je 
+           1. RRobl = 9 in hkrati 
+           2. (P55(n-1) = (3,5-7) ali P56(n-1) = (1-7) ali P57(n-1) = (1-7)) in 
+           3. (NS(n-1) &lt; 0 cm ali NS(n-1) &gt; 1 cm) ali (NS(n) &lt; 0 cm ali NS(n) &gt; 1 cm).
+
+99       Oblika padavin je RRobl(n) = 1 (tekoče padavine). Da ni napake, mora biti kombinacija šifer pri pojavih ta ali prejšnji dan naslednja:
+           P54(n,n-1) = (1-7) ali P55(n,n-1) = (1,2,4) ali P58(n,n-1) = (1,2,4).
+           Opozorilo, če postaja prejšnji dan ni delovala (ni nobenega idmm za to postajo) ali pa se ta ali prejšnji dan pojavi niso merili.
+
+100     Oblika padavin je RRobl(n) = 2 (trde padavine). Da ni napake, mora biti kombinacija šifer pri pojavih ta ali prejšnji dan naslednja:
+           P55(n,n-1) = (3) ali P56(n,n-1) = (1-7) ali P57(n,n-1) = (2).
+           Opozorilo, če postaja prejšnji dan ni delovala (ni nobenega idmm za to postajo) ali pa se ta ali prejšnji dan pojavi niso merili.
+
+101     Oblika padavin je RRobl(n) = 3 (mešane padavine). Da ni napake, mora biti kombinacija šifer pri pojavih ta ali prejšnji dan naslednja:
+           P57(n,n-1) = (1,3,5).
+           Opozorilo, če postaja prejšnji dan ni delovala (ni nobenega idmm za to postajo) ali pa se ta ali prejšnji dan pojavi niso merili.
+
+102     Oblika padavin je RRobl(n) = 4 (tekoče in trde padavine v različnem času). Da ni napake, mora biti kombinacija šifer pri pojavih ta ali 
+           prejšnji dan naslednja:
+           1. P55(n,n-1) = (5,6,7) tekoče in trde ali 
+           2. (P54(n,n-1) = (1-7) ali P55(n,n-1) = (1,2,4) ali P58(n,n-1) = (1,2,4)) tekoče in 
+               (P55(n,n-1) = (3) ali P56(n,n-1) = (1-7) ali P57(n,n-1) = (2)) trde.
+           Opozorilo, če postaja prejšnji dan ni delovala (ni nobenega idmm za to postajo) ali pa se ta ali prejšnji dan pojavi niso merili.
+
+103     Oblika padavin je RRobl(n) = 5 (tekoče in mešane padavine v različnem času). Da ni napake, mora biti kombinacija šifer pri pojavih 
+           ta ali prejšnji dan naslednja (pri primerjanju smo pri tekočih padavinah izpustili točo, ker praktično ni možna v kombinaciji s 
+           pojavom dež s snegom): 
+           P57(n,n-1) = (1,3,5) mešane in 
+           (P54(n,n-1) = (1-7) ali P55(n,n-1) = (1,2,4) ali P58(n,n-1) = (2)) tekoče.
+           Opozorilo, če postaja prejšnji dan ni delovala (ni nobenega idmm za to postajo) ali pa se ta ali prejšnji dan pojavi niso merili.
+
+104     Oblika padavin je RRobl(n) = 6 (trde in mešane padavine v različnem času). Da ni napake, mora biti kombinacija šifer pri pojavih ta ali 
+           prejšnji dan naslednja:
+           1. P57(n,n-1) = (4,6,7) mešane in trde ali 
+           2. P57(n,n-1) = (1,3,5) mešane in (P(55(n,n-1) = (3) ali P56(n,n-1) = (1-7)) trde.
+           Opozorilo, če postaja prejšnji dan ni delovala (ni nobenega idmm za to postajo) ali pa se ta ali prejšnji dan pojavi niso merili.
+
+105     Oblika padavin je RRobl(n) = 7 (tekoče, trde in mešane v različnem času). Da ni napake, mora biti kombinacija šifer za pojave ta ali 
+           prejšnji dan naslednja: 
+           (P54(n,n-1) = (1-7) ali P55(n,n-1) = (1,2,4) ali P58(n,n-1) = (1,2,4)) tekoče in 
+           1. (P55(n,n-1) = (3) in P57(n,n-1) = (1,3,5)) trde in mešane ali 
+           2. (P57(n,n-1) = (4,6,7)) trde in mešane ali 
+           3. (P56(n,n-1) = (1-7) ali P58(n,n-1) = (1,2,4)) trde in P57(n,n-1) = (1,3,5) mešane.
+           Opozorilo, če postaja prejšnji dan ni delovala (ni nobenega idmm za to postajo) ali pa se ta ali prejšnji dan pojavi niso merili.
+
+<u>106</u>     <b>Glede na minimalno temperaturo je malo možnosti za snežne padavine. 	
+           Opozorilo, če je Tmin(n) &gt; 2.0 °C in so ta dan snežne padavine s pojavi: P55(n) = (3) ali P56(n) = (1-7) ali P57(n) = (1-7).</b>
+
+<u>107</u>     <b>Kadar je višina padavin večja 0.3 mm, mora biti katerakoli šifra (1-9) pri atmosferskih pojavih v stolpcih 56,57,58,59,60 
+           prejšnji ali današnji dan. Napake ni, če je RR &gt; 0.3 mm in (P54(n,n-1) = (1-7) ali P55(n,n-1) = (1-7) ali P56(n,n-1) = (1-7) ali 
+           P57(n,n-1) = (1-7) ali P58(n,n-1) = (1,2,4-7)) vse vrste padavin.</b>
+
+//PREJ <u>108</u>     <b>Oblika padavin je RRobl(n) = 8 (padavine, ki nastanejo na zemeljski površini-rosa,slana,ivje,poledica,megla).</b> 
+//                    <b>Da ni napake, mora biti kombinacija šifer za pojave ta ali prejšnji dan naslednja:</b>
+//                    <b>P59(n,n-1) = (1,3,5) ali P61(n,n-1) = (1,2,4) ali P62(n,n-1) = (1) megla,zmrznjena m. rosa,slana poledica ali</b> 
+//                    <b>P63(n-1) = (1,2,4-7) ivje.</b>
+
+<u>108</u>     <b>Oblika padavin je RRobl(n) = 8 (padavine, ki nastanejo na zemeljski površini-rosa, slana, ivje, poledica, megla). 
+           Da ni napake, mora biti kombinacija šifer za pojave ta ali prejšnji dan naslednja: 	
+           P59(n,n-1) = (1-7) ali P60(n,n-1) = (1,3,5) ali P61(n,n-1) = (1-7) ali P62(n,n-1) = (1,2,4) megla,zmrznjena m., rosa,slana, 
+           poledica ali P63(n,n-1) = (1,2,4-7) ivje.
+           Opozorilo, če postaja prejšnji dan ni delovala (ni nobenega idmm za to postajo) ali pa se ta ali prejšnji dan pojavi niso merili.</b>
+
+108B   Kadar je oblika padavin 8, ne sme biti atmosferskih pojavov v stolpcih 54, 55, 56, 57, 58 prejšnji ali današnji dan.
+           Oblika padavin je RRobl(n) = 8. Da ni napake, mora biti kombinacija šifer za pojave ta ali prejšnji dan naslednja: 	
+           P54(n,n-1) = (0) in P55(n,n-1) = (0) in P56(n,n-1) = (0) in P57(n,n-1) = (0) in P58(n,n-1) = (0,3).
+
+<u>109</u>     <b>Oblika padavin je RRobl(n) = 9 in višina padavin je RR = 0.0 mm. 
+           Da ni napake, mora biti kombinacija šifer za pojave ta ali prejšnji dan naslednja: 
+           P54(n,n-1) = (1-7) ali P55(n,n-1) = (1-7) ali P56(n,n-1) = (1-7) ali P57(n,n-1) = (1-7) ali P58(n,n-1) = (1,2,4-7), vse 
+           vrste padavin.</b>
+
+<u>110</u>     <b>Višina skupne snežne odeje ni v dovoljenih mejah. 
+           Napaka, če je SS(n) &lt; -1  in SS(n) != -9 ali SS(n) &gt; A; zgornja meja A je odvisna od nadmorske višine:</b>
+<table cellspacing="0" class="kontrola110_style">
+<tr><td style="border-right-width:1px; border-bottom-width:1px">Nadmorska višina</td><td style="border-bottom-width:1px">Dovoljena meja</td></tr>
+<tr><td style="border-right-width:1px">h &lt; 500 m</td><td>300 cm</td></tr>
+<tr><td style="border-right-width:1px">500 m &lt;= h &lt; 1000 m</td><td>500 cm</td></tr>
+<tr><td style="border-right-width:1px">1000 m &lt;= h &lt; 1500 m</td><td>800 cm</td></tr>
+<tr><td style="border-right-width:1px">1500 m &lt;= h &lt; 2000 m</td><td>1000 cm</td></tr>
+<tr><td style="border-right-width:1px">2000 m &lt;= h &lt; 3000 m</td><td>1400 cm</td></tr>
+</table>
+
+<u>110A</u>   <b>Višina novozapadlega snega ni v dovoljenih mejah. Napaka, če je NS(n) &lt; -1 in NS(n) != -9 ali NS(n) &gt; 300 cm. </b>
+
+<u>111</u>     <b>Napačen podatek o množini vode v snežni odeji. Napaka, če je VODA(n) &lt; -1 in VODA(n) != -9. </b>
+
+112     Skupna snežna odeja je na hitro izginila, čeprav ni deževalo ali ni padal dež s snegom. 
+           Opozorilo, če je SS(n-1) - SS(n) &gt; 15 cm in (SS(n) = 0 ali SS(n) = -1) in ( P54(n) != (1-7) in P57(n != (1,3,5)).
+
+113     Šifra za vidnost je 3 ali manj, toda ni pojava megle in ni bilo padavin.
+           Opozorilo, če je VID7(n) ali VID14(n) ali VID21(n) &lt;= 3 in P59(n) != (1-7) in P54(n) != (1-7) in P56(n) != (1-7) in P57(n) != (1-7).
+
+114     Šifra za vidnost je med 4 in 6, toda ni pojava meglice, suhe motnosti ali ni bilo padavin. 
+           Opozorilo, če je 4 &lt;= VID7(n) &lt;= 6 ali 4 &lt;= VID14(n) &lt;= 6 ali 4 &lt;= VID21(n) &lt;= 6 in P60(n) != (1,2,4-7) in P54(n) != (1-7) in 
+           P56(n) != (1-7) in P57(n) != (1-7).
+
+115     Glede na temperaturo ob 7. uri, Tmin5 in temperaturo ob 21. uri in stanje tal ob 7. uri in 21. uri je malo verjetnosti za pojav rose.
+           Opozorilo, če je P61(n) = 1 in hkrati (TLA7(n) != (0,1,2) ali T7(n) &lt; 1.0°C ali Tmin5(n) &lt; -0.5°C)	
+           razen, če velja TLA21(n) = (0,1,2) in T21(n) &gt; 0°C in P61(n) = 1.
+
+116     Minimalni temperaturi sta za nastanek slane previsoki. Opozorilo,če je (Tmin(n) &gt; 5.0°C ali Tmin5(n) &gt; 0.0°C) in P61(n) = 2.
+
+117     Pojava peščenega ali prašnega vrtinca se ne meri. Opozorilo, če P65(n) = (3,5,7). 
+           Opozorilo je samo za podatke po 1.1.1991, saj se je pred tem datumom ta pojav meril.
+
+118     Neskladje med minimalno temperaturo, minimalno temperaturo na 5cm in šifro za poledico.
+           Opozorilo, če je (Tmin(n) &gt; 1.0°C ali Tmin5(n) &gt; 0°C) in P62(n) = (1-7).
+
+119     Šifra za stanje tal ne ustreza šifri za poledico. Napaka, če je TLA7(n) ali TLA14(n) ali TLA21(n) != 4 in P62(n) = (1-7).
+
+<u>120</u>     <b>Napačna višina talnih padavin, če je oblika padavin 8. Napaka, če so talne padavine = 0.0 mm ali &gt; 0.3 mm.</b>
+
+121     Minimalna temperatura je previsoka za nastanek ivja (megla je).
+           Opozorilo, če je P63(n) = (1,4) in Tmin(n) &gt; -3.0°C  (ivje) in (P59(n-1) = (1-7) ali P59(n) = (1-7) megla je).
+
+122     Minimalna temperatura na 5cm je previsoka za nastanek ivja (megle ni).
+           Opozorilo, če je P63(n) = (1,4) in Tmin5(n) &gt; -6.0°C in Tmin(n) &gt; -3.0°C  (ivje) in P59(n-1) = 0 in P59(n) = 0  megle ni.
+
+123     Pogoji za nastanek trdega ivja niso izpolnjeni (minimalna temperatura, megla, terminski veter večji ali enak 5.5 m/s ali pojav močnega 
+           vetra pri atmosferskih pojavih).
+           Opozorilo, če je P63(n) = (2,4) trdo ivje in hkrati   
+           1. Tmin(n) &gt; 0°C ali 
+           2. P59(n) = 0 ali 
+           3. (P65(n) != (1,4) in FF7(n) &lt; 5.5 m/s in FF14(n) &lt; 5.5 m/s in FF21(n) &lt; 5.5 m/s).
+
+123J    Pogoji za nastanek trdega ivja niso izpolnjeni  (minimalna temperatura, megla, terminski veter večji ali enak 4 Beauforte ali pojav 
+           močnega vetra pri atmosferskih pojavih).
+           Opozorilo, če je P63(n) = (2,4) trdo ivje in hkrati   
+           1. Tmin(n) &gt; 0°C ali 
+           2. P59(n) = 0 ali 
+           3. (P65(n) != (1,4) in JAK7(n) &lt;= 4 in JAK14(n) &lt;= 4 in JAK21(n) &lt;= 4).
+
+//PREJ 124     Pojav močnega vetra je, v nobenem od terminov pa ni hitrost vetra dosegala 6 ali 8 Beaufortov. (Močan 
+//                   veter je bil lahko ta dan med klimatološkimi termini, vendar je treba preveriti v originalnem zapisu, ker lahko 
+//                   pride do napake pri vnosu).
+//                   Opozorilo, če je P65(n) = 1 in (FF7(n) &lt; 10.8 m/s ali FF14(n) &lt; 10.8 m/s ali FF21(n) &lt; 10.8 m/s) ali 
+//                   P65(n) = 4 in (FF7(n) &lt; 18.9 m/s ali FF14(n) &lt; 18.9 m/s ali FF21(n) &lt; 18.9 m/s)
+
+124     Pojav močnega vetra je, v nobenem od terminov pa hitrost vetra ni dosegala 10.8 m/s (močan veter je bil lahko ta dan med 
+           klimatološkimi termini, vendar je treba preveriti v originalnem zapisu, ker lahko pride do napake pri vnosu). 
+           Opozorilo, če je P65(n) = (1) in (FF7(n) = -9 ali FF7(n) &lt; 10.8 m/s) in (FF14(n) = -9 ali FF14(n) &lt; 10.8 m/s) in (FF21(n) = -9 ali FF21(n) &lt; 10.8 m/s). 
+
+124A   Pojav viharnega vetra je, v nobenem od terminov pa ni hitrost vetra dosegala 17.2 m/s (viharni veter je bil lahko ta dan med 
+           klimatološkimi termini, vendar je treba preveriti v originalnem zapisu, ker lahko pride do napake pri vnosu). 
+           Opozorilo, če je P65(n) = (4) in (FF7(n) = -9 ali FF7(n) &lt; 17.2 m/s) in (FF14(n) = -9 ali FF14(n) &lt; 17.2 m/s) in (FF21(n)  = -9 ali FF21(n) &lt; 17.2 m/s).
+
+124J    Pojav močnega vetra je, v nobenem od terminov pa jakost vetra ni dosegala 6 Beaufortov (močan veter je bil lahko ta dan 
+           med klimatološkimi termini, vendar je treba preveriti v originalnem zapisu, ker lahko pride do napake pri vnosu). 
+           Opozorilo, če je P65(n) = (1) in (JAK7(n) = -9 ali JAK7(n) &lt; 6) in (JAK14(n) = -9 ali JAK14(n) &lt; 6) in (JAK21(n) = -9 ali JAK21(n) &lt; 6).
+                                  
+124JA  Pojav viharnega vetra je, v nobenem od terminov pa jakost vetra ni dosegala 8 Beaufortov (viharni veter je bil lahko ta dan 
+           med klimatološkimi termini, vendar je treba preveriti v originalnem zapisu, ker lahko pride do napake pri vnosu). 
+           Opozorilo, če je P65(n) = (4) in (JAK7(n) = -9 ali JAK7(n) &lt; 8) in (JAK14(n) = -9 ali JAK14(n) &lt; 8) in (JAK21(n) = -9 ali JAK21(n) &lt; 8).					 
+
+// PREJ <u>125</u>     <b>Hitrost vetra v enem od terminov presega 10.8 m/s, ni pa šifre močnega vetra pri atmosferskih pojavih.</b> 
+//                    <b>Napaka, če je (FF7(n) &gt;= 10.8 m/s ali FF14(n) &gt;= 10.8 m/s ali FF21(n) &gt;= 10.8 m/s) in P65(n) != (1,4).</b>
+
+<u>125</u>     <b>Hitrost vetra v enem od terminov presega 10.8 m/s, ni pa pojava močnega vetra pri atmosferskih pojavih. 
+           Napaka, če je (FF7(n) &gt;= 10.8 m/s in FF7(n) &lt; 17.2 m/s ali FF14(n) &gt;= 10.8 m/s  in FF14(n) &lt; 17.2 m/s ali 
+           FF21(n) &gt;= 10.8 m/s in FF21(n) &lt; 17.2 m/s) in P65(n) != (1).</b>
+
+<u>125A</u>   <b>Hitrost vetra v enem od terminov presega 17.2 m/s, ni pa pojavov močnega in viharnega vetra pri atmosferskih pojavih.
+           Napaka, če je (FF7(n) &gt;= 17.2 m/s ali FF14(n) &gt;= 17.2 m/s ali FF21(n) &gt;= 17.2 m/s) in P65(n) != (4).</b>
+
+125B   Hitrost vetra v enem od terminov presega 10.8 m/s, v nobenem od terminov pa ne presega 17.2 m/s. Pri atmosferskih pojavih je 
+           tudi pojav viharnega vetra (šifra 4 namesto 1; viharni veter se lahko pojavi tudi med termini).
+           Opozorilo, če je (10.8 m/s &gt;= FF7(n) &lt; 17.2 m/s ali 10.8 m/s &gt;= FF14(n) &lt; 17.2 m/s ali 10.8 m/s &gt;= FF21(n) &lt; 17.2 m/s 
+           in P65(n) = (4).
+
+<u>125C</u>   <b>Hitrost vetra v enem od terminov presega 17.2 m/s. Pri atmosferskih pojavih manjka pojav viharnega vetra 
+           (šifra 1, morala pa biti 4).
+           Napaka, če je (FF7(n) &gt;= 17.2 m/s ali FF14(n) &gt;= 17.2 m/s ali FF21(n) &gt;= 17.2 m/s) in P65(n) = (1).</b>
+
+<u>125J</u>    <b>Jakost vetra je v enem od terminov enaka 6 ali 7, ni pa pojava močnega vetra pri atmosferskih pojavih. 
+           Napaka, če je (JAK7(n) &gt;= 6 ali 7 ali JAK14(n) &gt;= 6 ali 7 ali JAK21(n) &gt;= 6 ali 7) in P65(n) != (1).</b>
+
+<u>125JA</u>  <b>Jakost vetra je v enem od terminov večja ali enaka 8, ni pa pojavov močnega in viharnega vetra pri atmosferskih pojavih.
+           Napaka, če je (JAK7(n) &gt;= 8 ali JAK14(n) &gt;= 8 ali JAK21(n) &gt;= 8) in P65(n) != (4).</b>
+
+125JB  Jakost vetra je v enem od terminov večja ali enaka 6, v nobenem od terminov pa ni večja ali enaka 8. Pri atmosferskih pojavih je tudi 
+           pojav viharnega vetra (šifra 4 namesto 1; viharni veter se lahko pojavi tudi med termini).
+           Opozorilo, če je (6 &gt;= JAK7(n) &lt; 8 ali 6 &gt;= JAK14(n) &lt; 8 ali 6 &gt;= JAK21(n) &lt; 8 in P65(n) = (4).
+
+<u>125JC</u>  <b>Jakost vetra je v enem od terminov večja ali enaka 8. Pri atmosferskih pojavih manjka pojav viharnega 
+           vetra (šifra 1, morala pa biti 4).
+           Napaka, če je (JAK7(n) &gt;= 8 ali JAK14(n) &gt;= 8 ali JAK21(n) &gt;= 8) in P65(n) = (1).</b>
+                         
+<u>126</u>     <b>Višina snežne odeje je večja od 0, ni pa pojava snežne odeje. Napaka, če je SS(n) &gt; 0 cm in P70(n) != 1.</b>
+
+<u>127</u>     <b>Ker ni višine skupnega snega, ne more biti pojava snežne odeje. Izjema je primer, ko so bile snežne padavine čez dan, 
+           zato napako izpišemo le, če ta dan ni snežilo. 
+           Napaka, če je SS(n) = -1 in P70(n) = 1 in P56(n) = 0 in P57(n) = 0.</b>
+
+127A   Ni pojava snežne odeje, čeprav je danes snežilo. Možno je, da je bilo manj kot 1 cm snega in snežna odeja ni pokrivala več kot 50% tal.  
+           Opozorilo, če je P70(n) = 0 in P56(n) = (1-7) in P57(n) = (1-7).
+
+<u>128</u>     <b>Glede na šifro za stanje tal mora biti tudi pojav snežne odeje. 
+           Napaka, če velja (TLA7(n) ali TLA14(n) ali TLA21(n) &gt; 5) in P70(n) != 1.</b>
+
+<u>129</u>     <b>Količina oblačnosti ob 7. uri ni v mejah. Napaka, če je 10 &lt; OBL7(n) ali OBL7(n) &lt; 0.</b>
+
+<u>130</u>     <b>Količina oblačnosti ob 14. uri ni v mejah. Napaka, če je10 &lt; OBL14(n) ali OBL14(n) &lt; 0.</b>
+
+<u>131</u>     <b>Količina oblačnosti ob 21. uri ni v mejah. Napaka,če je 10 &lt; OBL21(n) ali OBL21(n) &lt; 0.</b>
+
+<u>132</u>     <b>Podatek o množini vode v snežni odeji je ob napačnem dnevu. 
+           Napaka, če je DATUM != (5.,10.,15.,20.,25. in zadnjega v mesecu) in VODA(n) > -1.</b>
+
+133     Razlika med minimalno temperaturo na 5cm in minimalno temperaturo ni v mejah za jasno noč. 
+    
+           A = Tmin5(n) - Tmin(n)
+           
+           Opozorilo, če je OBL21(n-1) + OBL7(n) &lt;= 15 in A &lt; -11.0°C.
+
+           (Opomba: opozorilo za razliko A v pozitivno smer je v napaki 8).          
+
+134     Razlika med minimalno temperaturo na 5cm in minimalno temperaturo ni v mejah za oblačno noč. Pri snežni odeji je razlika lahko večja, 
+           kot če ni snežne odeje.
+        
+           A = Tmin5(n) - Tmin(n)
+           
+           Opozorilo, če je 
+           1. A &lt; -7.0°C in OBL21(n-1) + OBL7(n) &gt; 15 in SS(n) &lt; 0 cm ali 
+           2. A &lt; -8.0°C in OBL21(n-1) + OBL7(n) &gt; 15 in SS(n) &gt;= 0 cm. 
+
+135     Prevelik skok delnega pritiska vodne pare ob 7. uri. Opozorilo, če je |VP7(n) - VP21(n-1)| &gt; 1.0 * MAX( VP7(n), VP21(n-1)).
+
+136     Prevelik skok delnega pritiska vodne pare ob 14. uri. Opozorilo, če je |VP14(n) - VP7(n-1)| &gt; 1.0 * MAX( VP14(n), VP7(n-1)).
+
+137     Prevelik skok delnega pritiska vodne pare ob 21. uri. Opozorilo, če je |VP21(n) - VP14(n-1)| &gt; 1.0 * MAX( VP21(n), VP14(n)).
+
+138     Manjka podatek za množino vode v snegu. Kadar ni podatka, se v bazo vpiše vrednost -9. 
+           Opozorilo, kadar se parameter meri in je VODA(n) = -9.
+
+139     Deficit temperature na 5 cm je prevelik glede na terminske temperature.
+    
+           A = Tmin5(n) - MIN (T21(n-1), T7(n))
+           
+           Opozorilo, če je A &lt; - 11.0°C.
+
+140     Temperatura na 5 cm je višja od terminske ob 7. uri in ni megle ali novega snega.
+	
+           A = Tmin5(n) - T7(n)	
+           
+           Opozorilo, če je   	
+           1.  1.5°C &gt;= A &gt; 0°C in P59(n) = 0 in NS &lt; 0 cm, megla ali 
+           2.  2.5°C &gt;= A &gt; 1.5°C in NS &lt; 0 cm ali 
+           3. A &gt; 2.5°C.
+
+<u>141</u>     <b>Temperatura na 5 cm je višja od terminske temperature ob 21. uri prejšnji dan.
+           
+           A = Tmin5(n) - T21(n-1).	
+           
+           Napaka, če je A &gt; 0°C.</b>
+ 
+142     Šifra pri atmosferskih pojavih v stolpcu 70 za pojav snežne odeje ni 0 ali 1 (pojavov polarnega sija in svetlobnih stebrov se ne meri). 
+           Opozorilo, če je P70(n) != (0,1) oziroma je pojav snega lahko v naslednji kombinaciji P70(n) = (1,4,5,7) za kontrolo snega pred 
+           letom 1991. Opozorilo je samo za podatke po 1.1.1991, saj sta se pred tem datumom pojava polarnega sija in svetlobnih 
+           stebrov merila.
+ 
+//PREJ 143     Šifre pri atmosferskih pojavih v stolpcih 66, 67, 68, 69 ne bi smelo biti - briši jo!
+//                   Napaka, če je P66(n) != 0 ali P67(n) != 0 ali P68(n) != 0 ali P69(n) != 0.
+
+143     Atmosferski pojavi v stolpcih 66, 67, 68, 69 se ne merijo. 
+           Opozorilo, če je P66(n) != 9 ali P67(n) != 9 ali P68(n) != 9 ali P69(n) != 9.                  
+           Opozorilo je samo za podatke po 1.1.1991, saj so se pred tem datumom pojavi merili.
+
+//PREJ <u>144</u>     <b>Napaka v  številki postaje. NE DELUJE, KER JE PC PROGRAM PREVELIK IN SE NE DA PREVEST!!!!!</b>  
+//                   <b>a) Pri kontroli letnih datotek za eno postajo številka postaje ni enaka številki, ki jo določimo pri zagonu kontrolnega</b> 
+//                   <b>     programa KONTRPOS.EXE.</b>
+//                   <b>b) Pri mesečni kontroli (KONTROLA.EXE) vseh postaj si morajo številke postaj slediti v naraščajočem vrstnem redu</b> 
+//                   <b>     (morajo biti sortirane po številki</b>
+//                   <b>     postaje)</b>
+
+<u>145</u>     <b>Hitrost vetra ob 7., 14. in 21. uri ne sme biti manjša od 0 m/s. 	
+           Napaka, če je FF7(n) &lt; 0 m/s in hkrati FF7(n) != -9 ali FF14(n) &lt; 0 m/s in hkrati FF14(n) != -9 ali FF21(n) &lt; 0 m/s in 
+           hkrati FF21(n) != -9.</b>
+
+<u>145J</u>    <b>Napačna šifra za jakost vetra. Jakost vetra ob 7., 14. in 21. uri ne sme biti manjša od 0 in večja od 12. 	
+           Napaka, če je JAK7(n) &lt; 0 in JAK7(n) != -9 ali JAK7(n) &gt; 12 ali  JAK14(n) &lt; 0 in JAK14(n) != -9 ali JAK14(n) &gt; 12 ali 
+           JAK21(n) &lt; 0 in JAK21(n) != -9 ali JAK21(n) &gt; 12.</b>
+
+<u>146</u>     <b>Napaka vnosa: vse vrednosti so enake vrednostim za prejšnji dan. Pri vnosu klimatoloških podatkov je to napaka, 
+           pri vnosu padavinskih podatkov in podatkov o trajanju sončnega obsevanja pa je samo opozorilo.</b>
+<!-- STARO - POPRAVEK 2006-08-21 
+147     Ni podatkov. Opozorilo, kadar za ta dan ni vnešene nobene vrednosti. Izjema so vrednosti za interpolacije, ki so lahko 0. -->
+//PREJ 147     Ni podatkov. Opozorilo, kadar za ta dan ni vnešene nobene vrednosti. Izjema so vrednosti za interpolacije, ki so lahko 0. 
+                  Vrednosti pojavov so v tem primeru enake 0, razen v formi Klima v stolpcih 66, 67, 68 in 69 po letu 1991, kjer je vrednost 9 (manjkajoča vrednost).
+147     Ni podatkov. Opozorilo, kadar za ta dan ni vnešene nobene vrednosti in so vrednosti pojavov 9 (manjkajoče).
+           Izjema so vrednosti za interpolacije, ki so lahko 0. 
+
+<u>148</u>     <b>Pritisk ob 7., 14. in 21. uri se lahko od povprečnega pritiska razlikuje za 700 (kontrola grobih meja). Povprečni pritisk je 
+           odvisen od nadmorske višine postaje in je za vsako postajo posebej določen ter zapisan v evidenco postaj.
+					 
+           PP_post = povprečen pritisk na postaji (za vsako postajo posebej določen), dobljen iz evidence postaj; 
+					 
+           Napaka je pri pogoju: Abs(PP7-PP_post) > 700 ali Abs(PP14-PP_post) > 700 ali Abs(PP21-PP_post) > 700</b>
+
+<u>149</u>     <b>Temperatura ne sme biti nižja od -50.0°C ali višja od 50.0°C (grobe meje). 
+           Napaka, če Tmax(n) != -999 in (Tmax(n) &lt; -50.0°C ali Tmax(n) &gt; 50.0°C) ali Tmin(n) != -999 in (Tmin(n) &lt; -50.0°C ali 
+           Tmin(n) &gt; 50.0°C) ali Tmin5(n) != -999 in (Tmin5(n) &lt; -50.0°C ali Tmin5(n) &gt; 50.0°C) ali T7(n) != -999 in 
+           (T7(n) &lt; -50.0°C ali T7(n) &gt; 50.0°C) ali T14(n) != -999 in (T14(n) &lt; -50.0°C ali T14(n) &gt; 50.0°C) ali 
+           T21(n) != -999 in (T21(n) &lt; -50.0°C ali T21(n) &gt; 50.0°C) ali TM7(n) != -999 in (TM7(n) &lt; -50.0°C ali TM7(n) &gt; 50.0°C) 
+           ali TM14(n) != -999 in (TM14(n) &lt; -50.0°C ali TM14(n) &gt; 50.0°C) ali TM21(n) != -999 in (TM21(n) &lt; -50.0°C ali 
+           TM21(n) &gt; 50.0°C).</b>
+					 
+<u>150</u>     <b>Napačna šifra za led na krpici. Dovoljene šifre za led so 0 (voda), 1 (led) in 9 (manjkajoča vrednost).
+           Napaka, če LED7(n) != (0,1,9) ali LED14(n) != (0,1,9) ali LED21(n) != (0,1,9).</b>
+
+<u>151</u>     <b>Relativna vlaga po higrografu ob 7., 14. in 21. uri se meri v % in ne sme biti manjša od 0 % ali večja od 100%.
+           Napaka, če Uh7(n) &lt; 0% ali Uh7(n) &gt; 100% in Uh7(n) != -9 ali 
+           Uh14(n) &lt; 0% ali Uh14(n) &gt; 100%  in Uh14(n) != -9 ali 
+           Uh14(n) &lt; 0% ali Uh14(n) &gt; 100%  in Uh21(n) != -9.</b>
+
+<u>152</u>     <b>Napačna oznaka interpolacije.
+           Dovoljene šifre za klimo in padavine: 0, 1, 2, 3, 4, 5, 6, 7, 8 in 9 (manjkajoča vrednost).  
+           Dovoljene šifre za trajanje sonca: 00, 11, 12, 13, 14, 15, 16, 21, 22, 23, 24, 25, 26, 31, 32, 33, 34, 35, 36, 41, 42, 43, 44, 45, 
+                                                                    51, 52, 53, 54, 55, 56 in -9 (manjkajoča vrednost).</b>
+
+<u>153</u>     <b>Napačno šifriran pojav. Dovoljene šifre: 0, 1, 2, 3, 4, 5, 6, 7 in 9 (manjkajoča vrednost).</b>
+
+<u>154</u>     <b>Manjka podatek za višino skupne snežne odeje ali podatek za višino novozapadlega snega preveč. 
+           Napaka, če SS(n) = -9 in NS(n) &gt;= -1 in NS(n) &lt;= 300 cm.
+           Če podatka za višino skupne snežne odeje ne napišemo, se v bazo vpiše vrednost -9 (opozorilo 162).</b>
+
+<u>155</u>     <b>Manjka podatek za višino novozapadlega snega ali podatek za višino skupne snežne odeje preveč.
+           Napaka, če NS(n) = -9 in SS(n) &gt;= -1 in SS(n) ne presega zgornje meje.
+           Če podatka za višino novozapadlega ne napišemo, se v bazo vpiše vrednost -9 (opozorilo 163).</b>
+
+<u>156</u>     <b>Manjka podatek za množino vode v snegu ali podatek za višino skupne snežne odeje preveč. 
+           Napaka, če VODA(n) = -9 in SS(n) &gt;= -1 in SS(n) ne presega zgornje meje.
+           Če podatka za množino vode v snegu ne napišemo, se v bazo vpiše vrednost -9 (opozorilo 138).</b>
+
+<u>157</u>     <b>Manjka podatek za višino skupne snežne odeje ali podatek za množino vode v snegu preveč.
+           Napaka, če SS(n) = -9 in VODA(n) &gt;= -1.
+           Če podatka za višino skupne snežne odeje ne napišemo, se v bazo vpiše vrednost -9 (opozorilo 162).</b>
+
+<u>158</u>     <b>Minimalna temperatura me sme biti višja od maksimalne. Napaka, če Tmin(n) &gt;= Tmax(n).</b>
+
+<u>159</u>     <b>Če prejšnji dan ni bilo snežne odeje in ta dan ni bilo padavin, ne more biti snežne odeje. 
+           Napaka, če SS(n-1) = -1 in RR(n) = -1 in SS(n) > -1.</b>
+
+160     Manjka podatek za višino padavin. Kadar ni podatka, se v bazo vpiše vrednost -999. 
+           Opozorilo, kadar se parameter meri in je RR(n) = -999.
+
+161     Manjka podatek za obliko padavin. Kadar ni podatka, se v bazo vpiše vrednost -9.
+           Opozorilo, kadar se parameter meri in je Robl(n) = -9.
+
+162     Manjka podatek za višino skupne snežne odeje. Kadar ni podatka, se v bazo vpiše vrednost -9.
+           Opozorilo, kadar se parameter meri in je SS(n) = -9.
+					 
+163     Manjka podatek za višino novozapadlega snega. Kadar ni podatka, se v bazo vpiše vrednost -9. 
+           Opozorilo, kadar se parameter meri in je NS(n) = -9.
+
+164     Višina skupne snežne odeje je večja od 200 cm (za postaje z nadmorsko višino pod 1500 m).
+           Opozorilo, kadar je SS(n) > 200 cm.
+
+165     Višina novozapadlega snega je večja od 200 cm (za postaje z nadmorsko višino pod 1500 m).
+           Opozorilo, kadar je NS(n) > 200 cm.
+
+166     Manjka podatek za pritisk. Kadar ni podatka, se v bazo vpiše vrednost -999. 
+           Opozorilo, kadar se parameter meri in je PP7(n) = -999 ali PP14(n) = -999 ali PP21(n) = -999.
+
+167     Manjka podatek za maksimalno temperaturo. Kadar ni podatka, se v bazo vpiše vrednost -999. 
+           Opozorilo, kadar se parameter meri in je Tmax(n) = -999.
+
+168     Manjka podatek za minimalno temperaturo. Kadar ni podatka, se v bazo vpiše vrednost -999. 
+           Opozorilo, kadar se parameter meri in je Tmin(n) = -999.
+
+169     Manjka podatek za minimalno temperaturo na 5 cm. Kadar ni podatka, se v bazo vpiše vrednost -999. 
+           Opozorilo, kadar se parameter meri in je Tmin5(n) = -999.
+
+170     Manjka podatek za smer vetra. Kadar ni podatka, se v bazo vpiše vrednost -9. 
+           Opozorilo, kadar se parameter meri in je DD7(n) = -9 ali DD7(n) = -9 ali DD7(n) = -9.
+
+171     Manjka podatek za hitrost vetra. Kadar ni podatka, se v bazo vpiše vrednost -9. 
+           Opozorilo, kadar se parameter meri in je FF7(n) = -9 ali FF14(n) = -9 ali FF21(n) = -9.
+
+171J    Manjka podatek za jakost vetra. Kadar ni podatka, se v bazo v polje za hitrost vpiše vrednost -9. 
+           Opozorilo, kadar se parameter meri in je JAK7(n) = -9 ali JAK14(n) = -9 ali JAK21(n) = -9.
+
+172     Manjka podatek za stanje tal. Kadar ni podatka, se v bazo vpiše vrednost -9. 
+           Opozorilo, kadar se parameter meri in je TLA7(n) = -9 ali TLA14(n) = -9 ali TLA21(n) = -9.
+
+173     Manjka podatek za vidnost. Kadar ni podatka, se v bazo vpiše vrednost -9. 
+           Opozorilo, kadar se parameter meri in je VID7(n) = -9 ali VID14(n) = -9 ali VID21(n) = -9.
+           
+174     Manjka podatek za oblačnost. Kadar ni podatka, se v bazo vpiše vrednost -9. 
+           Opozorilo, kadar se parameter meri in je OBL7(n) = -9 ali OBL14(n) = -9 ali OBL21(n) = -9.
+
+175     Manjka podatek za trajanje sončnega obsevanja. Če podatka ni, se v bazo vpiše vrednost -9. 
+           Opozorilo, kadar se parameter meri in je SON(n) = -9.
+
+176     Manjka podatek za vrsto interpolacije. Če podatka ni, se v bazo vpiše vrednost -9. 
+           Opozorilo, kadar podatke preverja kontrolor in manjka vrednost interpolacije ter se parameter, ki ga interpoliramo, meri.  
+
+177     Manjka podatek za pojave. Kadar ni podatka, se v bazo vpiše vrednost 9. 
+           Opozorilo, kadar se pojavi merijo in velja P54(n) = 9 ali P55(n) = 9 ali P56(n) = 9 ali P57(n) = 9 ali P58(n) = 9 ali P59(n) = 9 ali 
+           P60(n) = 9 ali P61(n) = 9 ali P62(n) = 9 ali P63(n) = 9 ali P64(n) = 9 ali P65(n) = 9 ali P70(n) = 9, pri podatkih pred letom 1991
+           pa še, če velja P66(n) = 9 ali P67(n) = 9 ali P68(n) = 9 ali P69(n) = 9. 
+					
+178     Prevelika razlika med minimalno temperaturo in temperaturo suhega termometra ob 7. uri.
+           Opozorilo, če |T7(n) - Tmin(n)| &gt;= 5.0°C.
+
+179     Prevelika razlika med maksimalno temperaturo in temperaturo suhega termometra ob 14. uri.
+           Opozorilo, če |T14(n) - Tmax(n)| &gt;= 5.0°C.
+</pre>    
+<p class="top_style"><a href="#top">Na vrh</a></p>   
+</body>
+</html>

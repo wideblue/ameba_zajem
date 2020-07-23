@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+
+<map:sitemap xmlns:map="http://apache.org/cocoon/sitemap/1.0">
+	<map:flow language="javascript">
+		<map:script src="flow.js" />
+		<map:script src="query.js" />
+		<map:script src="data.js" />
+		<map:script src="functions.js"/>
+		<map:script src="variables.js"/>
+		<map:script src="controls.js"/>
+		<map:script src="sun.js"/>
+		<map:script src="context:/lib/cocoon/flow/flow.js" />
+		<map:script src="session.js"/>
+	</map:flow>
+
+	<map:components>
+	
+	  <map:transformers default="xslt">
+			<!-- Saxon as default XSLT processor. -->
+			<map:transformer logger="sitemap.transformer.xslt" name="xslt" pool-grow="2" pool-max="32" pool-min="8" src="org.apache.cocoon.transformation.TraxTransformer">
+				<use-request-parameters>false</use-request-parameters>
+				<use-session-parameters>false</use-session-parameters>
+				<use-cookie-parameters>false</use-cookie-parameters>
+				<xslt-processor-role>saxon</xslt-processor-role>
+				<check-includes>true</check-includes>
+			</map:transformer>
+			<map:transformer name="i18n" src="org.apache.cocoon.transformation.I18nTransformer">
+				<catalogues default="messages">
+					<catalogue id="forms" name="forms" location="resources/message"/>
+					<catalogue id="messages" name="messages" location="resources/message"/>
+				</catalogues>
+				
+				<untranslated-text>untranslated</untranslated-text>
+				<cache-at-startup>false</cache-at-startup>
+			</map:transformer>
+		</map:transformers>	
+		
+		<map:serializers default="html">
+			<map:serializer logger="sitemap.serializer.text" mime-type="text/plain" name="text" src="org.apache.cocoon.serialization.TextSerializer">
+				<encoding>UTF-8</encoding>
+			</map:serializer>
+			<map:serializer logger="sitemap.serializer.text" mime-type="text/javascript" name="javascript" src="org.apache.cocoon.serialization.TextSerializer">
+				<encoding>UTF-8</encoding>
+			</map:serializer>
+			<map:serializer logger="sitemap.serializer.xml" mime-type="text/xml" name="xml8" src="org.apache.cocoon.serialization.XMLSerializer">
+				<encoding>UTF-8</encoding>
+				<omit-xml-declaration>no</omit-xml-declaration>
+			</map:serializer>
+		</map:serializers>
+	</map:components>
+	
+	<map:resources>
+		<map:resource name="form2html.t">
+			<map:transform type="xalan" src="resources/xslt/ameba-forms-styling.xsl">
+				<map:parameter name="contextPath" value="{request:contextPath}"/>
+				<map:parameter name="resources-uri" value="web"/>
+			</map:transform>
+		</map:resource>
+	</map:resources>
+	
+	<map:pipelines default="profile-noncaching">
+		<map:pipeline>
+			<map:match pattern="index">
+				<map:redirect-to uri="index.htm"/>
+			</map:match>
+		</map:pipeline>
+
+		<map:pipeline>
+			<map:match pattern="index.htm">
+				<map:select type="user-role">
+					<map:when test="kontrolor">
+						<map:call function="setInsert"/>
+					</map:when>
+					<map:when test="vnasalec">
+						<map:call function="setInsert"/>
+					</map:when>
+					<map:otherwise>
+						<map:read src="napacna_prijava.htm"/>
+					</map:otherwise>
+				</map:select>
+			</map:match>
+		</map:pipeline>
+		
+		<map:pipeline>
+			<map:match pattern="index_*.htm">
+				<map:read src="index.htm"/>
+			</map:match>
+		</map:pipeline>
+		
+		<map:pipeline>
+			<map:match pattern="index_debug.htm">
+				<map:select type="user-role">
+					<map:when test="kontrolor">
+						<map:read src="index_debug.htm"/>
+					</map:when>
+					<map:when test="vnasalec">
+						<map:read src="index_debug.htm"/>
+					</map:when>
+					<map:otherwise>
+						<map:read src="napacna_prijava.htm"/>
+					</map:otherwise>
+				</map:select>
+			</map:match>
+		</map:pipeline>
+		
+		<map:pipeline>
+			<map:match pattern="web/**">				
+				<map:read src="resources/{1}"/>
+			</map:match>
+		</map:pipeline>
+
+		<map:pipeline>
+			<map:match pattern="insert_info()">
+				<map:parameter name="expires" value="now"/>
+				<map:call function="getInsertInfo"/>
+		  </map:match>
+		</map:pipeline>	
+		
+		<map:pipeline>
+			<map:match pattern="*.ft">
+				<map:generate src="forms/{1}.ft"/>
+				<map:transform type="forms"/>
+				<map:transform type="i18n">
+					<map:parameter name="locale" value="si"/>
+				</map:transform>
+				<map:call resource="form2html.t"/>
+				<map:serialize type="html"/>
+			</map:match>
+		</map:pipeline>
+		
+		<map:pipeline>
+			<map:match pattern="*.continue">
+				<map:call continuation="{1}"/>
+			</map:match>
+		</map:pipeline>
+		
+		<map:pipeline>
+			<map:match pattern="css/**">
+				<map:read src="css/{1}" />
+			</map:match>
+		</map:pipeline>
+		
+		<map:pipeline>
+			<map:match pattern="*.js">
+				<map:read src="{1}.js" />
+			</map:match>
+		</map:pipeline>
+		
+		<map:pipeline>
+			<map:match pattern="*.swf">
+				<map:read src="{1}.swf" />
+			</map:match>
+		</map:pipeline>
+
+		<map:pipeline>
+			<map:match pattern="images/**">
+				<map:read src="images/{1}" />
+			</map:match>
+		</map:pipeline>
+
+		<map:pipeline>
+			<map:match pattern="*_select">
+				<map:call function="{1}Select"/>
+			</map:match>
+		</map:pipeline>
+
+		<map:pipeline>
+			<map:match pattern="*_result">
+				<map:call function="{1}Result"/>
+			</map:match>
+		</map:pipeline>
+
+		<map:pipeline>
+			<map:match pattern="*_transform">
+				<map:generate src="module:flow-attribute:{1}"/>
+				<map:transform src="xml2obj.xsl"/>
+				<map:serialize type="javascript"/>
+			</map:match>
+		</map:pipeline>
+
+		<map:pipeline>
+			<map:match pattern="*_xml">
+				<map:parameter name="expires" value="now"/>
+				<map:generate src="xmodule:flow-attribute:{1}"/>
+				<map:serialize type="xml8"/>
+			</map:match>
+		</map:pipeline>
+
+		<map:pipeline>
+			<map:match pattern="*_text">
+				<map:generate src="module:flow-attribute:{1}"/>
+				<map:serialize type="text"/>
+			</map:match>
+		</map:pipeline>
+		
+		<map:pipeline>
+			<map:match pattern="*_html">
+				<map:generate type="jx" src="jx/{1}.jx">
+					<map:parameter name="lenient-xpath" value="true"/>
+				</map:generate>
+				<map:serialize type="html"/>
+			</map:match>
+		</map:pipeline>		
+
+		<map:pipeline>
+			<map:match pattern="refresh-session">
+				<map:call function="refreshSession"/>
+			</map:match>
+		</map:pipeline>
+
+		<map:pipeline>
+			<map:match pattern="user-info">
+				<map:call function="getUserInfo"/>
+			</map:match>
+		</map:pipeline>
+
+		<map:handle-errors>
+			<map:select type="exception">
+				<map:when test="not-found">
+					<map:generate type="notifying"/>
+					<map:serialize type="xml"/>
+				</map:when>
+				<map:when test="invalid-continuation">
+					<map:generate type="notifying"/>
+					<map:serialize type="xml"/>
+				</map:when>
+				<map:otherwise>
+					<map:generate type="notifying"/>
+					<map:serialize type="xml"/>
+				</map:otherwise>
+			</map:select>
+		</map:handle-errors>
+		
+	</map:pipelines>
+</map:sitemap>

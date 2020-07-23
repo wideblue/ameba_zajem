@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<fd:form xmlns:fd="http://apache.org/cocoon/forms/1.0#definition">
+  <fd:widgets>
+    <fd:field id="tab" required="true">
+      <fd:datatype base="integer"/>
+			<fd:selection-list>
+				<fd:item value="1"><fd:label>kkd_vhodna, ppd_vhodna, stu_vhodna</fd:label></fd:item>
+				<fd:item value="2"><fd:label>klima_vhodna, padavine_vhodna, trajanje_vhodna</fd:label></fd:item>
+			</fd:selection-list>
+    </fd:field>
+    <fd:action id="save">
+      <fd:label>Nadaljuj</fd:label>
+      <fd:on-action>
+        <fd:javascript>
+          var form =  event.source.getForm();
+          form.validate();
+          if (form.isValid()) form.endProcessing(false);
+       </fd:javascript>
+      </fd:on-action>
+    </fd:action>
+  </fd:widgets>
+</fd:form>

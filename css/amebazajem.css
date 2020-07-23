@@ -1,0 +1,12 @@
+.ameba-zajem-print {
+	padding: 5px;
+  border: 1px solid black;
+  font-family: tahoma;
+  font-size: 15px;
+}
+
+.ameba-zajem-print td {
+	border-top: 1px solid black;
+	padding: 3px;
+}
+

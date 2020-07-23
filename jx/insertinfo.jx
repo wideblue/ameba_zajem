@@ -1,0 +1,15 @@
+<html xmlns:jx="http://apache.org/cocoon/templates/jx/1.0">
+	<jx:set var="tab" value="#{./tab}"/>
+	<head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  	<link type="text/css" rel="StyleSheet" href="css/ameba_zajem.css"></link>
+  </head>
+	<body>
+		<p class="red bold" style="text-align:left;margin-top:0px">
+		<jx:choose>
+			<jx:when test="#{$tab=1}">Obravnavajo se podatki v tabelah kkd_vhodna, ppd_vhodna, stu_vhodna.</jx:when>
+			<jx:when test="#{$tab=2}">Obravnavajo se podatki v tabelah klima_vhodna, padavine_vhodna, trajanje_vhodna.</jx:when>
+		</jx:choose>
+		</p>
+	</body>
+</html>

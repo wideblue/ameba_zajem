@@ -1,0 +1,22 @@
+<html xmlns:ft="http://apache.org/cocoon/forms/1.0#template" xmlns:fi="http://apache.org/cocoon/forms/1.0#instance">
+  <head>
+    <title>Ameba forme</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link type="text/css" rel="StyleSheet" href="css/ameba_zajem.css"></link>
+		<style>
+      td { font-size:12px;text-align:left }
+			.forms-field-required { display:none }
+    </style>
+  </head>
+  <body style="margin:15px">
+		<ft:form-template action="#{$cocoon/continuation/id}.continue" method="POST" enctype="multipart/form-data">
+			<h3 style="border:0px solid #808080;border-bottom-width:1px;background-color:#eeeeee;padding:5px">AMEBA ZAJEM</h3>
+			<table style="margin-bottom:20px">
+				<tr><td>Obravnavaj podatke v tabelah:</td></tr>
+				<tr><td><ft:widget id="tab"><fi:styling list-type="radio"/></ft:widget></td></tr>
+				<tr><td><ft:widget id="save"></ft:widget></td></tr>
+			</table>
+			<hr/>
+		</ft:form-template>
+  </body>
+</html>
